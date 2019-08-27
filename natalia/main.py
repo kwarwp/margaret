@@ -16,3 +16,6 @@ artefato.vai()
 pedras.direita = sereiamonstro 
 sereiamonstro.esquerda = pedras
 pedras.vai()
+sereiamonstro.direita = fogo 
+fogo.esquerda = pedras
+pedras.vai()

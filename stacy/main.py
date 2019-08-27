@@ -1,4 +1,8 @@
 # margaret.stacy.main.py
 from _spy.vitollino.main import Cena
-CENA = "http://lorenpixel/300/300/city/1"
-Cena(CENA).vai()
+CENA = "https://i.imgur.com/ucaj8RJ.jpg"
+FOGO = "https://i.imgur.com/FaPZtsh.jpg"
+templo = Cena(CENA)
+fogo = Cena(FOGO)
+templo.direita = fogo
+templo.vai()

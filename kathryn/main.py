@@ -1,4 +1,7 @@
 # margaret.kathryn.main.py
 from _spy.vitollino.main import Cena 
 CENA = "http://lorempixel/300/300/city/1"
-Cena (CENA).vai()
+TESOURO = "https://i.imgur.com/DsncQRP.jpg"
+MUMIA = "https://i.imgur.com/ardMlqr.jpg"
+templo = Cena(CENA)
+tesouro = Cena(TESOURO)

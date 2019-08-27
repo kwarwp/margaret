@@ -9,7 +9,6 @@ class Inca:
           fogo = Cena(FOGO)
           templo.direita = fogo
           fogo.esquerda = templo
-          templo.vai()
 
 inca = Inca()
 inca.inicia()

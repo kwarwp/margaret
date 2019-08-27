@@ -7,6 +7,7 @@ PEDRAS = "https://i.imgur.com/4ftVqRs.jpg"
 templo = Cena(CENA)
 artefato = Cena(ARTEFATO)
 pedras = Cena(PEDRAS)
+sereiamonstro = Cena(SEREIAMONSTRO)
 templo.direita = artefato
 artefato.esquerda = templo
 templo.vai()

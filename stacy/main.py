@@ -5,4 +5,5 @@ FOGO = "https://i.imgur.com/FaPZtsh.jpg"
 templo = Cena(CENA)
 fogo = Cena(FOGO)
 templo.direita = fogo
+fogo.esquerda = templo
 templo.vai()

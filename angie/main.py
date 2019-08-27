@@ -7,3 +7,4 @@ tesouro = Cena(TESOURO).vai()
 templo.direita = tesouro
 templo.vai()
 tesouro.esquerda = templo
+templo.vai()

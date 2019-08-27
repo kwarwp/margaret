@@ -13,3 +13,6 @@ templo.vai()
 artefato.direita = pedras
 pedras.esquerda = artefato 
 artefato.vai()
+pedras.direita = sereiamonstro 
+sereiamonstro.esquerda = pedras
+pedras.vai()

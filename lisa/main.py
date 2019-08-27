@@ -1,12 +1,11 @@
 # margaret.lisa.main.py
 from _spy.vitollino.main import Cena
-CENA = "https://i.imgur.com/ysHJLhg.jpg"
-MONSTRO = "https://i.imgur.com/cHd7w24.jpg"
-
+from stacy.main import fogo
+CENA = "https://i.imgur.com/7GZetDn.jpg"
+TESOURO = "https://i.imgur.com/h8MfuRD.jpg"
 templo = Cena(CENA)
-monstro = Cena(MONSTRO)
-
-templo.direita = monstro
-monstro.esquerda = templo
-
+tesouro = Cena(TESOURO)
+templo.direita = tesouro
+tesouro.esquerda = templo
+tesouro.direita = fogo
 templo.vai()

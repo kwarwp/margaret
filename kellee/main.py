@@ -8,4 +8,6 @@ tesouro = Cena(TESOURO)
 templo.direita = tesouro
 tesouro.esquerda = templo
 templo.vai()
+MONSTRO = "https://i.imgur.com/4cBiZ6n.jpg"
 monstro = Cena(MONSTRO)
+

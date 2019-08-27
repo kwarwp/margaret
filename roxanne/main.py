@@ -7,7 +7,6 @@ guardado = Cena(CENA)
 caverna = Cena(CENA)
 monstro = Cena(MONSTRO)
 caverna.direita = monstro
-monstro.esquerda = caverna
-monstro.direita = guardado
+monstro.esquerda = guardado
 caverna.vai()
 

@@ -31,3 +31,10 @@ NameError: name 'cena' is not defined
     cena(CENA).vai()
 NameError: name 'cena' is not defined
 '''},
+{'date': 'Tue Aug 27 2019 10:49:10.224 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  tesouro = Cena(MONSTRO).
+                           ^
+SyntaxError: invalid syntax
+'''},

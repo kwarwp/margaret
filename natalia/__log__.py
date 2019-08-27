@@ -929,3 +929,10 @@ Traceback (most recent call last):
   module <module> line 2
     from _spy.vitollino.main import cena 
 '''},
+{'date': 'Tue Aug 27 2019 10:39:47.681 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  CENA = "http://https://i.imgur.com/0EsXIPN.jpg
+                                                ^
+SyntaxError: EOL while scanning string literal
+'''},

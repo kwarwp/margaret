@@ -12,4 +12,8 @@ MONSTRO = "https://i.imgur.com/4cBiZ6n.jpg"
 monstro = Cena(MONSTRO)
 monstro.esquerda = templo
 monstro.vai()
+FOGO = "https://imgur.com/AVBV4TF"
+fogo = Cena(FOGO)
+fogo.direita = monstro
+fogo.vai()
 

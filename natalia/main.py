@@ -6,8 +6,10 @@ ARTEFATO = "https://i.imgur.com/rGbY5XC.jpg"
 PEDRAS = "https://i.imgur.com/4ftVqRs.jpg"
 templo = Cena(CENA)
 artefato = Cena(ARTEFATO)
+pedras = Cena(PEDRAS)
 templo.direita = artefato
 artefato.esquerda = templo
 templo.vai()
-
-templo = Cena(CENA)
+artefato.direita = pedras
+pedras.esquerda = artefato 
+artefato.vai()

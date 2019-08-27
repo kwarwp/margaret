@@ -9,4 +9,6 @@ tesouro = Cena(TESOURO)
 caverna.direita = monstro
 monstro.esquerda = caverna
 caverna.vai()
-
+monstro.direira = tesouro
+tesouro.esquerda = monstro
+monstro.vai()

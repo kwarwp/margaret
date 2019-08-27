@@ -9,5 +9,5 @@ monstro = Cena(MONSTRO)
 caverna.direita = monstro
 monstro.esquerda = caverna
 monstro.direita = guardado
-caverna.vai()
+guardado.vai()
 

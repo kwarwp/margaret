@@ -8,3 +8,4 @@ tesouro = Cena(TESOURO)
 templo.direita = tesouro
 tesouro.esquerda = templo
 templo.vai()
+monstro = Cena(MONSTRO)

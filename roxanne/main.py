@@ -5,6 +5,6 @@ MONSTRO = "https://i.imgur.com/ZOoZ2aQ.jpg"
 caverna = Cena(CENA)
 monstro = Cena(MONSTRO)
 caverna.direita = monstro
-tesouro.esquerda = caverna
+caverna.esquerda = caverna
 caverna.vai()
 

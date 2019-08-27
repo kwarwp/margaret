@@ -9,6 +9,6 @@ ouro = Cena(OURO)
 caverna.direita = monstro
 monstro.esquerda = caverna
 caverna.vai()
-monstro.direira = ouro
+monstro.direita = ouro
 ouro.esquerda = monstro
 monstro.vai()

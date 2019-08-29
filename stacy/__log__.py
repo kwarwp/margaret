@@ -618,3 +618,10 @@ SyntaxError: invalid syntax
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 29 2019 09:57:57.883 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  def cartas =  (TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA):
+              ^
+SyntaxError: invalid syntax
+'''},

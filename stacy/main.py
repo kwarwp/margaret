@@ -34,11 +34,10 @@ def decisao (anterior,carta):
     elif resposta == "saio":
         anterior.vai()
 
-cartas = [(TESOURO), (FOGO), (ARTEFATO1), (DESABAMENTO), (MUMIA), (ARANHA), (COBRA)]
+cartas = [(TESOURO), (ARTEFATO), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
-for elemento in cartas:
-elemento.vai
-
+from elemento in cartas 
+elemento.vai()
 
 # decisao(tesouro, fogo)

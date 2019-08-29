@@ -89,3 +89,10 @@ NameError: name 'ARTEFATO' is not defined
     cartas = [(TESOURO), (ARTEFATO), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 NameError: name 'ARTEFATO' is not defined
 '''},
+{'date': 'Thu Aug 29 2019 09:22:05.605 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},

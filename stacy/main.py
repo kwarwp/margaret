@@ -10,8 +10,7 @@ DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
-templo = Cena(TEMPLO)
-templo.vai()
+
 
 class Cartas:
       def vai(self):
@@ -23,6 +22,8 @@ class Cartas:
           mumia = Cena(MUMIA)
           aranha = Cena(ARANHA)
 
+templo = Cena(TEMPLO)
+templo.vai()
 cartas = Cartas()
 cartas.vai()
 

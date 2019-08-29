@@ -12,20 +12,14 @@ ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
 templo = Cena(TEMPLO)
 templo.vai()
-tesouro = Cena(TESOURO)
-tesouro.vai()
-fogo = Cena(FOGO)
-fogo.vai()
-artefato1 = Cena(ARTEFATO1)
-artefato1.vai()
-cobra = Cena(COBRA)
-cobra.vai()
-desabamento = Cena(DESABAMENTO)
-desabamento.vai()
-mumia = Cena(MUMIA)
-mumia.vai()
-aranha = Cena(ARANHA)
-aranha.vai()
+def cartas:
+    tesouro = Cena(TESOURO)
+    fogo = Cena(FOGO)
+    artefato1 = Cena(ARTEFATO1)
+    cobra = Cena(COBRA)
+    desabamento = Cena(DESABAMENTO)
+    mumia = Cena(MUMIA)
+    aranha = Cena(ARANHA)
 
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas

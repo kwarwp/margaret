@@ -662,3 +662,10 @@ IndentationError: unexpected indent
     elemento.vai()
 AttributeError: 'str' object has no attribute 'vai'
 '''},
+{'date': 'Thu Aug 29 2019 10:02:49.405 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  elemento = Cena(TESOURO FOGO ARTEFATO1 COBRA DESABAMENTO MUMIA ARANHA, esquerda = templo)
+                           ^
+SyntaxError: invalid syntax
+'''},

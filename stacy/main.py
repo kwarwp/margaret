@@ -32,7 +32,7 @@ cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COB
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
 templo.vai()
-templo.direit = cartas
+templo.direita = cartas
 cartas.esquerda = templo
 for elemento in cartas:
      elemento.vai()

@@ -10,9 +10,16 @@ DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
-
+cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
+baralho = cartas[:] # Copy cartas
+shuffle(baralho) # Shuffle baralho
+for elemento in cartas:
+    elemento.vai()
+    
 templo = Cena(TEMPLO)
 templo.vai()
+templo.direita = cartas
+cartas.esquerda = templo
 tesouro = Cena(TESOURO)
 fogo = Cena(FOGO)
 artefato1 = Cena(ARTEFATO1)
@@ -27,16 +34,5 @@ def decisao (anterior,carta):
         carta.vai() 
     elif resposta == "saio":
         anterior.vai()
-
-
-cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
-baralho = cartas[:] # Copy cartas
-shuffle(baralho) # Shuffle baralho
-for elemento in cartas:
-    elemento.vai()
-
-templo.direita = cartas
-cartas.esquerda = templo
-
 
 # decisao(tesouro, fogo)

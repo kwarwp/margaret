@@ -15,13 +15,13 @@ templo.vai()
 
 class Cartas:
       def vai(self):
-      tesouro = Cena(TESOURO)
-      fogo = Cena(FOGO)
-      artefato1 = Cena(ARTEFATO1)
-      cobra = Cena(COBRA)
-      desabamento = Cena(DESABAMENTO)
-      mumia = Cena(MUMIA)
-      aranha = Cena(ARANHA)
+          tesouro = Cena(TESOURO)
+          fogo = Cena(FOGO)
+          artefato1 = Cena(ARTEFATO1)
+          cobra = Cena(COBRA)
+          desabamento = Cena(DESABAMENTO)
+          mumia = Cena(MUMIA)
+          aranha = Cena(ARANHA)
 
 cartas = Cartas()
 cartas.vai()

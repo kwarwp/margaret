@@ -336,3 +336,10 @@ AttributeError: 'str' object has no attribute 'vai'
     elemento.vai()
 AttributeError: 'str' object has no attribute 'vai'
 '''},
+{'date': 'Thu Aug 29 2019 09:35:10.478 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  elemento.vai()
+  ^
+IndentationError: unexpected indent
+'''},

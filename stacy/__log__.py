@@ -391,3 +391,10 @@ AttributeError: 'str' object has no attribute 'vai'
     templo.vai()
 NameError: name 'templo' is not defined
 '''},
+{'date': 'Thu Aug 29 2019 09:42:15.688 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  tesouro = Cena(TESOURO)
+  ^
+IndentationError: expected an indented block
+'''},

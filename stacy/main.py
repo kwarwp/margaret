@@ -10,22 +10,16 @@ DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
-templo = Cena(TEMPLO)
-templo.vai()
-tesouro = Cena(TESOURO)
-tesouro.vai()
-fogo = Cena(FOGO)
-fogo.vai()
-artefato1 = Cena(ARTEFATO1)
-artefato1.vai()
-cobra = Cena(COBRA)
-cobra.vai()
-desabamento = Cena(DESABAMENTO)
-desabamento.vai()
-mumia = Cena(MUMIA)
-mumia.vai()
-aranha = Cena(ARANHA)
-aranha.vai()
+class Inca:
+      def Inca(self):
+      templo = Cena(TEMPLO)
+      tesouro = Cena(TESOURO)
+      fogo = Cena(FOGO)
+      artefato1 = Cena(ARTEFATO1)
+      cobra = Cena(COBRA)
+      desabamento = Cena(DESABAMENTO)
+      mumia = Cena(MUMIA)
+      aranha = Cena(ARANHA)
 
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
@@ -34,9 +28,13 @@ def decisao (anterior,carta):
     elif resposta == "saio":
         anterior.vai()
 
+
 cartas = [(TESOURO), (ARTEFATO), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
+templo.vai()
+templo.direit = cartas
+cartas.esquerda = templo
 for elemento in cartas:
      elemento.vai()
 

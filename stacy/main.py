@@ -12,6 +12,7 @@ ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
 
 templo = Cena(TEMPLO)
+templo.vai()
 tesouro = Cena(TESOURO)
 fogo = Cena(FOGO)
 artefato1 = Cena(ARTEFATO1)
@@ -31,10 +32,11 @@ def decisao (anterior,carta):
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
-templo.vai()
-templo.direita = cartas
-cartas.esquerda = templo
 for elemento in cartas:
-     elemento.vai()
+    elemento.vai()
+#templo.vai()
+#templo.direita = cartas
+#cartas.esquerda = templo
+
 
 # decisao(tesouro, fogo)

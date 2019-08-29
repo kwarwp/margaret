@@ -10,18 +10,15 @@ DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
-class Cartas:
-      def vai(self):
-          tesouro = Cena(TESOURO)
-          fogo = Cena(FOGO)
-          artefato1 = Cena(ARTEFATO1)
-          cobra = Cena(COBRA)
-          desabamento = Cena(DESABAMENTO)
-          mumia = Cena(MUMIA)
-          aranha = Cena(ARANHA)
-
 templo = Cena(TEMPLO)
 templo.vai()
+tesouro = Cena(TESOURO)
+fogo = Cena(FOGO)
+artefato1 = Cena(ARTEFATO1)
+cobra = Cena(COBRA)
+desabamento = Cena(DESABAMENTO)
+mumia = Cena(MUMIA)
+aranha = Cena(ARANHA)
 
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas

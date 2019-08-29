@@ -10,8 +10,6 @@ DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
-
-
 class Cartas:
       def vai(self):
           tesouro = Cena(TESOURO)
@@ -24,8 +22,6 @@ class Cartas:
 
 templo = Cena(TEMPLO)
 templo.vai()
-cartas = Cartas()
-cartas.vai()
 
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
@@ -33,8 +29,8 @@ shuffle(baralho) # Shuffle baralho
 for elemento in cartas:
     elemento.vai()
     
-templo.direita = baralho
-baralho.esquerda = templo
+templo.direita = elemento
+elemento.esquerda = templo
 
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")

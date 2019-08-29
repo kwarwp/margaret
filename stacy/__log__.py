@@ -29,3 +29,10 @@ SyntaxError: invalid syntax
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 29 2019 07:14:20.323 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 41
+  elemento.vai
+  ^
+IndentationError: expected an indented block
+'''},

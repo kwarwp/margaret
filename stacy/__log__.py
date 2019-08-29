@@ -15,3 +15,10 @@
     baralho.vai()
 AttributeError: 'list' object has no attribute 'vai'
 '''},
+{'date': 'Thu Aug 29 2019 07:13:43.989 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  for elemento in cartas
+                         ^
+SyntaxError: invalid syntax
+'''},

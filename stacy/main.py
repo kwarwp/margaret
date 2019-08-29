@@ -12,20 +12,28 @@ ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
 
 templo = Cena(TEMPLO)
 templo.vai()
+
+class Cartas:
+      def vai(self):
+      tesouro = Cena(TESOURO)
+      fogo = Cena(FOGO)
+      artefato1 = Cena(ARTEFATO1)
+      cobra = Cena(COBRA)
+      desabamento = Cena(DESABAMENTO)
+      mumia = Cena(MUMIA)
+      aranha = Cena(ARANHA)
+
+cartas = Cartas()
+cartas.vai()
+
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
-templo.direita = baralho
-baralho.esquerda = templo
 for elemento in cartas:
     elemento.vai()
-tesouro = Cena(TESOURO)
-fogo = Cena(FOGO)
-artefato1 = Cena(ARTEFATO1)
-cobra = Cena(COBRA)
-desabamento = Cena(DESABAMENTO)
-mumia = Cena(MUMIA)
-aranha = Cena(ARANHA)
+    
+templo.direita = baralho
+baralho.esquerda = templo
 
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")

@@ -19,7 +19,9 @@ cobra = Cena(COBRA)
 desabamento = Cena(DESABAMENTO)
 mumia = Cena(MUMIA)
 aranha = Cena(ARANHA)
-
+elemento = Cena(TESOURO, FOGO, ARTEFATO1, COBRA, DESABAMENTO, MUMIA, ARANHA)
+elemento.esquerda = templo
+templo.direita = elemento
 cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho

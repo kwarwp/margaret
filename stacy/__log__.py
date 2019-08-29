@@ -639,3 +639,10 @@ SyntaxError: invalid syntax
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 29 2019 09:59:19.943 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  tesouro = Cena(TESOURO)
+  ^
+IndentationError: unexpected indent
+'''},

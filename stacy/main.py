@@ -37,7 +37,7 @@ def decisao (anterior,carta):
 cartas = [(TESOURO), (ARTEFATO), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
-from elemento in cartas:
+for elemento in cartas:
      elemento.vai()
 
 # decisao(tesouro, fogo)

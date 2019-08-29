@@ -26,8 +26,8 @@ shuffle(baralho) # Shuffle baralho
 for elemento in cartas:
     elemento.vai()
     
-templo.direita = cartas
-cartas.esquerda = templo
+templo.direita = elemento
+elemento.esquerda = templo
 
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")

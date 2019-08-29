@@ -22,3 +22,10 @@ AttributeError: 'list' object has no attribute 'vai'
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 29 2019 07:13:44.979 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  for elemento in cartas
+                         ^
+SyntaxError: invalid syntax
+'''},

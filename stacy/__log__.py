@@ -36,3 +36,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Aug 29 2019 07:18:58.202 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  from elemento in cartas 
+                 ^
+SyntaxError: invalid syntax
+'''},

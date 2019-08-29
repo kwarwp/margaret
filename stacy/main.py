@@ -19,8 +19,8 @@ baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
 for elemento in cartas:
     elemento.vai()
-templo.direita = cartas
-cartas.esquerda = templo
+templo.direita = baralho
+baralho.esquerda = templo
 tesouro = Cena(TESOURO)
 fogo = Cena(FOGO)
 artefato1 = Cena(ARTEFATO1)

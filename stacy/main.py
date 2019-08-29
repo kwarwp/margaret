@@ -34,9 +34,9 @@ baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
 for elemento in cartas:
     elemento.vai()
-#templo.vai()
-#templo.direita = cartas
-#cartas.esquerda = templo
+
+templo.direita = cartas
+cartas.esquerda = templo
 
 
 # decisao(tesouro, fogo)

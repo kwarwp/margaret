@@ -20,7 +20,7 @@ desabamento = Cena(DESABAMENTO)
 mumia = Cena(MUMIA)
 aranha = Cena(ARANHA)
 
-cartas = [(TESOURO), (ARTEFATO1), (FOGO), (MUMIA), (DESABAMENTO), (ARANHA), (COBRA)]
+cartas = [TESOURO(), ARTEFATO1(), FOGO(), MUMIA(), DESABAMENTO(), ARANHA(), COBRA()]
 baralho = cartas[:] # Copy cartas
 shuffle(baralho) # Shuffle baralho
 for elemento in cartas:

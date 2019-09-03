@@ -12,12 +12,14 @@ class Inca:
         cobra = Cena (COBRA).vai()
         fogo = Cena (FOGO).vai()
         templo.direita = tesouro
-        templo.vai()
         tesouro.esquerda = templo
         tesouro.direita = cobra
         cobra.esquerda = tesouro
         cobra.direita = fogo
         fogo.esquerda = cobra 
+        templo.vai()
 
 inca = Inca()
-inca.inicia()
+
+if __name__ == "__main__":
+    inca.inicia()

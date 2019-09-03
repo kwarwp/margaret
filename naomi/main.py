@@ -30,6 +30,7 @@ class Jogo:
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
     def inicia(self):
+        self.templo.vai()
         pass
     
 inca = Jogo()  # Inca()

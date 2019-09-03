@@ -8,28 +8,11 @@ DI["COBRA"] = "https://i.imgur.com/Lh1O87Q.jpg"
 DI["FOGO"] = "https://i.imgur.com/ScR01C1"
 DI["MONSTRO"] = "https://i.imgur.com/nvWMlWx.jpg"
 
-class Inca:
-    def inicia(self):
-        templo = Cena(DI["CENA"])
-        tesouro = Cena(DI["TESOURO"])
-        cobra = Cena(DI["COBRA"])
-        fogo = Cena(DI["FOGO"])
-        monstro = Cena(DI["MONSTRO"])
-        templo.direita = tesouro
-        tesouro.esquerda = templo
-        tesouro.direita = cobra
-        cobra.esquerda = tesouro
-        cobra.direita = fogo
-        fogo.esquerda = cobra 
-        fogo.direita = monstro
-        monstro.esquerda = fogo
-        templo.vai()
-
 class Carta:
     def __init__(self):
-        self.carta = Cena(DI["TESOURO"])
+        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
     def baralho(self):
-        return [self.carta]
+        return self.cartas
     
 class Jogo:
     def __init__(self):

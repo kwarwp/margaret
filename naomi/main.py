@@ -1,6 +1,6 @@
 # margaret.naomi.main.py
 from _spy.vitollino.main import Cena
-IMAGENS = ["CENA", "TESOURO"]
+IMAGENS = ["CENA", "ARTEFATO"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"

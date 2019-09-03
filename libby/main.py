@@ -9,19 +9,19 @@ DIC["TESOURO"] = "https://i.imgur.com/x2wLF9U.jpg"
 DIC["DEGRAU"] = "https://i.imgur.com/UxV1LyG.jpg"
 DIC["ARTEFATO1"] = "https://i.imgur.com/agqn9Gg.jpg"
 
-class Inca:
-    def inicia(self):
-        templo = Cena(DIC["TEMPLO"])
-        tesouro = Cena(DIC["TESOURO"])
-        degrau = Cena(DIC["DEGRAU"])
-        artefato01 = Cena(DIC["ARTEFATO01"])
-        templo.direita = degrau
-        degrau.direita = artefato01
-        tesouro.esquerda = templo
+#class Inca:
+    #def inicia(self):
+        #templo = Cena(DIC["TEMPLO"])
+        #tesouro = Cena(DIC["TESOURO"])
+        #degrau = Cena(DIC["DEGRAU"])
+        #artefato01 = Cena(DIC["ARTEFATO01"])
+        #templo.direita = degrau
+        #degrau.direita = artefato01
+        #tesouro.esquerda = templo
         #tesouro.direita = fogo
         #fogo.esquerda = tesouro
-        tesouro.esquerda = templo
-        templo.vai()
+        #tesouro.esquerda = templo
+        #templo.vai()
         
 #outro jeito mais sofisticado:
         

@@ -161,3 +161,10 @@ IndentationError: expected an indented block
     self.templo.direita  = self.baralho[0]
 IndexError: list index out of range
 '''},
+{'date': 'Tue Sep 03 2019 10:57:30.84 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  self.cartas = [Cena(DI[uma_imagem])] for uma_imagem in IMAGENS
+                                        ^
+SyntaxError: invalid syntax
+'''},

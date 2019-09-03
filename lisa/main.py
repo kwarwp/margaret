@@ -2,9 +2,11 @@
 __author__ = "Carlo E. T. Oliveira carlo@ufrj.br"
 from _spy.vitollino.main import Cena
 from ruzwana.main import DI as RDI
+from random import shuffle
 #from stacy.main import fogo
 #from natalia.main import sereiamonstro
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]
+IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
+shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"

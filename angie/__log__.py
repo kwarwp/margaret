@@ -102,3 +102,10 @@ NameError: name 'fogo' is not defined
     cobra.direita = fogo
 NameError: name 'fogo' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 10:13:47.106 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  def baralho(self)
+                    ^
+SyntaxError: invalid syntax
+'''},

@@ -9,7 +9,7 @@ DI["TESOURO"] = "https://i.imgur.com/nBbQxbD.jpg"
 DI["COBRA"] = "https://i.imgur.com/Lh1O87Q.jpg"
 DI["FOGO"] = "https://i.imgur.com/ScR01C1.png"
 DI["MONSTRO"] = "https://i.imgur.com/nvWMlWx.jpg"
-DI["PEDRAS"] = "https://i.imgur.com/gWFNSS2.jpg"
+DI["PEDRAS"] = "https://i.imgur.com/7I7whdO.jpg"
 class Carta:
     def __init__(self):
         self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]

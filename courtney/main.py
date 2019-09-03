@@ -8,7 +8,7 @@ FOGO = "https://i.imgur.com/76RAEGh.jpg"
 class Inca:
         def inicia(self):
 templo = Cena (CENA).vai()
-tesouro = Cena(TESOURO) 
+tesouro = Cena(TESOURO).vai()
 mumia = Cena(MUMIA)
 templo.direita = tesouro 
 tesouro.esquerda = templo 

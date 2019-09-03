@@ -263,3 +263,10 @@ AttributeError: 'Jogo' object has no attribute 'tmplo'
                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 02 2019 18:08:38.934 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cartas = Cena(DI[uma_imagem]) for uma_imagem in IMAGENS] 
+                                      ^
+SyntaxError: invalid syntax
+'''},

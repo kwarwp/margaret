@@ -25,10 +25,10 @@ class Inca:
         pedras.esquerda = templo
         pedras.direita = desmoronamento
         desmoronamento.esquerda = pedras
-        desmoronamento.direita = tesouro
-        tesouro.esquerda = desmoronamento
-        tesouro.direita = fogo
-        fogo.esquerda = tesouro
+        desmoronamento.direita = pedras
+        pedras.esquerda = desmoronamento
+        pedras.direita = fogo
+        fogo.esquerda = pedras
         templo.vai()
         
 inca = Inca()

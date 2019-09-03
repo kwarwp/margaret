@@ -15,3 +15,10 @@
     monstro = Cena(MONSTRO)
 NameError: name 'MONSTRO' is not defined
 '''},
+{'date': 'Mon Sep 02 2019 16:39:37.528 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  templo = Cena(CENA)
+  ^
+IndentationError: expected an indented block
+'''},

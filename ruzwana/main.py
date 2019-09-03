@@ -3,6 +3,7 @@ __author__ = "G.L.L Almeida gabriellaleni@gmail.com"
 from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
 
+IMAGENS = ["FOGO", "PEDRAS", "ARANHA"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/BTTqaBa.jpg"
 DI["MUMIA"] = "https://i.imgur.com/T6ONIKS.jpg"
@@ -12,32 +13,12 @@ DI["ARTEFATO"] = "https://i.imgur.com/vN9MDwx.jpg"
 DI["FOGO"] = "https://i.imgur.com/Mbek5ie.jpg"
 DI["ARANHA"] = "https://i.imgur.com/k2RoQqf.jpg"
 DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
-
-class Inca:
-    def inicia(self):
-        templo = Cena(DI["TEMPLO"])
-        pedras = Cena(DI["PEDRAS"])
-        mumia = Cena(DI["MUMIA"])
-        desmoronamento = Cena(DI["DESMORONAMENTO"])
-        artefato = Cena(DI["ARTEFATO"])
-        fogo = Cena(DI["FOGO"])
-        aranha = Cena(DI["ARANHA"])
-        cobra = Cena(DI["COBRA"])        
-        templo.direita = pedras
-        pedras.esquerda = templo
-        pedras.direita = desmoronamento
-        desmoronamento.esquerda = pedras
-        desmoronamento.direita = pedras
-        pedras.esquerda = desmoronamento
-        pedras.direita = fogo
-        fogo.esquerda = pedras
-        templo.vai()
     
 class Carta:
     def __init__(self):
-        self.carta = Cena(DI["PEDRAS"])
+        self.cartas = [Cena(DI[uma_imagem])] for uma_imagem in IMAGENS
     def baralho(self):
-        return [self.carta]
+        return self.cartas
 
 class Jogo:
     def __init__(self):

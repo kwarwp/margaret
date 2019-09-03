@@ -155,3 +155,10 @@ KeyError: TESOURO
     self.cartas = [Cena(RDI[uma_imagem]) for uma_imagem in IMAGENS]
 NameError: name 'RDI' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 11:22:37.667 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  pedras preciosas = Cena(DI["PEDRAS PRECIOSAS"])
+          ^
+SyntaxError: invalid syntax
+'''},

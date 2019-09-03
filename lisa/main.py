@@ -17,6 +17,9 @@ class Inca:
         #tesouro.direita = fogo
         #fogo.esquerda = tesouro
         templo.vai()
+        
+class Jogo:
+    pass
 
 inca = Inca()
 

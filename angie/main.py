@@ -14,6 +14,7 @@ class Inca:
         tesouro = Cena (DI["TESOURO"])
         cobra = Cena (DI["COBRA"])
         fogo = Cena (DI["FOGO"])
+        monstro = Cena (DI["MONSTRO"])
         templo.direita = tesouro
         tesouro.esquerda = templo
         tesouro.direita = cobra

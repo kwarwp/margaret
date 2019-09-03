@@ -1,19 +1,24 @@
 # margaret.kellee.main.py
 from _spy.vitollino.main import Cena
-CENA = "https://i.imgur.com/F0pWLRM.png"
-Cena(CENA).vai()
-TESOURO = "https://i.imgur.com/Z2CD83L.jpg"
-templo = Cena(CENA)
-tesouro = Cena(TESOURO)
-templo.direita = tesouro
-tesouro.esquerda = templo
-templo.vai()
-MONSTRO = "https://i.imgur.com/4cBiZ6n.jpg"
-monstro = Cena(MONSTRO)
-monstro.esquerda = templo
-monstro.vai()
-FOGO = "https://imgur.com/AVBV4TF"
-fogo = Cena(FOGO)
-fogo.direita = monstro
-fogo.vai()
+DI = DICIONARIO_DE_IMAGENS = {}
+DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"
+DI["TESOURO"] = "https://i.imgur.com/Z2CD83L.jpg"
+DI["MONSTRO"] = "https://i.imgur.com/4cBiZ6n.jpg"
+DI["FOGO"] = "https://imgur.com/AVBV4TF"
+DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD.png"
 
+class Inca:
+    def inicial(self):
+    templo = Cena(CENA)
+    tesouro = Cena(TESOURO)
+    monstro = Cena(MONSTRO)
+    fogo = Cena(FOGO)
+    pedras = Cena(PEDRAS)
+    templo.direita = tesouro
+    tesouro.esquerda = templo
+    tesouro.direita = monstro
+    monstro.esquerda = fogo
+    fogo.direita = pedras 
+    
+inca = Inca ()
+if __name__ == "__main__":

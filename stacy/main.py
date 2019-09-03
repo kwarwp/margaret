@@ -46,6 +46,7 @@ class Inca:
 class Cartas:
     def __init__(self):
         self.carta = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
+        for ordem, carta in enumerate(self.cartas)
     def baralho(self):
         return self.carta
     

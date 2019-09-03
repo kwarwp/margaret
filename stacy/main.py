@@ -14,7 +14,7 @@ DI["ARANHA"] = "https://i.imgur.com/w90m1jf.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["TEMPLO"])
-        tesouro = Cena(TESOURO)
+        tesouro = Cena(DI["TEMPLO"])
 
 
 fogo = Cena(FOGO)

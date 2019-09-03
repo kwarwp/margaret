@@ -14,12 +14,30 @@ DI["ARANHA"] = "https://i.imgur.com/w90m1jf.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["TEMPLO"])
-        tesouro = Cena(DI["TESOURO"])
+        tesouro = Cena(DI["TESOURO"]
         fogo = Cena(DI["FOGO"])
         artefato1 = Cena(DI["ARTEFATO1"])
         cobra = Cena(DI["COBRA"])
         desabamento = Cena(DI["DESABAMENTO"])
         mumia = Cena(DI["MUMIA"])
         aranha = Cena(DI["ARANHA"])
+        templo.direita = tesouro
+        tesouro.esquerda = templo
+        tesouro.direita = fogo
+        fogo.esquerda = tesouro
+        fogo.direita = artefato1
+        artefato1.esquerda = fogo
+        artefato1.direita = cobra
+        cobra.esquerda = artefato1
+        cobra.direita = desabamento
+        desabamento.esquerda = cobra
+        desabamento.direita = mumia
+        mumia.esquerda = desabamento
+        mumia.direita = aranha
+        aranha.esquerda = mumia
+        templo.vai()
+        
+inca = Inca()
 
-
+if __name__ == "__main__"
+inca.inicia()

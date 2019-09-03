@@ -1,4 +1,5 @@
 # margaret.meredith.main.py
+__author__ = "Henrique Bastos <henrique@bastos.net>"
 from _spy.vitollino.main import Cena
 from collections import OrderedDict
 

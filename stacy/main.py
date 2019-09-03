@@ -51,6 +51,8 @@ class Cartas:
 class Jogo:
     def __init__(self):
         self.baralho = Cartas().baralho()
-    pass 
+        self.templo = Cena(DI["TEMPLO"])
+    def inicia(self):
+    
     
 

@@ -2,7 +2,7 @@
 __author__ = "G.L.L Almeida gabriellaleni@gmail.com"
 from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
-
+from random import shuffle
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/BTTqaBa.jpg"

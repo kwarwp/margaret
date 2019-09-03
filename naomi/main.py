@@ -1,12 +1,16 @@
 # margaret.naomi.main.py
+__author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena
-IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA"]
+from random import shuffle
+IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "TESOURO" , "PEDRAS PRECIOSAS"]*5
+shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"
 DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 DI["COBRA"] = "https://i.imgur.com/UcWZh28.jpg"
+DI["PEDRS PRECIOSAS"] = " https://i.imgur.com/ijt1Hbq.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])
@@ -14,6 +18,7 @@ class Inca:
         fogo = Cena(DI["FOGO"])
         desmoronamento = Cena(DI["DESMORONAMENTO"])
         cobra = Cena(DI["COBRA"])
+        pedras preciosas = Cena(DI["PEDRAS PRECIOSAS"])
         templo.direita = artefato
         artefato.esquerda = templo
         artefato.direita = fogo
@@ -22,6 +27,8 @@ class Inca:
         desmoronamento.esquerda = fogo
         desmonoramento.direita = cobra
         cobra.esquerda = desmonoramento
+        cobra.direita = pedras preciosas
+        pedras preciosas.esquerda = cobra
         templo.vai()
         
 class Carta:

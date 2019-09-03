@@ -22,3 +22,10 @@ NameError: name 'MONSTRO' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Sep 02 2019 16:43:37.334 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  templo = Cena(DI["CENA"])
+  ^
+IndentationError: expected an indented block
+'''},

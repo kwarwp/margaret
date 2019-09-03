@@ -1080,3 +1080,10 @@ IndexError: list index out of range
     self.baralho[0] = self.baralho[1]
 IndexError: list index out of range
 '''},
+{'date': 'Tue Sep 03 2019 11:07:22.752 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 50
+  if ordem < len(self.cartas)-1
+                                ^
+SyntaxError: invalid syntax
+'''},

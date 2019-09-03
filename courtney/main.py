@@ -6,14 +6,18 @@ MUMIA = "https://i.imgur.com/7G66ctJ.png"
 FOGO = "https://i.imgur.com/76RAEGh.jpg"
 
 class Inca:
-        def inicia(self):
-templo = Cena (CENA).vai()
-tesouro = Cena(TESOURO).vai()
-mumia = Cena(MUMIA)
-templo.direita = tesouro 
-tesouro.esquerda = templo 
-templo.vai()
-tesouro.direita = mumia 
-mumia.esquerda = tesouro 
-mumia.vai()
+    def inicia(self):
+        templo = Cena (CENA).vai()
+        tesouro = Cena(TESOURO).vai()
+        cobra = Cena (COBRA).vai()
+        fogo = Cena (FOGO).vai()
+        templo.direita = tesouro
+        templo.vai()
+        tesouro.esquerda = templo
+        tesouro.direita = cobra
+        cobra.esquerda = tesouro
+        cobra.direita = fogo
+        fogo.esquerda = cobra 
 
+inca = Inca()
+inca.inicia()

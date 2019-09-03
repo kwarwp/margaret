@@ -1,6 +1,6 @@
 # margaret.lisa.main.py
 from _spy.vitollino.main import Cena
-from stacy.main import fogo
+#from stacy.main import fogo
 #from natalia.main import sereiamonstro
 #IMAGENS = ["CENA", "TESOURO"]
 DI = DICIONARIO_DE_IMAGENS = {}
@@ -13,8 +13,8 @@ class Inca:
         tesouro = Cena(DI["TESOURO"])
         templo.direita = tesouro
         tesouro.esquerda = templo
-        tesouro.direita = fogo
-        fogo.esquerda = tesouro
+        #tesouro.direita = fogo
+        #fogo.esquerda = tesouro
         templo.vai()
 
 inca = Inca()

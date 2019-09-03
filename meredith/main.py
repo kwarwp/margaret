@@ -1,21 +1,28 @@
 # margaret.meredith.main.py
 from _spy.vitollino.main import Cena
 from stacy.main import fogo
+from collections import OrderedDict
 
-CARTAS = {
-    'TEMPLO': "https://i.imgur.com/7GZetDn.jpg",
-    'TESOURO': "https://i.imgur.com/h8MfuRD.jpg",
-}
+CARTAS = OrderedDict(
+    ("TEMPLO", "https://i.imgur.com/LXptu0U.jpg"),
+    ("TESOURO", "https://i.imgur.com/Nq1hCeU.jpg"),
+    ("FOGO", "https://i.imgur.com/KRK66bR.jpg"),
+    ("ARTEFATO1", "https://i.imgur.com/1QHNdyI.jpg"),
+    ("COBRA", "https://i.imgur.com/MydpgBT.jpg"),
+    ("DESABAMENTO", "https://i.imgur.com/jnxWklS.jpg"),
+    ("MUMIA", "https://i.imgur.com/HPp1k5T.jpg"),
+    ("ARANHA", "https://i.imgur.com/w90m1jf.jpg")
+)
 
 class Inca:
     def inicia(self):
-        templo = Cena(CARTAS['TEMPLO'])
-        tesouro = Cena(CARTAS['TESOURO'])
-        templo.direita = tesouro
-        tesouro.esquerda = templo
-        tesouro.direita = fogo
-        fogo.esquerda = tesouro
-        templo.vai()
+        self.cenas = l = [Cena(img) for img in CARTAS.values()]
+        
+        for a, b in zip(l[:-1], l[1:]):
+            a.direita = b
+            b.esquerda = a
+
+        self.cenas[0].vai()
 
 inca = Inca()
 

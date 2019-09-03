@@ -16,7 +16,7 @@ DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
     
 class Carta:
     def __init__(self):
-        self.cartas = [Cena(DI[uma_imagem])] for uma_imagem in IMAGENS
+        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
     def baralho(self):
         return self.cartas
 

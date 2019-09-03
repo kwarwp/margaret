@@ -39,5 +39,5 @@ class Inca:
         
 inca = Inca()
 
-if __name__ == "__main__"
+if __name__ == "__main__":
 inca.inicia()

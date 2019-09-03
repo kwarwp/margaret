@@ -50,7 +50,7 @@ class Cartas:
     
 class Jogo:
     def __init__(self):
-    self.baralho = Cartas().baralho()
+        self.baralho = Cartas().baralho()
     pass 
     
 

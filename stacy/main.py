@@ -53,9 +53,9 @@ class Jogo:
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
     def inicia(self):
-        templo.vai()
+        pass
 
 inca = Jogo()
 
 if __name__ == "__main__":
-    Jogo.inicia()
+    inca.inicia()

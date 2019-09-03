@@ -1,4 +1,5 @@
 # margaret.kellee.main.py
+__author__ = "Bárbara Juliana C.Soares barbara_ju07@hotmail.com"
 from _spy.vitollino.main import Cena
 IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS"]
 DI = DICIONARIO_DE_IMAGENS = {}

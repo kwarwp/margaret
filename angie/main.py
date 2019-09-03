@@ -1,6 +1,6 @@
 # margaret.angie.main.py
 from _spy.vitollino.main import Cena
-from random import suffle
+from random import shuffle
 IMAGENS = ["CENA", "TESOURO", "COBRA", "FOGO", "MONSTRO"]*5
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/6NNu6ps.jpg"

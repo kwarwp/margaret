@@ -1,6 +1,8 @@
 # margaret.ruzwana.main.py
 __author__ = "G.L.L Almeida gabriellaleni@gmail.com"
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena, STYLE
+STYLE["width"] = 600
+
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/BTTqaBa.jpg"
 DI["MUMIA"] = "https://i.imgur.com/T6ONIKS.jpg"
@@ -31,9 +33,19 @@ class Inca:
         fogo.esquerda = pedras
         templo.vai()
         
-inca = Inca()
+inca = Jogo()  # Inca()
 
 if __name__ == "__main__":
     inca.inicia()
+    
+class Carta:
+    pass
+    def baralho(self):
+    return []
 
-        
+class Jogo:
+    def __init__(self):
+         self.baralho = Carta().baralho()
+         self.templo = Cena(DI["TEMPLO"])
+    def inicia(self):
+        pass

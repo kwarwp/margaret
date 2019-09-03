@@ -41,7 +41,7 @@ class Inca:
 #inca = Inca()
 
 if __name__ == "__main__":
-    inca.inicia()
+    jogo.inicia()
     
 class Cartas:
     def baralho(self):

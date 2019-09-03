@@ -90,3 +90,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 03 2019 10:29:04.88 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  inca = Jogo()  # Inca()
+  ^
+IndentationError: expected an indented block
+'''},

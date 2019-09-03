@@ -1,13 +1,16 @@
 # margaret.kellee.main.py
 __author__ = "Bárbara Juliana C.Soares barbara_ju07@hotmail.com"
 from _spy.vitollino.main import Cena
-IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS"]
+from random import shuffle
+IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS", "MUMIA"]*5
+shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"
 DI["TESOURO"] = "https://i.imgur.com/Z2CD83L.jpg"
 DI["MONSTRO"] = "https://i.imgur.com/4cBiZ6n.jpg"
 DI["FOGO"] = "https://i.imgur.com/qLYrtR0.jpg"
-DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD"
+DI["PEDRAS"] = "https://i.imgur.com/qPfDat7.jpg"
+DI["MUMIA"] = "https://i.imgur.com/4xWmf5O.jpg"
     
 class Carta:
     def __init__(self):

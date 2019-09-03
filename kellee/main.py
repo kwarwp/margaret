@@ -20,5 +20,7 @@ class Inca:
         monstro.esquerda = fogo
         fogo.direita = pedras 
     
-inca = Inca ()
+inca = Inca()
+
 if __name__ == "__main__":
+    inca.inicia()

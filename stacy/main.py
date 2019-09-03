@@ -43,5 +43,11 @@ inca = Inca()
 if __name__ == "__main__":
     inca.inicia()
     
+class Cartas:
+    pass
+    
 class Jogo:
+    def __init__(self):
     pass 
+    
+

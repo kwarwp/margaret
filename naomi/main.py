@@ -11,8 +11,6 @@ class Inca:
         tesouro = Cena(DI["TESOURO"])
         templo.dieita = tesouro
         tesouro.esquerda = templo
-        tesouro.direita = fogo
-        fogo.esquerda = tesouro
         templo.vai()
     
 inca = Inca()

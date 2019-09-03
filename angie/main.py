@@ -18,7 +18,7 @@ class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
-        self.templo.direita = self.baralho[0]
+        self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
         

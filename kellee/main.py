@@ -25,7 +25,7 @@ class Inca:
         templo.vai()
     
 class Carta:
-    def __init__(self)
+    def __init__(self):
         self.carta = Cena(DI["TESOURO"])
     def baralho(self):
         return [self.carta]

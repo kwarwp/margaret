@@ -44,12 +44,13 @@ if __name__ == "__main__":
     inca.inicia()
     
 class Cartas:
-    def baralho(self)
+    def baralho(self):
+        return []
     pass
     
 class Jogo:
     def __init__(self):
-    self,baralho = Cartas().baralho
+    self.baralho = Cartas().baralho()
     pass 
     
 

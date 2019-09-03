@@ -1,5 +1,6 @@
 # margaret.kellee.main.py
 from _spy.vitollino.main import Cena
+IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"
 DI["TESOURO"] = "https://i.imgur.com/Z2CD83L.jpg"

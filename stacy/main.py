@@ -45,7 +45,7 @@ class Inca:
     
 class Cartas:
     def __init__(self):
-        self.carta = Cena(DI["TESOURO"], DI["FOGO"])
+        self.carta = Cena(DI["TESOURO"]), Cena(DI["FOGO"])
     def baralho(self):
         return [self.carta]
     

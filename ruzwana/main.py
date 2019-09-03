@@ -41,7 +41,7 @@ if __name__ == "__main__":
 class Carta:
     pass
     def baralho(self):
-    return []
+        return []
 
 class Jogo:
     def __init__(self):

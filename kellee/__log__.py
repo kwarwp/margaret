@@ -107,3 +107,10 @@ AttributeError: 'Inca' object has no attribute 'inicia'
     inca.inicia()
 AttributeError: 'Inca' object has no attribute 'inicia'
 '''},
+{'date': 'Mon Sep 02 2019 17:30:01.291 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  def __init__(self)
+                     ^
+SyntaxError: invalid syntax
+'''},

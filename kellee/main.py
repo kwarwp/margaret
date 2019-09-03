@@ -25,15 +25,17 @@ class Inca:
         templo.vai()
     
 class Carta:
-    pass
+    def __init__(self)
+        self.carta = Cena(DI["TESOURO"])
     def baralho(self):
-        return []
+        return [self.carta]
         
 
 class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
+        self.tmplo.direita = self.baralho[0]
     def inicia(self):
         self.templo.vai()
         

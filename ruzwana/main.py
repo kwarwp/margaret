@@ -17,6 +17,10 @@ DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
 class Carta:
     def __init__(self):
         self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
+        for ordem, carta in enumerate(self.cartas):
+            if ordem < len(self.cartas)-1:
+                carta.direita = self.cartas[ordem+1]
+        
     def baralho(self):
         return self.cartas
 

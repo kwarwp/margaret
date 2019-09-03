@@ -5,7 +5,7 @@ DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/6NNu6ps.jpg"
 DI["TESOURO"] = "https://i.imgur.com/nBbQxbD.jpg"
 DI["COBRA"] = "https://i.imgur.com/Lh1O87Q.jpg"
-DI["FOGO"] = "https://i.imgur.com/ScR01C1.png"
+DI["FOGO"] = "https://i.imgur.com/ScR01C1"
 DI["MONSTRO"] = "https://i.imgur.com/nvWMlWx.jpg"
 
 class Inca:

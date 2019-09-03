@@ -1,6 +1,5 @@
 # margaret.meredith.main.py
 from _spy.vitollino.main import Cena
-from stacy.main import fogo
 from collections import OrderedDict
 
 CARTAS = OrderedDict(

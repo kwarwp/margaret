@@ -32,7 +32,7 @@ class Jogo:
     def inicia(self):
     
     
-inca = Jogo()  
+inca = Jogo()  # Inca
 
 if __name__ == "__main__":
     inca.inicia() 

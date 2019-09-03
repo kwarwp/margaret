@@ -2,13 +2,13 @@
 from _spy.vitollino.main import Cena
 IMAGENS = ["CENA", "TESOURO"]
 DI = DICIONARIO_DE_IMAGENS = {}
-DI["TEMPLO"] = "https://i.imgur.com/inzdUaq.jpg"
+DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["TESOURO"] = "https://i.imgur.com/DJNXWXY.jpg"
 DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 class Inca:
     def inicia(self):
-        templo = Cena(DI["TEMPLO"])
+        templo = Cena(DI["CENA"])
         tesouro = Cena(DI["TESOURO"])
         fogo = Cena(DI["FOGO"])
         desmoronamento = Cena(DI["DESMORONAMENTO"])
@@ -32,7 +32,7 @@ class Jogo:
     def inicia(self):
     
     
-inca = Jogo()  # Inca()
+inca = Jogo()  
 
 if __name__ == "__main__":
     inca.inicia() 

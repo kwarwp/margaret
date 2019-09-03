@@ -23,4 +23,6 @@ class Inca:
         fogo.esquerda = cobra 
 
 inca = Inca()
-inca.inicia()
+
+if __name__ == "__main__":
+    inca.inicia()

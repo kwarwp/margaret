@@ -42,3 +42,6 @@ inca = Inca()
 
 if __name__ == "__main__":
     inca.inicia()
+    
+class Jogo:
+    pass 

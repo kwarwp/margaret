@@ -882,3 +882,10 @@ SyntaxError: invalid syntax
                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 09:40:38.25 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  inca.inicia()
+  ^
+IndentationError: expected an indented block
+'''},

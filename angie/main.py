@@ -27,7 +27,7 @@ class Inca:
 
 class Carta:
     pass
-    def baralho(self)
+    def baralho(self):
         return []
     
 class Jogo:

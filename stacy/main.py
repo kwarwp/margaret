@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
 STYLE["height"] = 600
 from random import shuffle
-IMAGENS = ["TEMPLO", "TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
+IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/LXptu0U.jpg"

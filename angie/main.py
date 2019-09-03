@@ -10,11 +10,11 @@ DI["MONSTRO"] = "https://i.imgur.com/nvWMlWx.jpg"
 
 class Inca:
     def inicia(self):
-        templo = Cena (DI["CENA"])
-        tesouro = Cena (DI["TESOURO"])
-        cobra = Cena (DI["COBRA"])
-        fogo = Cena (DI["FOGO"])
-        monstro = Cena (DI["MONSTRO"])
+        templo = Cena(DI["CENA"])
+        tesouro = Cena(DI["TESOURO"])
+        cobra = Cena(DI["COBRA"])
+        fogo = Cena(DI["FOGO"])
+        monstro = Cena(DI["MONSTRO"])
         templo.direita = tesouro
         tesouro.esquerda = templo
         tesouro.direita = cobra
@@ -26,7 +26,8 @@ class Inca:
         templo.vai()
 
 class Carta:
-    pass
+    def __init__(self):
+        self.carta = Cena(DI["TESOURO"])
     def baralho(self):
         return []
     
@@ -34,6 +35,7 @@ class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
+        self.templo.direita = self.baralho[0]
     def inicia(self):
         self.templo.vai()
         

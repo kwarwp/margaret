@@ -24,7 +24,7 @@ class Inca:
         templo.direita = pedras
         pedras.esquerda = templo
         pedras.direita = desmoronamento
-        desmoronamento.esquerda = pedra
+        desmoronamento.esquerda = pedras
         desmoronamento.direita = tesouro
         tesouro.esquerda = desmoronamento
         tesouro.direita = fogo

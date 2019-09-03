@@ -76,3 +76,10 @@ Traceback (most recent call last):
     tesouro.direita = fogo
 NameError: name 'fogo' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 10:23:04.867 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  inca = Jogo()  # Inca()
+  ^
+IndentationError: expected an indented block
+'''},

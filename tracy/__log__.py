@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 09:36:31.704 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  tesouro = Cena(DI["TESOURO"]
+                                        ^
+SyntaxError: invalid syntax
+'''},

@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena
 from collections import OrderedDict
 
-CARTAS = OrderedDict(
+CARTAS = OrderedDict((
     ("TEMPLO", "https://i.imgur.com/LXptu0U.jpg"),
     ("TESOURO", "https://i.imgur.com/Nq1hCeU.jpg"),
     ("FOGO", "https://i.imgur.com/KRK66bR.jpg"),
@@ -11,7 +11,7 @@ CARTAS = OrderedDict(
     ("DESABAMENTO", "https://i.imgur.com/jnxWklS.jpg"),
     ("MUMIA", "https://i.imgur.com/HPp1k5T.jpg"),
     ("ARANHA", "https://i.imgur.com/w90m1jf.jpg")
-)
+))
 
 class Inca:
     def inicia(self):

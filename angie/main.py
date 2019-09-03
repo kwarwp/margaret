@@ -10,10 +10,7 @@ cobra = Cena (COBRA).vai()
 templo.direita = tesouro
 templo.vai()
 tesouro.esquerda = templo
-templo.vai()
 tesouro.direita = cobra
-templo.vai()
 cobra.esquerda = tesouro
-templo.vai()
 cobra.direita = fogo
-templo.vai()
+cobra.vai()

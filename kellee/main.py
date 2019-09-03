@@ -9,7 +9,7 @@ DI["FOGO"] = "https://imgur.com/AVBV4TF"
 DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD.png"
 
 class Inca:
-    def inicial(self):
+    def inicia(self):
         templo = Cena(DI["CENA"])
         tesouro = Cena(DI["TESOURO"])
         monstro = Cena(DI["MONSTRO"])

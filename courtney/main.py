@@ -3,9 +3,10 @@ from _spy.vitollino.main import Cena
 CENA = "https://i.imgur.com/IdXGTYa.jpg"
 TESOURO = "https://i.imgur.com/78iHROq.jpg"
 MUMIA = "https://i.imgur.com/7G66ctJ.png"
+FOGO = "https://i.imgur.com/76RAEGh.jpg"
 
 class Inca:
-def inicia (self):
+        def inicia(self):
 templo = Cena(CENA)
 tesouro = Cena(TESOURO) 
 mumia = Cena(MUMIA)

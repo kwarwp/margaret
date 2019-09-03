@@ -53,3 +53,10 @@ NameError: name 'pedra' is not defined
     desmoronamento.direita = tesouro
 NameError: name 'tesouro' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 10:24:32.7 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  return []
+  ^
+IndentationError: expected an indented block
+'''},

@@ -3,21 +3,21 @@ from _spy.vitollino.main import Cena
 IMAGENS = ["CENA", "TESOURO"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
-DI["TESOURO"] = "https://i.imgur.com/DJNXWXY.jpg"
+DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"
 DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 DI["COBRA"] = "https://i.imgur.com/UcWZh28.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])
-        tesouro = Cena(DI["TESOURO"])
+        artefato = Cena(DI["ARTEFATO"])
         fogo = Cena(DI["FOGO"])
         desmoronamento = Cena(DI["DESMORONAMENTO"])
         cobra = Cena(DI["COBRA"])
-        templo.direita = tesouro
-        tesouro.esquerda = templo
-        tesouro.direita = fogo
-        fogo.esquerda = tesouro
+        templo.direita = artefato
+        artefato.esquerda = templo
+        artefato.direita = fogo
+        fogo.esquerda = artefato
         fogo.direita = desmoronamento
         desmoronamento.esquerda = fogo
         desmonoramento.direita = cobra

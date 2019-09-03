@@ -34,9 +34,10 @@ class Inca:
         templo.vai()
     
 class Carta:
-    pass
+    def __init__(self):
+        self.carta = Cena(DI["PEDRAS"])
     def baralho(self):
-        return []
+        return [self.carta]
 
 class Jogo:
     def __init__(self):

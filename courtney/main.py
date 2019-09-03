@@ -1,9 +1,11 @@
 # margaret.courtney.main.py
 from _spy.vitollino.main import Cena 
-CENA = "https://i.imgur.com/IdXGTYa.jpg"
-TESOURO = "https://i.imgur.com/78iHROq.jpg"
-COBRA = "https://i.imgur.com/7G66ctJ.png"
-FOGO = "https://i.imgur.com/76RAEGh.jpg"
+imagens = ["CENA", "TESOURO"]
+DI = DICIONARIO_DE_IMAGENS = {}
+DI["CENA"] = "https://i.imgur.com/IdXGTYa.jpg"
+DI["TESOURO"] = "https://i.imgur.com/78iHROq.jpg"
+DI["COBRA"] = "https://i.imgur.com/7G66ctJ.png"
+DI["FOGO"] = "https://i.imgur.com/76RAEGh.jpg"
 
 class Inca:
     def inicia(self):

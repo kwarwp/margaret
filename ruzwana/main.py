@@ -44,7 +44,7 @@ class Jogo:
          self.templo = Cena(DI["TEMPLO"])
     def inicia(self):
        
-        inca = Jogo()  # Inca()
+inca = Jogo()  # Inca()
 
 if __name__ == "__main__":
     inca.inicia()

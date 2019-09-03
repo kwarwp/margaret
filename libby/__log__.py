@@ -108,3 +108,10 @@ NameError: name 'inicia' is not defined
     tesouro.direita = fogo
 NameError: name 'fogo' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 10:21:34.481 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  def inicia(self):
+  ^
+IndentationError: unexpected indent
+'''},

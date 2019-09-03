@@ -9,11 +9,11 @@ DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD.png"
 
 class Inca:
     def inicial(self):
-    templo = Cena(DI["CENA"])
-    tesouro = Cena(DI["TESOURO"])
-    monstro = Cena(DI["MONSTRO"])
-    fogo = Cena(DI["FOGO"])
-    pedras = Cena(DI["PEDRAS"])
+    templo = Cena (DI["CENA"])
+    tesouro = Cena (DI["TESOURO"])
+    monstro = Cena (DI["MONSTRO"])
+    fogo = Cena (DI["FOGO"])
+    pedras = Cena (DI["PEDRAS"])
     templo.direita = tesouro
     tesouro.esquerda = templo
     tesouro.direita = monstro

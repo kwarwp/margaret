@@ -37,3 +37,10 @@ Traceback (most recent call last):
   module <module> line 3
     from stacy.main import fogo
 '''},
+{'date': 'Tue Sep 03 2019 09:34:42.430 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  from stacy.main import DIC["FOGO"]
+                             ^
+SyntaxError: invalid syntax
+'''},

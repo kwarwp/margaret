@@ -21,6 +21,7 @@ class Inca:
         tesouro.direita = monstro
         monstro.esquerda = fogo
         fogo.direita = pedras 
+        pedras.wsquerda = templo
         templo.vai()
     
 inca = Inca()

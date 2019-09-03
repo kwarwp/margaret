@@ -27,6 +27,9 @@ class Inca:
 class Carta:
     def __init__(self):
         self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
+        for ordem, carta in enumerate(self.cartas):
+            if ordem < len(self.cartas)-2:
+                carta.direita = self.cartas[ordem+1]
     def baralho(self):
         return self.cartas
         
@@ -34,7 +37,7 @@ class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
-        self.templo.direita = self.baralho[2]
+        self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
         pass

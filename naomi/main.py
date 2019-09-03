@@ -18,6 +18,7 @@ class Inca:
     
 inca = Inca()
 
-if__name__ == "__main__":
-   inca.inicia() 
+if __name__ == "__main__":
+    inca.inicia() 
+
    

@@ -7,7 +7,7 @@ DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"
 DI["TESOURO"] = "https://i.imgur.com/Z2CD83L.jpg"
 DI["MONSTRO"] = "https://i.imgur.com/4cBiZ6n.jpg"
 DI["FOGO"] = "https://i.imgur.com/qLYrtR0.jpg"
-DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD.png"
+DI["PEDRAS"] = "https://i.imgur.com/rpIsgaD"
 
 class Inca:
     def inicia(self):
@@ -35,7 +35,7 @@ class Jogo:
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
     def inicia(self):
-        pass
+        self.templo.vai()
         
         
 inca = Jogo()  # Inca()

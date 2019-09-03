@@ -32,11 +32,6 @@ class Inca:
         pedras.direita = fogo
         fogo.esquerda = pedras
         templo.vai()
-        
-inca = Jogo()  # Inca()
-
-if __name__ == "__main__":
-    inca.inicia()
     
 class Carta:
     pass
@@ -48,4 +43,8 @@ class Jogo:
          self.baralho = Carta().baralho()
          self.templo = Cena(DI["TEMPLO"])
     def inicia(self):
-        pass
+       
+        inca = Jogo()  # Inca()
+
+if __name__ == "__main__":
+    inca.inicia()

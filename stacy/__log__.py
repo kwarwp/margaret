@@ -889,3 +889,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 03 2019 10:10:00.212 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 53
+  self.baralho = Cartas().baralho()
+  ^
+IndentationError: expected an indented block
+'''},

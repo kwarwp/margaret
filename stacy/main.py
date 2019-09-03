@@ -44,9 +44,9 @@ class Inca:
     #jogo.inicia()
     
 class Cartas:
+    pass
     def baralho(self):
         return []
-    pass
     
 class Jogo:
     def __init__(self):

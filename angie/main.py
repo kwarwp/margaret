@@ -31,7 +31,7 @@ class Carta:
         return []
     
 class Jogo:
-    def __init__(self)
+    def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["TEMPLO"])
     def inicia(self):

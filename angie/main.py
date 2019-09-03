@@ -6,7 +6,7 @@ DI["CENA"] = "https://i.imgur.com/6NNu6ps.jpg"
 DI["TESOURO"] = "https://i.imgur.com/nBbQxbD.jpg"
 DI["COBRA"] = "https://i.imgur.com/0paGPPh.jpg"
 DI["FOGO"] = "https://i.imgur.com/ScR01C1.png"
-DI["MONSTRO"] = "https://i.imgur.com/C487QGN.jpg"
+DI["MONSTRO"] = "https://i.imgur.com/eb88QC6.jpg"
 
 class Inca:
     def inicia(self):

@@ -875,3 +875,10 @@ ImportError: cannot import name 'inca'
                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 09:38:32.697 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+'''},

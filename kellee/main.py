@@ -30,7 +30,7 @@ class Carta:
         return []
         
 
-class Jogos:
+class Jogo:
     def __init__(self):
         self.baralho = carta().baralho()
         self.templo = Cena(DI["TEMPLO"])

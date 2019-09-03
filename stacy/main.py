@@ -1,5 +1,7 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
+STYLE["width"] = 600
+STYLE["height"] = 600
 from _spy.vitollino.main import Cena
 from random import shuffle
 IMAGENS = ["TEMPLO", "TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5

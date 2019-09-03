@@ -1,4 +1,4 @@
-# margaret.kathryn.main.py
+# margaret.courtney.main.py
 from _spy.vitollino.main import Cena 
 CENA = "https://i.imgur.com/IdXGTYa.jpg"
 TESOURO = "https://i.imgur.com/78iHROq.jpg"

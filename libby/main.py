@@ -1,6 +1,6 @@
 # margaret.libby.main.py
 from _spy.vitollino.main import Cena 
-from stacy.main import fogo
+from stacy.main import DIC["FOGO"]
 #IMAGENS = ["CENA", "TESOURO"]
 DIC = DICIONARIO_DE_IMAGENS = {}
 DIC["CENA"] = "https://i.imgur.com/q4Cznxt.jpg"

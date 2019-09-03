@@ -1,4 +1,5 @@
 # margaret.courtney.main.py
+__author__ = "Adailton dos S. Junior junior_shoot@hotmail.com"
 from _spy.vitollino.main import Cena 
 imagens = ["CENA", "TESOURO"]
 DI = DICIONARIO_DE_IMAGENS = {}

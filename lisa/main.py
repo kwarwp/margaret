@@ -4,7 +4,7 @@ from _spy.vitollino.main import Cena
 from ruzwana.main import DI as RDI
 #from stacy.main import fogo
 #from natalia.main import sereiamonstro
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA"]
+IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
@@ -12,6 +12,9 @@ DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
 class Carta:
     def __init__(self):
         self.cartas = [Cena(RDI[uma_imagem]) for uma_imagem in IMAGENS]
+        for ordem, carta in enumerate(self.cartas):
+            if ordem < len(self.cartas)-1:
+                carta.direita = self.cartas[ordem+1]
     def baralho(self):
         return self.cartas
         
@@ -19,7 +22,7 @@ class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["TEMPLO"])
-        self.templo.direita = self.baralho[0]
+        self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
         

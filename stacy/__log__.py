@@ -868,3 +868,10 @@ Traceback (most recent call last):
     from lisa.main import inca
 ImportError: cannot import name 'inca'
 '''},
+{'date': 'Tue Sep 03 2019 09:38:08.653 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  tesouro = Cena(DI["TESOURO"]
+                                        ^
+SyntaxError: invalid syntax
+'''},

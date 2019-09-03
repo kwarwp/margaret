@@ -48,6 +48,7 @@ class Cartas:
     
 class Jogo:
     def __init__(self):
+    self,baralho
     pass 
     
 

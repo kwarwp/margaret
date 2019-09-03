@@ -1,6 +1,6 @@
 # margaret.naomi.main.py
 from _spy.vitollino.main import Cena
-IMAGENS = ["CENA", "ARTEFATO"]
+IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"
@@ -26,9 +26,9 @@ class Inca:
         
 class Carta:
     def __init__(self):
-        self.carta = Cena(DI["ARTEFATO"])
+        self.cartas = [Cena(RDI[uma_imagem]) for uma_imagem in IMAGENS]
     def baralho(self):
-        return [self.carta]
+        return self.cartas
         
 class Jogo:
     def __init__(self):

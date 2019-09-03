@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena
 CENA = "https://i.imgur.com/6NNu6ps.jpg"
 TESOURO = "https://i.imgur.com/nBbQxbD.jpg"
-COBRA = "https://i.imgur.com/ow7s2gK.jpg"
+COBRA = "https://i.imgur.com/0paGPPh.jpg"
 FOGO = "https://i.imgur.com/ScR01C1.png"
 templo = Cena (CENA).vai()
 tesouro = Cena(TESOURO).vai()

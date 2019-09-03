@@ -53,6 +53,3 @@ class Jogo:
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
     def inicia(self):
-    
-    
-

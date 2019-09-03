@@ -108,3 +108,10 @@ NameError: name 'inca' is not defined
     inca.inicia()
 NameError: name 'inca' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 10:29:09.203 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  inca = Jogo()  # Inca()
+  ^
+IndentationError: expected an indented block
+'''},

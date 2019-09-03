@@ -51,7 +51,7 @@ class Cartas:
             if ordem < len(self.cartas)-1:
                 carta.direita = self.cartas[ordem+1]
     def baralho(self):
-        return self.carta
+        return self.cartas
     
 class Jogo:
     def __init__(self):

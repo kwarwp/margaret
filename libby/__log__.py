@@ -44,3 +44,10 @@ Traceback (most recent call last):
                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 09:38:35.201 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  from stacy.main import DIC["FOGO"]
+                             ^
+SyntaxError: invalid syntax
+'''},

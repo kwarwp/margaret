@@ -45,6 +45,7 @@ class Inca:
     
 class Cartas:
     def __init__(self):
+        self.carta = Cena(DI["TESOURO"])
     def baralho(self):
         return []
     

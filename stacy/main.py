@@ -14,12 +14,12 @@ DI["ARANHA"] = "https://i.imgur.com/w90m1jf.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["TEMPLO"])
-        tesouro = Cena(DI["TEMPLO"])
-        fogo = Cena(FOGO)
-        artefato1 = Cena(ARTEFATO1)
-        cobra = Cena(COBRA)
-        desabamento = Cena(DESABAMENTO)
-        mumia = Cena(MUMIA)
-        aranha = Cena(ARANHA)
+        tesouro = Cena(DI["TESOURO"])
+        fogo = Cena(DI["FOGO"])
+        artefato1 = Cena(DI["ARTEFATO1"])
+        cobra = Cena(DI["COBRA"])
+        desabamento = Cena(DI["DESABAMENTO"])
+        mumia = Cena(DI["MUMIA"])
+        aranha = Cena(DI["ARANHA"])
 
 

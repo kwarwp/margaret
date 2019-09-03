@@ -58,4 +58,4 @@ class Jogo:
 inca = Jogo()
 
 if __name__ == "__main__":
-    jogo.inicia()
+    Jogo.inicia()

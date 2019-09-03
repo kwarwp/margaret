@@ -7,6 +7,7 @@ FOGO = "https://i.imgur.com/ScR01C1.png"
 templo = Cena (CENA).vai()
 tesouro = Cena(TESOURO).vai()
 cobra = Cena (COBRA).vai()
+fogo = Cena (FOGO).vai()
 templo.direita = tesouro
 templo.vai()
 tesouro.esquerda = templo

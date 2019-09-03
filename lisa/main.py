@@ -1,4 +1,5 @@
 # margaret.lisa.main.py
+__author__ = "Carlo E. T. Oliveira carlo@ufrj.br"
 from _spy.vitollino.main import Cena
 #from stacy.main import fogo
 #from natalia.main import sereiamonstro

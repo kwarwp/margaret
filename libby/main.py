@@ -1,8 +1,9 @@
 # margaret.libby.main.py
 #__author__ = "Ana Voig frade.giovana13@gmail.com"
 from _spy.vitollino.main import Cena 
+from ruzwana.main import DI as RDI
 #from stacy.main import fogo
-#IMAGENS = ["CENA", "TESOURO"]
+IMAGENS = ["FOGO", "PEDRAS", "ARANHA"]
 DIC = DICIONARIO_DE_IMAGENS = {}
 DIC["TEMPLO"] = "https://i.imgur.com/q4Cznxt.jpg"
 DIC["TESOURO"] = "https://i.imgur.com/mZ6E5Qs.jpg"
@@ -25,11 +26,11 @@ DIC["ARTEFATO1"] = "https://i.imgur.com/agqn9Gg.jpg"
         
 #outro jeito mais sofisticado:
         
-class Carta: 
+class Cartas: 
     def __init__(self):
-        self.carta = Cena(DIC["TESOURO"])
+        self.cartas = [Cena(RDI[uma_imagem]) for uma_imagem in IMAGENS]
     def baralho(self):
-        return [self.carta]
+        return self.cartas
         
 class Jogo:
     def __init__(self):

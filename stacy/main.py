@@ -38,7 +38,7 @@ class Inca:
         aranha.esquerda = mumia
         templo.vai()
         
-inca = Inca()
+#inca = Inca()
 
 if __name__ == "__main__":
     inca.inicia()
@@ -54,3 +54,5 @@ class Jogo:
         self.templo = Cena(DI["TEMPLO"])
     def inicia(self):
         templo.vai()
+
+inca = Jogo()

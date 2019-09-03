@@ -1,7 +1,7 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
 from _spy.vitollino.main import Cena
-IMAGENS = ["TEMPLO", "TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]
+IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/LXptu0U.jpg"
 DI["TESOURO"] = "https://i.imgur.com/Nq1hCeU.jpg"

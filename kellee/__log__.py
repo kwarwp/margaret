@@ -182,3 +182,10 @@ NameError: name 'carta' is not defined
     self.templo = Cena(DI["TEMPLO"])
 KeyError: TEMPLO
 '''},
+{'date': 'Mon Sep 02 2019 17:54:10.366 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def __init__(self)
+                     ^
+SyntaxError: invalid syntax
+'''},

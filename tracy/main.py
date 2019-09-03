@@ -12,7 +12,7 @@ class Inca:
         cena = Cena(DI["CENA"])
         tesouro = Cena(DI["TESOURO"])
         cobra = Cena(DI["COBRA"])
-        fogo = Cena(DI["fogo"])
+        fogo = Cena(DI["FOGO"])
         templo.direita = tesouro
         templo.vai()
         tesouro.esquerda = templo

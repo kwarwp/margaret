@@ -14,5 +14,7 @@ tesouro.esquerda = templo
 tesouro.direita = cobra
 cobra.esquerda = tesouro
 cobra.direita = fogo
-cobra.vai()
 fogo.esquerda = cobra 
+
+inca = Inca()
+inca.inicia()

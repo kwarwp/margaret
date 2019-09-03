@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena
 #IMAGENS = ["CENA", "TESOURO"]
 DIC = DICIONARIO_DE_IMAGENS = {}
 DIC["TEMPLO"] = "https://i.imgur.com/q4Cznxt.jpg"
-DIC["TESOURO"] = "https://i.imgur.com/x2wLF9U.jpg"
+DIC["TESOURO"] = "https://i.imgur.com/mZ6E5Qs.jpg"
 DIC["DEGRAU"] = "https://i.imgur.com/UxV1LyG.jpg"
 DIC["ARTEFATO1"] = "https://i.imgur.com/agqn9Gg.jpg"
 
@@ -26,16 +26,18 @@ DIC["ARTEFATO1"] = "https://i.imgur.com/agqn9Gg.jpg"
 #outro jeito mais sofisticado:
         
 class Carta: 
-    pass
+    def __init__(self):
+        self.carta = Cena(DIC["TESOURO"])
     def baralho(self):
-        return []
+        return [self.carta]
         
 class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
         self.templo = Cena(DIC["TEMPLO"])
+        self.templo.direita = self.baralho[0]
     def inicia(self):
-        pass
+        self.templo.vai()
     
 inca = Jogo() # Inca()
  

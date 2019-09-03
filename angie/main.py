@@ -25,6 +25,9 @@ class Inca:
         monstro.esquerda = fogo
         templo.vai()
 
+class Jogo:
+    pass
+
 inca = Inca()
 
 if __name__ == "__main__":

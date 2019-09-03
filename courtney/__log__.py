@@ -147,3 +147,10 @@ NameError: name 'mostro' is not defined
     mostro.direita = pedras
 NameError: name 'mostro' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 09:00:50.498 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  def inicia (self):
+  ^
+IndentationError: expected an indented block
+'''},

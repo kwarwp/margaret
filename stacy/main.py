@@ -1,9 +1,5 @@
 # margaret.stacy.main.py
-from _spy.vitollino.main import Cena, STYLE
-from lisa.main import inca
-STYLE["width"] = 600
-STYLE["height"] = 600
-
+from _spy.vitollino.main import Cena
 TEMPLO = "https://i.imgur.com/LXptu0U.jpg"
 TESOURO = "https://i.imgur.com/Nq1hCeU.jpg"
 FOGO = "https://i.imgur.com/KRK66bR.jpg"

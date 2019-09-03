@@ -1,6 +1,7 @@
 # margaret.lisa.main.py
 from _spy.vitollino.main import Cena
 from stacy.main import fogo
+#from natalia.main import sereiamonstro
 CENA = "https://i.imgur.com/7GZetDn.jpg"
 TESOURO = "https://i.imgur.com/h8MfuRD.jpg"
 
@@ -15,5 +16,5 @@ class Inca:
         templo.vai()
 
 inca = Inca()
-inca.inicia()
+#inca.inicia()
     

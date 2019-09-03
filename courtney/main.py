@@ -1,5 +1,5 @@
 # margaret.courtney.main.py
-__author__ = "Adailton dos S. Junior junior_shoot@hotmail.com"
+__author__ = "Adailton dos S. Junior junior_shoot4@hotmail.com"
 from _spy.vitollino.main import Cena 
 imagens = ["CENA", "TESOURO"]
 DI = DICIONARIO_DE_IMAGENS = {}
@@ -12,7 +12,7 @@ class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])
         tesouro = Cena(DI["TESOURO"])
-        cobra = Cena(DI["COBRA])
+        cobra = Cena(DI["COBRA"])
         fogo = Cena(DI["FOGO"])
         templo.direita = tesouro
         templo.vai()

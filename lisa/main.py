@@ -16,5 +16,7 @@ class Inca:
         templo.vai()
 
 inca = Inca()
-#inca.inicia()
+
+if __name__ == "__main__":
+    inca.inicia()
     

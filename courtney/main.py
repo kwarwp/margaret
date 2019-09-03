@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena 
 CENA = "https://i.imgur.com/IdXGTYa.jpg"
 TESOURO = "https://i.imgur.com/78iHROq.jpg"
-MONSTRO = "https://i.imgur.com/7G66ctJ.png"
+MUMIA = "https://i.imgur.com/7G66ctJ.png"
 
 class Inca:
 def inicia (self):

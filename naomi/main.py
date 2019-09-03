@@ -9,7 +9,7 @@ class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])
         tesouro = Cena(DI["TESOURO"])
-        templo.dieita = tesouro
+        templo.direita = tesouro
         tesouro.esquerda = templo
         templo.vai()
     

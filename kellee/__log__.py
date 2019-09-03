@@ -256,3 +256,10 @@ SyntaxError: invalid syntax
     self.tmplo.direita = self.baralho[0]
 AttributeError: 'Jogo' object has no attribute 'tmplo'
 '''},
+{'date': 'Mon Sep 02 2019 18:08:07.106 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.carta = Cena(DI[uma_imagem]) for uma_imagem in IMAGENS] 
+                                     ^
+SyntaxError: invalid syntax
+'''},

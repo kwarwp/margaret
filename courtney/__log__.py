@@ -258,3 +258,10 @@ NameError: name 'CENA' is not defined
     tesouro = Cena(TESOURO).vai()
 NameError: name 'TESOURO' is not defined
 '''},
+{'date': 'Tue Sep 03 2019 09:49:10.768 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  cobra = Cena(DI["COBRA])
+                          ^
+SyntaxError: EOL while scanning string literal
+'''},

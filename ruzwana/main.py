@@ -5,7 +5,7 @@ STYLE["width"] = 600
 STYLE["height"] = 600
 
 from random import shuffle
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
+IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO","ARTEFATO"]*5
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/BTTqaBa.jpg"

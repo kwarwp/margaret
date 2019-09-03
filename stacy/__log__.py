@@ -1087,3 +1087,10 @@ IndexError: list index out of range
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 11:07:42.96 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 51
+  carta.direita = self.cartas[ordem+1]
+  ^
+IndentationError: expected an indented block
+'''},

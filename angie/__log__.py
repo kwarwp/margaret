@@ -109,3 +109,10 @@ NameError: name 'fogo' is not defined
                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 03 2019 10:14:41.551 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  def __init__(self)
+                     ^
+SyntaxError: invalid syntax
+'''},

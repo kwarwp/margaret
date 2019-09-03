@@ -1,7 +1,7 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
 from _spy.vitollino.main import Cena
-IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]
+IMAGENS = ["TEMPLO", "TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/LXptu0U.jpg"
 DI["TESOURO"] = "https://i.imgur.com/Nq1hCeU.jpg"
@@ -53,7 +53,7 @@ class Jogo:
     def __init__(self):
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
-        self.templo.direita = self.baralho[0]        
+        self.templo.direita = self.baralho[1]        
     def inicia(self):
         self.templo.vai()
 

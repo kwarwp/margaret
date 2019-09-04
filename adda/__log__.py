@@ -47,3 +47,10 @@ TypeError: 'module' object is not callable
     templo = Cena(TEMPLO)
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Wed Sep 04 2019 11:27:48.791 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},

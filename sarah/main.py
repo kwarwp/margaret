@@ -45,10 +45,9 @@ class Jogo:
         perigos = Cartas() #serviço oferecido pelas cartas
         #mumia = perigos.baralho[0] #
         umperigo = perigos.primeira_carta()
-        
         #mumia = Cena(PERIGOS["MUMIA"])
-        tesouro.direita = tesouro
-        mumia.esquerda = tesouro
+        tesouro.direita = umperigo
+        umperigo.esquerda = tesouro
         templo.vai()
 
 

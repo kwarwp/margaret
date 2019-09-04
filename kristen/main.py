@@ -3,7 +3,7 @@ from _spy.vitollino.main import Cena
 TEMPLO = "https://i.imgur.com/hy9jUf5.jpg"
 TESOURO = "https://i.imgur.com/pcrB1gm.jpg"
 PERIGOS = {
-    "MÚMIA": "https://i.imgur.com/vaRhKqK.jpg",
+    "MUMIA": "https://i.imgur.com/vaRhKqK.jpg",
     "COBRA": "https://i.imgur.com/oTs2Tf4.jpg",
     "DESMORONAMENTO": "https://i.imgur.com/gNFtoMy.jpg",
     "ARANHA": "https://i.imgur.com/gNFtoMy.jpg",
@@ -15,7 +15,9 @@ class Jogo:
         tesouro = Cena (TESOURO)
         templo.direita = tesouro
         tesouro.esquerda = templo 
-        mumia = Cena (PERIGOS["mumia"])
+        mumia = Cena (PERIGOS["MUMIA"])
+        tesouro.direita = mumia
+        mumia.esquerda = tesouro 
         templo.vai()
         
 jogo = Jogo()

@@ -1,5 +1,6 @@
 # margaret.kristen.main.py
 from _spy.vitollino.main import Cena
+from random import shuffle
 TEMPLO = "https://i.imgur.com/hy9jUf5.jpg"
 TESOURO = "https://i.imgur.com/pcrB1gm.jpg"
 PERIGOS = {
@@ -13,6 +14,7 @@ PERIGOS = {
 class Cartas:
     def __init__(self):
         self.baralho = [Cena(perigo) for perigo in PERIGOS.values()] * 5 
+        shuffle(self.baralho)
         baralho_amanha = self.baralho[1:]
         baralho_zip = zip(self.baralho, baralho_amanha)
         for carta_hoje, carta_amanha in baralho_zip:

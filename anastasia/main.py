@@ -9,12 +9,12 @@ PERIGOS = {
     "FOGO" : "https://i.imgur.com/9341Lk9.jpg",
     "DESMORONAMENTO" : "https://i.imgur.com/Qm6d1sd.jpg"
 }
-#ARTEFATOS = {
- #   "ARTEFATO1": "",
- #  "ARTEFATO2": "",
- #  "ARTEFATO3": "",
- #  "ARTEFATO4": "",
-#}
+ARTEFATOS = {
+   "ARTEFATO1":"https://i.imgur.com/icsIqiw.jpg",
+   "ARTEFATO2": "https://i.imgur.com/0cWMbbI.jpg",
+   "ARTEFATO3": "https://i.imgur.com/rSyYFvw.jpg",
+   "ARTEFATO4": "https://i.imgur.com/SJ1swRf.jpg",
+}
 
 class Cartas:
     def __init__(self):

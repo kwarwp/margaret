@@ -4,10 +4,11 @@ from random import shuffle
 TEMPLO = "https://i.imgur.com/7GZetDn.jpg"
 TESOURO = "https://i.imgur.com/h8MfuRD.jpg"
 PERIGOS = {
-    "MUMIA": "",
-    "COBRA": ""
+    "MUMIA": "https://i.imgur.com/YfLqYCa.jpg",
+    "COBRA":"https://i.imgur.com/Adp8zfm.jpg",
+    "FOGO" : "https://i.imgur.com/9341Lk9.jpg",
+    "DESMORONAMENTO" : "https://i.imgur.com/Qm6d1sd.jpg"
 }
-
 class Cartas:
     def __init__(self):
         self.baralho = [Cena(perigo) 

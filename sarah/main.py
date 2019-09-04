@@ -28,8 +28,8 @@ class Cartas:
         baralho_zip = zip(self.baralho,baralho_amanha)
         for c_hoje, c_ama in baralho_zip: 
         #este for e outro comando tem que separar mesmo
-        c_hoje.direita = c_ama
-        c_ama.esquerda = c_hoje
+            c_hoje.direita = c_ama
+            c_ama.esquerda = c_hoje
         #até aqui só definiu mas aind anão usou as cartas
     def primeira_carta(self):
         return self.baralho[0]
@@ -47,7 +47,7 @@ class Jogo:
         umperigo = perigos.primeira_carta()
         
         #mumia = Cena(PERIGOS["MUMIA"])
-        tesouro.direita = mumia
+        tesouro.direita = tesouro
         mumia.esquerda = tesouro
         templo.vai()
 

@@ -27,3 +27,10 @@ SyntaxError: invalid syntax
                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 04 2019 12:32:16.568 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  c_hoje.direita = c_ama
+  ^
+IndentationError: expected an indented block
+'''},

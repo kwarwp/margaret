@@ -197,3 +197,10 @@ AttributeError: 'Cartas' object has no attribute 'baralho'
     return self.baralho[0]
 AttributeError: 'Cartas' object has no attribute 'baralho'
 '''},
+{'date': 'Wed Sep 04 2019 12:46:15.171 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  From random import shuffle
+        ^
+SyntaxError: invalid syntax
+'''},

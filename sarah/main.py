@@ -9,4 +9,4 @@ ESCADA =
 templo = Cena(TEMPLO)
 #templo nome de uma instancia de um objeto
 #cena é uma instancia de uma classe
-TEMPLO.VAI()
+templo.vai()

@@ -7,4 +7,7 @@ TESOURO = "https://i.imgur.com/pEvCidq.jpg"
 templo = Cena(TEMPLO)
 #templo nome de uma instancia de um objeto
 #cena é uma instancia de uma classe
+tesouro = Cena(TESOURO)
+templo.direita = tesouro
+templo.esquerda = templo
 templo.vai()

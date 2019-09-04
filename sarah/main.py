@@ -13,7 +13,7 @@ PERIGOS ={
      "ARANHA":"https://i.imgur.com/25KhwPC.png"
 }
 class Cartas:
-    def __init__(self) #dunder
+    def __init__(self): #dunder
         #nosso baralho é uma lista
         #self.baralho = []
         #self.baralho[0] = Cena(PERIGOS["MUMIA"]) #Para não ter que fazer isso para todos os perigos usamos:

@@ -26,7 +26,7 @@ class Cartas:
         #self parece com gestalt (eu mesmo) na classe posso trabalhar com coisas minhas e com coisas dos outros
         #trabalha com conjundo de objetos diferentes meu e dos outros.
         baralho_zip = zip(self.baralho,baralho_amanha)
-        for c_hoje, c_ama in baralho_zip 
+        for c_hoje, c_ama in baralho_zip: 
         #este for e outro comando tem que separar mesmo
         c_hoje.direita = c_ama
         c_ama.esquerda = c_hoje

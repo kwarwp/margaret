@@ -4,6 +4,15 @@ from _spy.vitollino.main import Cena
 TEMPLO = "https://i.imgur.com/Tsxuzh2.jpg"
 TESOURO = "https://i.imgur.com/W46GoNq.gif"
 
+#DICIONARIO DE PERIGOS
+PERIGOS ={
+     "MUMIA":"",
+     "COBRA":"", 
+     "DESLIZAMENTO":"", 
+     "FOGO":"", 
+     "ARANHA":""
+}
+
 class Jogo:
     def inicia(self):
         templo = Cena(TEMPLO)
@@ -12,6 +21,9 @@ class Jogo:
         tesouro = Cena(TESOURO)
         templo.direita = tesouro
         tesouro.esquerda = templo
+        mumia = Cena(PERIGOS["MUMIA"])
+        tesouro.direita = mumia
+        mumia.esquerda = tesouro
         templo.vai()
 
 jogo = Jogo()

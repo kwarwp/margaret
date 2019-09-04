@@ -12,7 +12,7 @@ PERIGOS = {
 
 class Cartas:
     def __init__(self):
-        self.baralho = [Cena(perigo) for perigo in PERIGOS.values()]
+        self.baralho = [Cena(perigo) for perigo in PERIGOS.values()] *5
         baralho_amanha = self.baralho[1:]
         baralho_zip = zip(self.baralho, baralho_amanha)
         for c_hoje, c_ama in baralho_zip:

@@ -13,7 +13,8 @@ OBSTACULOS = {
 class Cartas:
     def __init__(self):
         self.baralho = [Cena(obstaculos) 
-             for obstaculos in OBSTACULOS.values()] * 5 
+             for obstaculos in OBSTACULOS.values()] * 5
+        shuffle(self.baralho)
         baralho_amanha = self.baralho[1:]
         baralho_zip = zip(self.baralho, baralho_amanha)
         for c_hoje, c_ama in baralho_zip:

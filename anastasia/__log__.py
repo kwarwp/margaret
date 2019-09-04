@@ -47,3 +47,10 @@ NameError: name 'Tesouro' is not defined
     tempo.direita = tesouro
 NameError: name 'tempo' is not defined
 '''},
+{'date': 'Wed Sep 04 2019 11:27:16.461 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},

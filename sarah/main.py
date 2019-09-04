@@ -1,4 +1,5 @@
 # margaret.sarah.main.py
+#Tesouro Inca desenvolvido a partir da modelagem UML e CRC Cards
 from _spy.vitollino.main import Cena
 from random import shuffle
 #Quando Classe inicia em maiuscula, quando constante não é maiuscula

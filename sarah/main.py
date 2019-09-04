@@ -1,5 +1,6 @@
 # margaret.sarah.main.py
 from _spy.vitollino.main import Cena
+from random import shuffle
 #Quando Classe inicia em maiuscula, quando constante não é maiuscula
 TEMPLO = "https://i.imgur.com/Tsxuzh2.jpg"
 TESOURO = "https://i.imgur.com/W46GoNq.gif"
@@ -19,7 +20,8 @@ class Cartas:
         #self.baralho[0] = Cena(PERIGOS["MUMIA"]) #Para não ter que fazer isso para todos os perigos usamos:
         #self.baralho = [façaalgo for perigo in PERIGOS.VALUES] EU QUERO SABER TODOS OS VALORES EXISTENTES NO PERIGO
         self.baralho = [Cena(perigo) 
-        for perigo in PERIGOS.values()] #este for faz parte da linha de cima
+            for perigo in PERIGOS.values()] *5#este for faz parte da linha de cima
+        shuffle(self.baralho)
         #list compreension crie uma cena com este perigo
         #baralho de hoje (é esse ai em cima)e o baralho de amanha
         baralho_amanha = self.baralho[1:]#conte a partir da 1ª posição e vá até o fim slice
@@ -49,8 +51,6 @@ class Jogo:
         tesouro.direita = umperigo
         umperigo.esquerda = tesouro
         templo.vai()
-
-
         
 jogo = Jogo()
 jogo.inicia()

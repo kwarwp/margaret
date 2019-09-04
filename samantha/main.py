@@ -22,9 +22,9 @@ class Jogo:
         templo.vai()
 class Cartas:
      def __init__(self):
-            self.baralho = []
-            self.baralho[0] = Cena(PERIGOS["MUMIA"])
-            self.baralho = [Cena(perigos)for perigo in PERIGOS.values()]
+            self.baralho = [Cena(perigos) for perigo in PERIGOS.values()]
+            baralho_amanha = self.baralho[1:]
+            
             
 jogo = Jogo()
 jogo.inicia()

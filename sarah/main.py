@@ -6,11 +6,11 @@ TESOURO = "https://i.imgur.com/W46GoNq.gif"
 
 #DICIONARIO DE PERIGOS
 PERIGOS ={
-     "MUMIA":"",
-     "COBRA":"", 
-     "DESLIZAMENTO":"", 
-     "FOGO":"", 
-     "ARANHA":""
+     "MUMIA":"https://i.imgur.com/shYk8Eo.gif",
+     "COBRA":"https://i.imgur.com/ndlMANn.png", 
+     "DESLIZAMENTO":"https://i.imgur.com/IJG5OKr.png", 
+     "FOGO":"https://i.imgur.com/zaHCVGP.png", 
+     "ARANHA":"https://i.imgur.com/25KhwPC.png"
 }
 
 class Jogo:

@@ -9,16 +9,34 @@ PERIGOS = {
     "ARANHA": "https://i.imgur.com/gNFtoMy.jpg",
     "FOGO": "https://i.imgur.com/4XA6XhB.jpg",
 } 
+
+class Cartas:
+    def __init__(self):
+        self.baralho = [Cena(perigo) for perigo in PERIGOS.values()]
+        baralho_amanha = self.baralho[1:]
+        baralho_zip = zip(self.baralho, baralho_amanha)
+        for carta_hoje, carta_amanha in baralho_zip:
+            carta_hoje.direita = carta_amanha
+            carta_amanha.esquerda = carta_hoje
+
+    def primeira_carta(self):
+        return self.baralho[0]
+
+
 class Jogo: 
     def inicia(self):
         templo = Cena (TEMPLO)
         tesouro = Cena (TESOURO)
         templo.direita = tesouro
         tesouro.esquerda = templo 
-        mumia = Cena (PERIGOS["MUMIA"])
-        tesouro.direita = mumia
-        mumia.esquerda = tesouro 
+        perigos = Cartas()
+        umperigo = perigos.primeira_carta()
+        tesouro.direita = umperigo
+        umperigo.esquerda = tesouro 
         templo.vai()
+        
+
+        
         
 jogo = Jogo()
 jogo.inicia()

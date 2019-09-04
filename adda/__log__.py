@@ -54,3 +54,10 @@ TypeError: 'module' object is not callable
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Wed Sep 04 2019 11:30:02.930 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},

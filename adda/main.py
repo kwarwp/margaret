@@ -18,19 +18,20 @@ class Cartas:
         for c_hoje, c_ama in baralho_zip:
             c_hoje.direita = c_ama
             c_ama.esquerda = c_hoje
+            
+    def primeira_carta(self):
+        return self.baralho[0]
 
 class Jogo:
-	def inicia(self):
+    def inicia(self):
             templo = Cena(TEMPLO)
             tesouro = Cena(TESOURO)
             templo.direita = tesouro
             tesouro.esquerda = templo
             perigos = Cartas()
-            umperigo = perigos.baralho[0] 
+            umperigo = perigos.primeira_carta()
             tesouro.direita = umperigo
-            
-            mumia.direita = tesouro
-            tesouro.esquerda = mumia
+            umperigo.esquerda = tesouro            
             templo.vai()
             
 

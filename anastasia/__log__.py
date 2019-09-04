@@ -70,3 +70,10 @@ IndentationError: expected an indented block
     jogo = jogo()
 NameError: name 'jogo' is not defined
 '''},
+{'date': 'Wed Sep 04 2019 12:27:55.475 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  carta_hoje.direita = carta_amanha
+  ^
+IndentationError: expected an indented block
+'''},

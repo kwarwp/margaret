@@ -9,5 +9,5 @@ templo = Cena(TEMPLO)
 #cena é uma instancia de uma classe
 tesouro = Cena(TESOURO)
 templo.direita = tesouro
-templo.esquerda = templo
+tesouro.esquerda = templo
 templo.vai()

@@ -13,4 +13,7 @@ class Jogo:
         templo.direita = tesouro
         tesouro.esquerda = templo
         templo.vai()
-        
+
+jogo = Jogo()
+jogo.inicia()
+

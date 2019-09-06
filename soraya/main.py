@@ -1,4 +1,5 @@
 # margaret.soraya.main.py
+__author__ "Vitória da Costa Lima vitcardinnot@gmail.com
 from spy.vitollino.main import Cena
 CENA = ""
 TESOURO = ""

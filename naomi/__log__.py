@@ -290,3 +290,7 @@ SyntaxError: invalid syntax
                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 09 2019 00:30:58.198 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: Cannot read property 'charAt' of undefined>
+'''},

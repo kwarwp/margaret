@@ -52,3 +52,10 @@ SyntaxError: Unbalanced bracket (
     with window.Peer as (pjs, err):
 AttributeError: no attribute Peer for [object Window]
 '''},
+{'date': 'Mon Sep 09 2019 15:20:30.759 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  except as err:
+          ^
+SyntaxError: invalid syntax
+'''},

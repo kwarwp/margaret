@@ -29,3 +29,10 @@ SyntaxError: invalid syntax
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 09 2019 15:17:29.398 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  with window.Peer as (pjs, err:
+                      ^
+SyntaxError: Unbalanced bracket (
+'''},

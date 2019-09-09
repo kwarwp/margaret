@@ -59,3 +59,7 @@ AttributeError: no attribute Peer for [object Window]
           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 09 2019 15:22:06.858 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: expected expression, got keyword 'var'>
+'''},

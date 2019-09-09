@@ -3,7 +3,7 @@ __author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena , STYLE
 from random import shuffle
 IMAGENS = ["CENA" , "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHAS" , "MUMIA"]*5 
-shuffle(IMAGENS) STYLE["Width"]=600
+shuffle(IMAGENS) , STYLE["Width"]=600
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"

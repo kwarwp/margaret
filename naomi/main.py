@@ -1,7 +1,7 @@
 # margaret.naomi.main.py
 __author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena
-from random import shuffle,STYLE
+from random import shuffle, STYLE
 STYLE["Width"]=600
 STYLE["Width"]=600
 IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHAS" , "MUMIA"]*5

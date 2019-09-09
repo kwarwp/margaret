@@ -262,3 +262,10 @@ Traceback (most recent call last):
   module <module> line 4
     from random import shuffle , STYLE
 '''},
+{'date': 'Mon Sep 09 2019 00:23:59.867 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHAS" , "MUMIA"]*5 STYLE["Width"]=600 
+                                                                                                              ^
+SyntaxError: invalid syntax
+'''},

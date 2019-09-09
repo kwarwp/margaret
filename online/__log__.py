@@ -15,3 +15,10 @@
     if window.Peer:
 AttributeError: no attribute Peer for [object Window]
 '''},
+{'date': 'Mon Sep 09 2019 15:13:38.990 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 5
+  except as err:
+   ^
+SyntaxError: invalid syntax
+'''},

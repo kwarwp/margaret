@@ -162,3 +162,10 @@ NameError: name 'RDI' is not defined
           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Sep 08 2019 23:42:28.419 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  pedras preciosas = Cena(DI["PEDRAS PRECIOSAS"])
+          ^
+SyntaxError: invalid syntax
+'''},

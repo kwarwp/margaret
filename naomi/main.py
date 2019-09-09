@@ -10,7 +10,7 @@ DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"
 DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 DI["COBRA"] = "https://i.imgur.com/UcWZh28.jpg"
-DI["PEDRS PRECIOSAS"] = " https://i.imgur.com/ijt1Hbq.jpg"
+DI["PEDRAS PRECIOSAS"] = " https://i.imgur.com/ijt1Hbq.jpg"
 class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])

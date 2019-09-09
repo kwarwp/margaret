@@ -2,7 +2,7 @@
 __author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena
 from random import shuffle
-IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS"]*5
+IMAGENS = ["CENA", "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHAS" , "MUMIA"]*5
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
@@ -11,6 +11,8 @@ DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 DI["COBRA"] = "https://i.imgur.com/UcWZh28.jpg"
 DI["PEDRINHAS"] = " https://i.imgur.com/ijt1Hbq.jpg"
+DI["ARANHAS"] = " "
+DI["MUMIA"] = " "
 class Inca:
     def inicia(self):
         templo = Cena(DI["CENA"])
@@ -19,6 +21,8 @@ class Inca:
         desmoronamento = Cena(DI["DESMORONAMENTO"])
         cobra = Cena(DI["COBRA"])
         pedrinhas = Cena(DI["PEDRINHAS"])
+        aranhas = Cena(DI["ARANHAS"])
+        mumia = Cena(DI["MUMIA"])
         templo.direita = artefato
         artefato.esquerda = templo
         artefato.direita = fogo
@@ -29,6 +33,10 @@ class Inca:
         cobra.esquerda = desmonoramento
         cobra.direita = pedrinhas
         pedrinhas.esquerda = cobra
+        pedrinhas.direita = aranhas
+        aranhas.esquerda = pedrinhas
+        aranhas.direita = mumia
+        mumia.esquerda = aranhas
         templo.vai()
         
 class Carta:

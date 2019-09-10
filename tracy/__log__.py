@@ -106,3 +106,10 @@ NameError: name 'templo' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 09:28:58.258 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  self.cena = Cena(imagem)
+  ^
+IndentationError: expected an indented block
+'''},

@@ -32,6 +32,11 @@ class Inca:
         desabamento = Cena(DI["DESABAMENTO"])
         mumia = Cena(DI["MUMIA"])
         aranha = Cena(DI["ARANHA"])
+        sala_do_tesouro = Cena(DI["SALADOTESOURO"])
+        pepita_de_ouro = Cena(DI["PEPITADEOURO"])
+        obsidiana = Cena(DI["OBSIDIANA"])
+        turquesa = Cena(DI["TURQUESA"])
+        acampamento = Cena(DI["ACAMPAMENTO"])
         templo.direita = tesouro
         tesouro.esquerda = templo
         tesouro.direita = fogo

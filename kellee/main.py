@@ -23,7 +23,13 @@ class Perigo:
        self.acampamento = ACAMPAMENTO
      
     def vai(self):
+        if self.tipo in PERIGOS:
+           # deu ruim, já tinha aparecido um perigp
+           self.cena.direita = self.acampamento
+        else:
+            PERIGOS[self.tipo] = 1
         self.cena_vai()
+        
         
 class Carta:
     def __init__(self):

@@ -21,6 +21,13 @@ class Perigo:
        self.tipo = tipo
        self.cena_vai = self.cena.vai
        self.cena.vai = self.vai
+       self.acampamento = ACAMPAMENTO
+    
+    def set_direita(self, direita):
+        self.cena.direita = direita
+        
+    def set_esquerda(self, esquerda)
+        self.cena.esquerda = direita 
      
     def vai(self):
         self.cena_vai()

@@ -25,6 +25,8 @@ class Jogador:
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
         self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*6
         
+class Perigo: 
+        
         
 CENA = "http://i.imgur.com/loO50ff.jpg"
 ARTEFATO = "https://i.imgur.com/rGbY5XC.jpg"

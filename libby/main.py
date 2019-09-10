@@ -20,6 +20,14 @@ DIC["MUMIA"] = "https://i.imgur.com/OVSH3Aa.jpg"
 DIC["FOGO"] = "https://i.imgur.com/LmoJDRb.jpg"
 DIC["DESMORONAMENTO"] = "https://i.imgur.com/Wl29PRv.jpg"
 
+class Perigo: 
+    def __init__(self, tipo, imagem):
+        self.cena = Cena(imagem)
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+    def vai(self):
+        self.cena_vai()   
+        
 class Cartas: 
     def __init__(self):
         self.cartas = [Cena(DIC[uma_imagem]) for uma_imagem in IMAGENS]

@@ -39,3 +39,30 @@ inca = Jogo()
 
 if __name__ == "__main__":
     inca.inicia()
+    
+class Perigo:
+    def _init__(self, imagem, tipo):
+        self.cena = Cena(imagem)
+        self.tipo = tipo
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+        
+    def vai(self):
+        self.cena_vai()
+
+class Cartas:
+    def __init__(self):
+        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
+        for ordem, carta in enumerate(self.cartas):
+            if ordem < len(self.cartas)-1:
+                carta.direita = self.cartas[ordem+1]
+    def baralho(self):
+        return self.cartas
+    
+class Jogo:
+    def __init__(self):
+        self.baralho = Cartas().baralho()
+        self.templo = Cena(DI["TEMPLO"])
+        self.templo.direita = self.baralho[1]        
+    def inicia(self):
+        self.templo.vai()

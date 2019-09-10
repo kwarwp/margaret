@@ -199,3 +199,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:17:52.800 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  if self.tipo in PERIGOS;
+                   ^
+SyntaxError: invalid syntax
+'''},

@@ -4,6 +4,8 @@ from _spy.vitollino.main import Cena
 from random import shuffle
 IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS", "MUMIA"]*8
 shuffle(IMAGENS)
+PERIGO = {}
+
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"
 DI["TESOURO"] = "https://i.imgur.com/Z2CD83L.jpg"

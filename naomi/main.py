@@ -31,7 +31,7 @@ class Perigo:
         
 class CARTA:  
     def __init__(self):
-        self.cartas  [Cena(DI[uma_imagem]) for uma_imagem in IMAGEM
+        self.cartas [Cena(DI[uma_imagem]) for uma_imagem in IMAGEM
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.direita = self.cartas[ordem+1]

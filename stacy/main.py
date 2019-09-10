@@ -53,6 +53,13 @@ class Inca:
 #if __name__ == "__main__":
     #jogo.inicia()
     
+class Perigo:
+    def _init__(self, imagem, tipo):
+        self.cena = Cena(imagem)
+        self.tipo = tipo
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+
 class Cartas:
     def __init__(self):
         self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]

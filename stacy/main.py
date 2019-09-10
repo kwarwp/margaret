@@ -7,6 +7,7 @@ STYLE["height"] = 600
 from random import shuffle
 IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
 shuffle(IMAGENS)
+PERIGOS = {}
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/LXptu0U.jpg"
 DI["TESOURO"] = "https://i.imgur.com/Nq1hCeU.jpg"
@@ -66,6 +67,10 @@ class Perigo:
         self.cena.vai = self.vai
         
     def vai(self):
+        if self.tipo in PERIGO:
+            # deu ruim, já tinha aparecido um perigo
+        else:
+            PERIGOS[self.tipo] = 1
         self.cena_vai()
 
 class Cartas:

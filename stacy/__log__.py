@@ -1230,3 +1230,10 @@ AttributeError: 'Cartas' object has no attribute 'carta'
     STYLE["width"] = 600
 NameError: name 'STYLE' is not defined
 '''},
+{'date': 'Tue Sep 10 2019 10:15:47.428 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 72
+  else:
+  ^
+IndentationError: expected an indented block
+'''},

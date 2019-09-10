@@ -40,7 +40,7 @@ class Perigo:
         if self.tipo in PERIGOS:
             self.cena.direita = self.acampamento 
         else:
-             PERIGOS[self.tipo]*1
+             PERIGOS[self.tipo] = 1
         self.cena_vai()   
         
 class Cartas: 

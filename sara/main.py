@@ -1,16 +1,32 @@
 # margaret.sara.main.py
-from _spy.vitollino.main import Cena
-CENA = "https://i.imgur.com/ZzWag8V.jpg"
-ACAMPAMENTO = "https://i.imgur.com/3QWHNYM.jpg"
-MOCHILA = "https://i.imgur.com/UCQvviq.jpg"
-ARTEFATO = "https://i.imgur.com/0t0j5Ne.jpg"
-MONSTRO = "https://i.imgur.com/zwbxMeu.jpg"
-PEDRAS = "https://i.imgur.com/fvnFDJl.jpg"
-FOGO = "https://i.imgur.com/sIq24MI.jpg"
-DESABAMENTO =
-COBRA=
-templo = Cena(CENA).vai()
-artefato = Cena(ARTEFATO).vai()
+__author__ = "Luiza Busnardo busnardo.luiza@gmail.com"
+
+from _spy.vitollino.main import Cena, STYLE
+STYLE["width"] = 600
+STYLE["height"] = 600
+from random import shuffle
+IMAGENS = ["CENA", "ACAMPAMENTO", "MOCHILA", "ARTEFATO1", "MONSTRO", "PEDRAS", "FOGO", "DESABAMENTO", "COBRA", "ARANHA", "SALADOTESOURO", "OBSIDIANA", "TURQUESA", "PEPITADEOURO"]*5
+shuffle(IMAGENS)
+DI = DICIONARIO_DE_IMAGENS = {}
+DI["CENA"] = "https://i.imgur.com/ZzWag8V.jpg"
+DI["ACAMPAMENTO"] = "https://i.imgur.com/3QWHNYM.jpg"
+DI["MOCHILA"] = "https://i.imgur.com/UCQvviq.jpg"
+DI["ARTEFATO1"] = "https://i.imgur.com/0t0j5Ne.jpg"
+DI["MONSTRO"] = "https://i.imgur.com/zwbxMeu.jpg"
+DI["PEDRAS"] = "https://i.imgur.com/fvnFDJl.jpg"
+DI["FOGO"] = "https://i.imgur.com/sIq24MI.jpg"
+DI["DESABAMENTO"] = "https://i.imgur.com/iEjnRsA.jpg"
+DI["COBRA"] = "https://i.imgur.com/BRCXuz3.jpg"
+DI["ARANHA"] = "https://i.imgur.com/VxTxDTj.jpg"
+DI["SALADOTESOURO"] = "https://i.imgur.com/PQV7tEW.jpg"
+DI["OBSIDIANA"] = "https://i.imgur.com/WAYaUV7.jpg"
+DI["PEPITADEOURO"] = "https://i.imgur.com/5MmC1SO.jpg"
+DI["TURQUESA"] = "https://i.imgur.com/mh4EZF7.jpg"
+
+class Inca:
+    def inicia(self):
+        templo = Cena(CENA).vai()
+        artefato = Cena(ARTEFATO).vai()
 templo.direita = artefato
 artefato.esquerda = templo
 monstro = Cena(MONSTRO).vai()

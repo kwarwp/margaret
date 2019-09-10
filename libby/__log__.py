@@ -308,3 +308,10 @@ TypeError: __init__() missing 1 positional argument: imagem
                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 10 2019 10:36:49.760 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  self.cartas = [Perigo(DIC[uma_imagem], uma imagem) 
+                                              ^
+SyntaxError: invalid syntax
+'''},

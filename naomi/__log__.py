@@ -301,3 +301,10 @@ Exception: <TypeError: Cannot read property 'charAt' of undefined>
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 10 2019 09:53:21.867 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  sala do tesouro = Cena(DI["SALA DO TESOURO"])
+        ^
+SyntaxError: invalid syntax
+'''},

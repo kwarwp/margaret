@@ -361,3 +361,10 @@ KeyError: PEDRASMUMIA
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:55:26.717 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def set_esquerda(self, esquerda)
+                                   ^
+SyntaxError: invalid syntax
+'''},

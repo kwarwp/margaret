@@ -185,3 +185,10 @@ SyntaxError: invalid syntax
     carta.direita = self.cartas [ordem+1]
 NameError: name 'carta' is not defined
 '''},
+{'date': 'Tue Sep 10 2019 10:16:54.206 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  else:
+  ^
+IndentationError: expected an indented block
+'''},

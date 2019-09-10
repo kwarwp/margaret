@@ -2,7 +2,7 @@
 __author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena
 from random import shuffle
-IMAGENS = ["CENA" , "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHA" , "MUMIA" , "SALA DO TESOURO" , "PEPITAS DE OURO" , "OBSEDIANA" , "TURQUESA" , "ACAMPAMENTO"]*5 
+IMAGENS = ["CENA" , "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHA" , "MUMIA" , "SALA DO TESOURO" , "PEPITAS DE OURO" , "OBSIDIANA" , "TURQUESA" , "ACAMPAMENTO"]*5 
 shuffle(IMAGENS) 
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
@@ -15,7 +15,7 @@ DI["ARANHA"] = "https://i.imgur.com/opdKFGa.jpg "
 DI["MUMIA"] = "https://i.imgur.com/75NssMI.jpg "
 DI["SALA DO TESOURO"] = "https://i.imgur.com/w3DPsMb.jpg"
 DI["PEPITAS DE OURO"] = "https://i.imgur.com/amIQQ8Z.jpg"
-DI["OBSEDIANA"] = "https://i.imgur.com/ShXGOw0.png"
+DI["OBSIDIANA"] = "https://i.imgur.com/ShXGOw0.png"
 DI["TURQUESA"] = " "
 DI["ACAMPAMENTO"] ="https://i.imgur.com/MEl27uM.png"
 class Inca:
@@ -30,7 +30,7 @@ class Inca:
         mumia = Cena(DI["MUMIA"])
         sala do tesouro = Cena(DI["SALA DO TESOURO"])
         pepitas de ouro = Cena(DI["PEPITAS DE OURO"])
-        obsediana = Cena(DI["OBSEDIANA"])
+        obsidiana = Cena(DI["OBSIDIANA"])
         turquesa = Cena(DI["TURQUESA"])
         acampamento = Cena(DI["ACAMPAMENTO"])
         templo.direita = artefato
@@ -51,9 +51,9 @@ class Inca:
         sala do tesouro.esquerda = mumia
         sala do tesouro.direita = pepitas de ouro
         pepitas de ouro.esquerda = sala do tesouro
-        pepitas de ouro.direita = obsediana
-        obsediana.esquerda = pepitas de ouro
-        obsediana.direita = turquesa
+        pepitas de ouro.direita = obsidiana
+        obsidiana.esquerda = pepitas de ouro
+        obsidiana.direita = turquesa
         turquesa.esquerda = obsediana
         turquesa.direita = acampamento
         acampamento.esquerda = turquesa
@@ -69,8 +69,8 @@ class Perigo:
     def vai(self):
         self.cena_vai()
         
- class CARTA:  
-     def __init__(self):
+class CARTA:  
+    def __init__(self):
         self.cartas  [Cena(DI[uma_imagem]) for uma_imagem in IMAGEM
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:

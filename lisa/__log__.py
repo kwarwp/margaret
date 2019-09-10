@@ -67,3 +67,10 @@ TypeError: __init__() missing 1 positional argument: imagem
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:40:53.232 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module ruzwana.main line 40
+  self.cena.direita = self.acampamento
+  ^
+IndentationError: expected an indented block
+'''},

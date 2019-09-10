@@ -192,3 +192,10 @@ NameError: name 'carta' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:17:25.796 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  else:
+  ^
+IndentationError: expected an indented block
+'''},

@@ -18,46 +18,6 @@ DI["PEPITAS DE OURO"] = "https://i.imgur.com/amIQQ8Z.jpg"
 DI["OBSIDIANA"] = "https://i.imgur.com/ShXGOw0.png"
 DI["TURQUESA"] = " "
 DI["ACAMPAMENTO"] = "https://i.imgur.com/MEl27uM.png"
-class Inca:
-    def inicia(self):
-        templo = Cena(DI["CENA"])
-        artefato = Cena(DI["ARTEFATO"])
-        fogo = Cena(DI["FOGO"])
-        desmoronamento = Cena(DI["DESMORONAMENTO"])
-        cobra = Cena(DI["COBRA"])
-        pedrinhas = Cena(DI["PEDRINHAS"])
-        aranha = Cena(DI["ARANHA"])
-        mumia = Cena(DI["MUMIA"])
-        sala do tesouro = Cena(DI["SALA DO TESOURO"])
-        pepitas de ouro = Cena(DI["PEPITAS DE OURO"])
-        obsidiana = Cena(DI["OBSIDIANA"])
-        turquesa = Cena(DI["TURQUESA"])
-        acampamento = Cena(DI["ACAMPAMENTO"])
-        templo.direita = artefato
-        artefato.esquerda = templo
-        artefato.direita = fogo
-        fogo.esquerda = artefato
-        fogo.direita = desmoronamento
-        desmoronamento.esquerda = fogo
-        desmonoramento.direita = cobra
-        cobra.esquerda = desmonoramento
-        cobra.direita = pedrinhas
-        pedrinhas.esquerda = cobra
-        pedrinhas.direita = aranha
-        aranhas.esquerda = pedrinhas
-        aranha.direita = mumia
-        mumia.esquerda = aranha
-        mumia.direita = sala do tesouro
-        sala do tesouro.esquerda = mumia
-        sala do tesouro.direita = pepitas de ouro
-        pepitas de ouro.esquerda = sala do tesouro
-        pepitas de ouro.direita = obsidiana
-        obsidiana.esquerda = pepitas de ouro
-        obsidiana.direita = turquesa
-        turquesa.esquerda = obsediana
-        turquesa.direita = acampamento
-        acampamento.esquerda = turquesa
-        templo.vai()
         
 class Perigo:
     def __init__(self, imagem, tipo):
@@ -94,4 +54,4 @@ if __name__ == "__main__":
     
     
 
-   
+    

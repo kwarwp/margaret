@@ -7,6 +7,8 @@ STYLE["height"] = 600
 from random import shuffle
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO","ARTEFATO"]*5
 shuffle(IMAGENS)
+PERIGOS = {}
+
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/BTTqaBa.jpg"
 DI["MUMIA"] = "https://i.imgur.com/T6ONIKS.jpg"
@@ -16,6 +18,7 @@ DI["ARTEFATO"] = "https://i.imgur.com/vN9MDwx.jpg"
 DI["FOGO"] = "https://i.imgur.com/Mbek5ie.jpg"
 DI["ARANHA"] = "https://i.imgur.com/k2RoQqf.jpg"
 DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
+ACAMPAMENTO = Cena ("https://i.imgur.com/Cbt8tRd.jpg")
         
 class Perigo:
     def _init__(self, imagem, tipo):
@@ -23,19 +26,32 @@ class Perigo:
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
+        self.acampamento = ACAMPAMENTO
+        
+    def set_direita(selfie, direita):
+        self.cena.direita = direita
+        
+    def set_esquerda(selfie, esquerda):
+        self.cena.esquerda = esquerda
         
     def vai(self):
+        if self.tipo in PERIGOS:
+        # deu ruim, já tinha aparecido um perigo
+        self.cena.direita = self.acampamento
+        else:
+            PERIGOS[self.tipo] = 
         self.cena_vai()
 
 class Cartas:
     def __init__(self):
-        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS]
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem)
+            for uma_imagem in IMAGENS]
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                carta.direita = self.cartas[ordem+1]
+                carta.set_direita = (self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
-    
+
 class Jogo:
     def __init__(self):
         self.baralho = Cartas().baralho()

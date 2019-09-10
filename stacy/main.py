@@ -92,8 +92,11 @@ class Cartas:
     
 class Jogo:
     def __init__(self):
+        global PERIGOS
+        PERIGOS ={}
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
+        #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
         self.templo.direita = self.baralho[1]        
     def inicia(self):
         self.templo.vai()
@@ -102,3 +105,4 @@ inca = Jogo()
 
 if __name__ == "__main__":
     inca.inicia()
+    

@@ -99,3 +99,10 @@ KeyError: fogo
     templo.direita = tesouro
 NameError: name 'templo' is not defined
 '''},
+{'date': 'Tue Sep 10 2019 09:28:30.407 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  self.cena = Cena(imagem)
+  ^
+IndentationError: expected an indented block
+'''},

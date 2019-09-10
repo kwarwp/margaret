@@ -1244,3 +1244,10 @@ IndentationError: expected an indented block
                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 10 2019 10:28:37.438 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 86
+  self.cartas = [Perigo(DI[uma_imagem], uma _imagem) for uma_imagem in IMAGENS]
+                                             ^
+SyntaxError: invalid syntax
+'''},

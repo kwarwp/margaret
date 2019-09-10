@@ -11,6 +11,16 @@ DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
         
+class Perigo:
+    def __init__(self, imagem, tipo):
+        self.cena = Cena(imagem)
+        self.tipo = tipo
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+        
+    def vai(self):
+        self.cena_vai()
+        
 class Carta:
     def __init__(self):
         self.cartas = [Cena(RDI[uma_imagem]) for uma_imagem in IMAGENS]
@@ -23,8 +33,9 @@ class Carta:
 class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()
-        self.templo = Cena(DI["TEMPLO"])
-        self.templo.direita = self.baralho[1]
+        #self.templo = Cena(DI["TEMPLO"])
+        self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
+        #self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
         

@@ -9,6 +9,14 @@ class Cena:
         self.cena = html.IMG(src=imagem)
         
     def vai(self):
+        self.dom.html=""
         self.dom <= self.cena
         
 cena = Cena(IMAGEM)
+#cena.vai()
+vai_seq = cena.vai
+def seq_vai():
+    ah = input("peguei!")
+    vai_seq()
+cena.vai = seq_vai
+cena.vai()

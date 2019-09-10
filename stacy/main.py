@@ -59,6 +59,9 @@ class Perigo:
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
+        
+    def vai(self):
+        self.cena_vai()
 
 class Cartas:
     def __init__(self):

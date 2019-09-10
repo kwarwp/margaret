@@ -43,7 +43,7 @@ class Perigo:
         
 class CARTA:  
     def __init__(self):
-        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) 
+        self.cartas = [PERIGO(DI[uma_imagem], uma_imagem) 
             for uma_imagem in IMAGENS
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:

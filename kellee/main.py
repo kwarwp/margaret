@@ -14,13 +14,13 @@ DI["FOGO"] = "https://i.imgur.com/qLYrtR0.jpg"
 DI["PEDRAS"] = "https://i.imgur.com/qPfDat7.jpg"
 DI["MUMIA"] = "https://i.imgur.com/4xWmf5O.jpg"
 ACAMPAMENTO = Cena(" https://i.imgur.com/59m6gMz.jpg")
- 
 class Perigo:
     def __init__(self, imagem, tipo):
        self.cena = Cena(imagem)
        self.tipo = tipo
        self.cena_vai = self.cena.vai
        self.cena.vai = self.vai
+       self.acampamento = ACAMPAMENTO
      
     def vai(self):
         self.cena_vai()

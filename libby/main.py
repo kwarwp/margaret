@@ -6,6 +6,7 @@ from random import shuffle
 #from stacy.main import fogo
 IMAGENS = ["TESOURO" , "ARANHA", "DESMORONAMENTO" , "MUMIA" , "FOGO"]*5
 shuffle(IMAGENS)
+PERIGOS = {}
 DIC = DICIONARIO_DE_IMAGENS = {}
 DIC["TEMPLO"] = "https://i.imgur.com/q4Cznxt.jpg"
 DIC["DEGRAU"] = "https://i.imgur.com/UxV1LyG.jpg"
@@ -26,6 +27,9 @@ class Perigo:
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
     def vai(self):
+        if self.tipo in PERIGOS:
+        else:
+             PERIGOS[self.tipo] = 1
         self.cena_vai()   
         
 class Cartas: 

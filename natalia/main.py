@@ -25,36 +25,26 @@ class Jogador:
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
         self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*6
         
-class Perigo: 
+class Perigo:
+    def __init__(self, imagem, tipo):
+        self.cena = Cena(imagem)
+        self.tipo = tipo
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+        self.acampamento = ACAMPAMENTO
+
+    def set_direita(self, direita):
+        self.cena.direita = direita
+
+    def set_esquerda(self, esquerda):
+        self.cena.esquerda = esquerda
+    
         
+    def vai(self):
+        if self.tipo in PERIGOS:
+            # deu ruim, já tinha aperecido um perigo
+            self.cena.direita = self.acampamento
+        else:
+            PERIGOS[self.tipo] = 1
+        self.cena_vai()
         
-CENA = "http://i.imgur.com/loO50ff.jpg"
-ARTEFATO = "https://i.imgur.com/rGbY5XC.jpg"
-PEDRAS = "https://i.imgur.com/4ftVqRs.jpg"
-templo = Cena(CENA)
-artefato = Cena(ARTEFATO)
-pedras = Cena(PEDRAS)
-sereiamonstro = Cena(SEREIAMONSTRO)
-templo.direita = artefato
-artefato.esquerda = templo
-templo.vai()
-artefato.direita = pedras
-pedras.esquerda = artefato 
-artefato.vai()
-pedras.direita = sereiamonstro 
-sereiamonstro.esquerda = pedras
-pedras.vai()
-sereiamonstro.direita = fogo 
-fogo.esquerda = pedras
-pedras.vai()
-class Jogador:
-    def __init__(self):
-        self.chance = list(range(30))
-        shuffle(self.chance)
-        self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
-        self.maior_tesouro, self.maior_joias, = [0]*6
-        self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
-        self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*6
-        
-       class Jogo: 
-       

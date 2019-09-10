@@ -22,6 +22,11 @@ class Perigo:
        self.cena.vai = self.vai
        self.acampamento = ACAMPAMENTO
      
+    def set_direita(self, direita):
+        self.cena.direita = direita
+        
+    def set_esquerda(self, esquerda)
+        self.cena.esquerda = esquerda
     def vai(self):
         if self.tipo in PERIGOS:
            # deu ruim, já tinha aparecido um perigp
@@ -33,14 +38,14 @@ class Perigo:
         
 class Carta:
     def __init__(self):
-        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS] 
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) 
+        for uma_imagem in IMAGENS] 
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.direita = self.cartas[ordem+1]
     def baralho(self):
         return self.cartas
         
-
 class Jogo:
     def __init__(self):
         self.baralho = Carta().baralho()

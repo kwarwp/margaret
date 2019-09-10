@@ -8,6 +8,7 @@ from random import shuffle
 IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
 shuffle(IMAGENS)
 PERIGOS = {}
+
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/LXptu0U.jpg"
 DI["TESOURO"] = "https://i.imgur.com/Nq1hCeU.jpg"

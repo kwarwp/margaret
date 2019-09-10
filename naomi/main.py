@@ -2,7 +2,7 @@
 __author__ = "Raquel P. R. Santos raquelp737@gmail.com"
 from _spy.vitollino.main import Cena
 from random import shuffle
-IMAGENS = ["CENA" , "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHA" , "MUMIA" , "SALA DO TESOURO" , "PEPITAS DE OURO" , "OBSIDIANA" , "TURQUESA" , "ACAMPAMENTO"]*5 
+IMAGENS = ["CENA" , "ARTEFATO" , "FOGO" , "DESMORONAMENTO" , "COBRA" , "PEDRINHAS" , "ARANHA" , "MUMIA" , "SALA DO TESOURO" , "PEPITAS DE OURO" , "OBSIDIANA" , "TURQUESA"]*5 
 shuffle(IMAGENS) 
 Perigo = {}
 DI = DICIONARIO_DE_IMAGENS = {}
@@ -61,7 +61,7 @@ class Jogo:
         self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
-        pass
+        
     
 inca = Jogo()  # Inca()
 

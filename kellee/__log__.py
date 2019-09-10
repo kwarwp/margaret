@@ -368,3 +368,10 @@ IndentationError: expected an indented block
                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 10 2019 10:55:26.938 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def set_esquerda(self, esquerda)
+                                   ^
+SyntaxError: invalid syntax
+'''},

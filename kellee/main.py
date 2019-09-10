@@ -27,6 +27,7 @@ class Perigo:
         
     def set_esquerda(self, esquerda)
         self.cena.esquerda = esquerda
+    
     def vai(self):
         if self.tipo in PERIGOS:
            # deu ruim, já tinha aparecido um perigp
@@ -53,6 +54,7 @@ class Jogo:
         self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
+        pass
         
         
 inca = Jogo()  # Inca()

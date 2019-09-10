@@ -1237,3 +1237,10 @@ NameError: name 'STYLE' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:28:05.645 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 73
+  del set_esquerda(self, esquerda):
+                                   ^
+SyntaxError: invalid syntax
+'''},

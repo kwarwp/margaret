@@ -39,7 +39,7 @@ class Perigo:
         # deu ruim, já tinha aparecido um perigo
         self.cena.direita = self.acampamento
         else:
-            PERIGOS[self.tipo] = 
+            PERIGOS[self.tipo] = 1
         self.cena_vai()
 
 class Cartas:

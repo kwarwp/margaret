@@ -54,7 +54,7 @@ class CARTA:
 class Jogo:    
     def __init__(self):
         global PERIGOS
-        
+        PERIGOS ={}
         self.baralho = Carta().baralho()
         self.templo = Cena(DI["CENA"])
         self.templo.direita = self.baralho[1]

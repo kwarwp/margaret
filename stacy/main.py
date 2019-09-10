@@ -60,7 +60,7 @@ class Inca:
     #jogo.inicia()
     
 class Perigo:
-    def _init__(self, imagem, tipo):
+    def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai

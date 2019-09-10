@@ -22,16 +22,17 @@ ACAMPAMENTO = Cena("https://i.imgur.com/MEl27uM.png")
 class Perigo:
     def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)
-        self.tipo =tipo
+        self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
         self.acampamento = ACAMPAMENTO
         
     def set_direita(self, direita):   
-        self.cena.diereita = direita
+        self.cena.direita = direita
         
     def set_esquerda(self, esquerda):   
         self.cena.esquerda = esquerda
+        
         
     def vai(self):
         if self.tipo in PERIGOS:

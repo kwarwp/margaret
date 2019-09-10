@@ -231,3 +231,10 @@ KeyError: PEDRAS
     self.cartas = [Perigo(DI[uma_imagem],uma_imagem) 
 KeyError: MUMIA
 '''},
+{'date': 'Tue Sep 10 2019 10:41:56.100 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  from _spy.vitollino.main import Cena
+  ^
+IndentationError: unexpected indent
+'''},

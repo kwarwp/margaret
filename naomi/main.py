@@ -8,7 +8,7 @@ Perigo = {}
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/inzdUaq.jpg"
 DI["ARTEFATO"] = "https://i.imgur.com/DJNXWXY.jpg"
-DI["FOGO"] = " https://i.imgur.com/yufZlvN.jpg"
+DI["FOGO"] = "https://i.imgur.com/yufZlvN.jpg"
 DI["DESMORONAMENTO"] = "https://i.imgur.com/uMSX7Ka.jpg"
 DI["COBRA"] = "https://i.imgur.com/UcWZh28.jpg"
 DI["PEDRINHAS"] = "https://i.imgur.com/ijt1Hbq.jpg"
@@ -43,8 +43,8 @@ class Perigo:
         
 class CARTA:  
     def __init__(self):
-        self.cartas = [PERIGO(DI[uma_imagem], uma_imagem) 
-            for uma_imagem in IMAGENS
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) 
+            for uma_imagem in IMAGENS]
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.set_direita(self.cartas[ordem+1])

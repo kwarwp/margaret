@@ -1399,3 +1399,10 @@ TypeError: object() takes no parameters
     self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
 TypeError: object() takes no parameters
 '''},
+{'date': 'Tue Sep 10 2019 10:56:25.25 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 87
+  for ordem, carta in enumerate(self.cartas):
+  ^
+IndentationError: unexpected indent
+'''},

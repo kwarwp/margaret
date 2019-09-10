@@ -5,7 +5,7 @@ from ruzwana.main import DI as RDI
 from random import shuffle
 #from stacy.main import fogo
 #from natalia.main import sereiamonstro
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO", "TEMPLO", "TESOURO"]*5
+IMAGENS = ["ARTEFATO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO", "TEMPLO", "TESOURO"]*5
 shuffle(IMAGENS)
 PERIGOS = {}
 
@@ -13,7 +13,7 @@ DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
 DI["PEDRAS] = "https://i.imgur.com/4ftVqRs.jpg"
-DI["FOGO"] = ""
+DI["ARTEFATO"] = ""
 
 ACAMPAMENTO = Cena("https://i.imgur.com/dmSDeDF.jpg")      
 class Perigo:

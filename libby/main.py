@@ -23,7 +23,7 @@ DIC["DESMORONAMENTO"] = "https://i.imgur.com/Wl29PRv.jpg"
 ACAMPAMENTO = Cena("https://i.imgur.com/LYVTX9p.jpg")
 
 class Perigo: 
-    def __init__(self, tipo, imagem):
+    def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai
@@ -33,14 +33,14 @@ class Perigo:
     def set_direita (self, direita):
         self.cena.direta = direita
         
-    def set_direita (self, direita):
-        self.cena.direta = direita
+    def set_esquerda (self, esquerda):
+        self.cena.esquerda = esquerda
         
     def vai(self):
         if self.tipo in PERIGOS:
             self.cena.direita = self.acampamento 
         else:
-             PERIGOS[self.tipo] = 1
+            PERIGOS[self.tipo] = 1
         self.cena_vai()   
         
 class Cartas: 
@@ -59,7 +59,7 @@ class Jogo:
         PERIGOS = {}
         self.baralho = Cartas().baralho()
         self.templo = Cena(DIC["TEMPLO"])
-        self.templo.direita = self.baralho[1]
+        self.templo.direita = self.baralho[0]
     def inicia(self):
         self.templo.vai()
     

@@ -25,7 +25,7 @@ class Cartas:
         self.cartas = [Cena(DIC[uma_imagem]) for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-               carta.direita = self.cartas [ordem+1]
+               cartas.direita = self.cartas [ordem+1]
     def baralho(self):
         return self.cartas
         

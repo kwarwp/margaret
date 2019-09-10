@@ -25,7 +25,7 @@ class Perigo:
     def set_direita(self, direita):
         self.cena.direita = direita
         
-    def set_esquerda(self, esquerda)
+    def set_esquerda(self, esquerda):
         self.cena.esquerda = esquerda
     
     def vai(self):

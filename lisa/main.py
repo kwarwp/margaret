@@ -7,18 +7,33 @@ from random import shuffle
 #from natalia.main import sereiamonstro
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
 shuffle(IMAGENS)
+PERIGOS = {}
+
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
-        
+ACAMPAMENTO = Cena("https://i.imgur.com/dmSDeDF.jpg")      
 class Perigo:
     def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
+        self.acampamento = ACAMPAMENTO
+
+    def set_direita(self, direita):
+        self.cena.direita = direita
+
+    def set_esquerda(self, esquerda):
+        self.cena.esquerda = esquerda
+    
         
     def vai(self):
+        if self.tipo in PERIGOS:
+            # deu ruim, já tinha aperecido um perigo
+            self.cena.direita = self.acampamento
+        else:
+            PERIGOS[self.tipo] = 1
         self.cena_vai()
         
 class Carta:

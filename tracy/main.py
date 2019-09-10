@@ -15,17 +15,17 @@ DI["PEPITA DE OURO"] = "https://i.imgur.com/wtTTD26.png"
 DI["PEPITA OBSIDIANA"] = "https://i.imgur.com/DAtKJFX.png"
 DI["PEPITA TURQUESA"] = "= https://i.imgur.com/fnpiuCo.jpg" 
  
- class jogador
 class Perigo:
     def __init__(self, imagem, tipo):
-       self.cena = Cena(imagem)
-       self.tipo = tipo
-       self.cena_vai = self.cena.vai
-       self.cena.vai = self.vai
-     
-    def vai(self):
+    self.cena = Cena(imagem)
+    self.tipo = tipo
+    self.cena_vai = self.cena.vai
+    self.cena.vai = self.vai
+       def vai(self):
         self.cena_vai()
         
+class jogador :
+    
 class Carta:
     def __init__(self):
         self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS] 

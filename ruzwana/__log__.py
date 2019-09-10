@@ -189,3 +189,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:38:20.928 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  self.cena.direita = self.acampamento
+  ^
+IndentationError: expected an indented block
+'''},

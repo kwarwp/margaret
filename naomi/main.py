@@ -47,6 +47,16 @@ class Inca:
         aranhas.esquerda = pedrinhas
         aranha.direita = mumia
         mumia.esquerda = aranha
+        mumia.direita = sala do tesouro
+        sala do tesouro.esquerda = mumia
+        sala do tesouro.direita = pepitas de ouro
+        pepitas de ouro.esquerda = sala do tesouro
+        pepitas de ouro.direita = obsediana
+        obsediana.esquerda = pepitas de ouro
+        obsediana.direita = turquesa
+        turquesa.esquerda = obsediana
+        turquesa.direita = acampamento
+        acampamento.esquerda = turquesa
         templo.vai()
         
 class Perigo:

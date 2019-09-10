@@ -1265,3 +1265,10 @@ SyntaxError: invalid syntax
                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 10 2019 10:47:18.36 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 86
+  self.cartas = [Perigo(DI[uma_imagem], uma _imagem) for uma_imagem in IMAGENS]
+                                             ^
+SyntaxError: invalid syntax
+'''},

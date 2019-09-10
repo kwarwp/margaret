@@ -67,6 +67,12 @@ class Perigo:
         self.cena.vai = self.vai
         self.acampamento = ACAMPAMENTO
         
+    def set_direita(self, direita):
+        self.cena.direita = direita
+        
+    del set_esquerda(self, esquerda):
+        self.cena.esquerda = esquerda
+        
     def vai(self):
         if self.tipo in PERIGO:
             # deu ruim, já tinha aparecido um perigo

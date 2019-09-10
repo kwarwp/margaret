@@ -354,3 +354,10 @@ TypeError: 'module' object is not callable
     self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGENS] 
 KeyError: PEDRASMUMIA
 '''},
+{'date': 'Tue Sep 10 2019 10:25:56.533 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cena.direita = direita 
+  ^
+IndentationError: expected an indented block
+'''},

@@ -28,7 +28,7 @@ class Perigo:
         self.cena.vai = self.vai
         self.acampamento = ACAMPAMENTO
         
-    def set_direita(selfie, direita):
+    def set_direita(self, direita):
         self.cena.direita = direita
         
     def set_esquerda(self, esquerda):

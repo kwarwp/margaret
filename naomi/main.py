@@ -31,7 +31,8 @@ class Perigo:
         self.cena.diereita = direita
         
     def set_esquerda(self, esquerda):   
-        self.cena.esquerda = esquerda    
+        self.cena.esquerda = esquerda
+        
     def vai(self):
         if self.tipo in PERIGOS:
             #deu ruim, já tinha aparecido um perigo
@@ -42,7 +43,8 @@ class Perigo:
         
 class CARTA:  
     def __init__(self):
-        self.cartas = [Cena(DI[uma_imagem]) for uma_imagem in IMAGEM
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) 
+             for uma_imagem in IMAGEM
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.direita = self.cartas[ordem+1]

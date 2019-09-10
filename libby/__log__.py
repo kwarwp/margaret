@@ -301,3 +301,10 @@ TypeError: __init__() missing 1 positional argument: imagem
     self.cartas = [Perigo(DIC[uma_imagem]) 
 TypeError: __init__() missing 1 positional argument: imagem
 '''},
+{'date': 'Tue Sep 10 2019 10:30:28.931 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  self.cartas = [Perigo(DIC[uma_imagem], uma imagem) 
+                                              ^
+SyntaxError: invalid syntax
+'''},

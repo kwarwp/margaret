@@ -65,10 +65,12 @@ class Perigo:
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
+        self.acampamento = ACAMPAMENTO
         
     def vai(self):
         if self.tipo in PERIGO:
             # deu ruim, já tinha aparecido um perigo
+            self.cena.direita = self.acampamento
         else:
             PERIGOS[self.tipo] = 1
         self.cena_vai()

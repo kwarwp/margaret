@@ -11,6 +11,9 @@ DI["MONSTRO"] = "https://i.imgur.com/4cBiZ6n.jpg"
 DI["FOGO"] = "https://i.imgur.com/qLYrtR0.jpg"
 DI["PEDRAS"] = "https://i.imgur.com/qPfDat7.jpg"
 DI["MUMIA"] = "https://i.imgur.com/4xWmf5O.jpg"
+DI["PEPITA DE OURO"] = "https://i.imgur.com/wtTTD26.png"
+DI["PEPITA OBSIDIANA"] = "https://i.imgur.com/DAtKJFX.png"
+DI["PEPITA TURQUESA"] = "= https://i.imgur.com/fnpiuCo.jpg" 
     
 class Carta:
     def __init__(self):

@@ -127,3 +127,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 10 2019 10:30:26.200 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module ruzwana.main line 40
+  self.cena.direita = self.acampamento
+  ^
+IndentationError: expected an indented block
+'''},

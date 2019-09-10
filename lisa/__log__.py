@@ -90,3 +90,10 @@ IndentationError: expected an indented block
     from ruzwana.main import DI as RDI
 ImportError: cannot import name 'DI'
 '''},
+{'date': 'Tue Sep 10 2019 10:41:57.857 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module ruzwana.main line 40
+  self.cena.direita = self.acampamento
+  ^
+IndentationError: expected an indented block
+'''},

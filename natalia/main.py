@@ -4,8 +4,11 @@ from parisa.main import SEREIAMONSTRO
 IMAGENS = ["CENA", "PEDRAS", "TEMPLO", "ARTEFATO", "SEREIAMONSTRO"]*5
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
-DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
+DI["TEMPLO"] = "https://i.imgur.com/0EsXIPN.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
+DI["PEDRAS"] = "https://i.imgur.com/4ftVqRs.jpg"
+DI["ARTEFATO"] = "https://i.imgur.com/rGbY5XC.jpg"
+
 
 class Carta:
     def __init__(self):

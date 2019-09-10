@@ -1,5 +1,5 @@
 # margaret.natalia.main.py
-__author__ = "gabrielly de souza silveira dos reis bielly2reis@gmail.com "
+__author__ = "queila gonçalves dos santos couto qlcouto@gmail.com "
 from _spy.vitollino.main import Cena
 from ruzwana.main import DI as RDI
 from random import shuffle

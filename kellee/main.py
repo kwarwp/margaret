@@ -2,7 +2,7 @@
 __author__ = "Bárbara Juliana C.Soares barbara_ju07@hotmail.com"
 from _spy.vitollino.main import Cena
 from random import shuffle
-IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS", "MUMIA"]*5
+IMAGENS = ["CENA", "TESOURO", "MONSTRO", "FOGO", "PEDRAS", "MUMIA"]*8
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["CENA"] = "https://i.imgur.com/F0pWLRM.png"

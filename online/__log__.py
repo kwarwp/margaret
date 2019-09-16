@@ -111,3 +111,7 @@ Traceback (most recent call last):
     x = Sns(a=1, b=2, c=3)
 TypeError: __init__() got an unexpected keyword argument 'a'
 '''},
+{'date': 'Mon Sep 16 2019 13:04:51.892 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: module is undefined>
+'''},

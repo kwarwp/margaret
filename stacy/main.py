@@ -21,7 +21,7 @@ DI["SALADOTESOURO"] = "https://i.imgur.com/83xewyg.jpg"
 DI["PEPITADEOURO"] = "https://i.imgur.com/tsP6aby.jpg"
 DI["OBSIDIANA"] = "https://i.imgur.com/1Pqs1JN.jpg"
 DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
-DI["ACAMPAMENTO"] = "https://i.imgur.com/yIhLHaK.jpg"
+ACAMPAMENTO = Cena("https://i.imgur.com/yIhLHaK.jpg")
 
 class Inca:
     def inicia(self):

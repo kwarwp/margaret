@@ -48,7 +48,7 @@ class Cartas:
             for uma_imagem in IMAGENS]
         for ordem, cartaS in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                cartaS.set_direita = (self.cartas[ordem+1])
+                cartas.set_direita = (self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
 
@@ -57,7 +57,7 @@ class Jogo:
         global PERIGOS
     PERIGOS = {}
     def __init__(self):
-        self.baralho = CartaS().baralho()
+        self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
         self.templo.direita = self.baralho[1]        
     def inicia(self):

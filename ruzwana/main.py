@@ -57,7 +57,7 @@ class Jogo:
     PERIGOS = {}
     def __init__(self):
         self.baralho = Cartas().baralho()
-        self.templo = Cena(DI["TEMPLO"])
+        self.templo = Cena(DI["CARTAS"])
         self.templo.direita = self.baralho[1]        
     def inicia(self):
         self.templo.vai()

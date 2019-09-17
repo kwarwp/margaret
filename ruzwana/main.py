@@ -44,8 +44,7 @@ class Perigo:
 
 class Cartas:
     def __init__(self):
-        self.cartas = [Perigo(DI[uma_imagem], uma_imagem)
-            for uma_imagem in IMAGENS]
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 cartas.set_direita = (self.cartas[ordem+1])

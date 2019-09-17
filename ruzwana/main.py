@@ -48,7 +48,7 @@ class Cartas:
             for uma_imagem in IMAGENS]
         for ordem, cartaS in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                cartas.set_direita = (self.cartas[ordem+1])
+                carta.set_direita = (self.carta[ordem+1])
     def baralho(self):
         return self.cartas
 

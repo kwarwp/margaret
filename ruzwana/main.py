@@ -42,7 +42,7 @@ class Perigo:
             PERIGOS[self.tipo] = 1
         self.cena_vai()
 
-class Cartas:
+class Carta:
     def __init__(self):
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem)
             for uma_imagem in IMAGENS]

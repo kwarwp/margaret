@@ -11,6 +11,7 @@ MUMIA =
 ARANHA =
 FOGO =
 
+
 templo = Cena(CENA)
 tesouro = Cena(TESOURO)
 templo.direta = tesouro

@@ -3,6 +3,7 @@ __author__ = "G.L.L Almeida gabriellaleni@gmail.com"
 from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
 STYLE["height"] = 600
+
 from random import shuffle
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO","ARTEFATO"]*5
 shuffle(IMAGENS)
@@ -17,7 +18,7 @@ DI["ARTEFATO"] = "https://i.imgur.com/vN9MDwx.jpg"
 DI["FOGO"] = "https://i.imgur.com/Mbek5ie.jpg"
 DI["ARANHA"] = "https://i.imgur.com/k2RoQqf.jpg"
 DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
-ACAMPAMENTO = Cena("https://i.imgur.com/Cbt8tRd.jpg")
+ACAMPAMENTO = Cena ("https://i.imgur.com/Cbt8tRd.jpg")
         
 class Perigo:
     def __init__(self, imagem, tipo):
@@ -43,17 +44,19 @@ class Perigo:
 
 class Cartas:
     def __init__(self):
-        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem)
+            for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                cartas.set_direita(self.cartas[ordem+1])
+                cartas.set_direita = (self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
 
 class Jogo:
     def __init__(self):
         global PERIGOS
-        PERIGOS = {}
+    PERIGOS = {}
+    def __init__(self):
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
         self.templo.direita = self.baralho[1]        

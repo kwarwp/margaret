@@ -1,11 +1,10 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
-
 from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
 STYLE["height"] = 600
 from random import shuffle
-IMAGENS = ["TESOURO", "FOGO", "ARTEFATO1", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
+IMAGENS = ["FOGO", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
 shuffle(IMAGENS)
 PERIGOS = {}
 
@@ -75,7 +74,7 @@ class Perigo:
         self.cena.esquerda = esquerda
         
     def vai(self):
-        if self.tipo in PERIGO:
+        if self.tipo in PERIGOS:
             # deu ruim, já tinha aparecido um perigo
             self.cena.direita = self.acampamento
         else:
@@ -85,9 +84,9 @@ class Perigo:
 class Cartas:
     def __init__(self):
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
-        for ordem, carta in enumerate(self.cartas):
+        for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                carta.set_direita(self.cartas[ordem+1])
+                cartas.set_direita(self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
     

@@ -3,7 +3,6 @@ __author__ = "G.L.L Almeida gabriellaleni@gmail.com"
 from _spy.vitollino.main import Cena, STYLE
 STYLE["width"] = 600
 STYLE["height"] = 600
-
 from random import shuffle
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO","ARTEFATO"]*5
 shuffle(IMAGENS)
@@ -47,7 +46,7 @@ class Cartas:
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                cartas.set_direita = (self.cartas[ordem+1])
+                cartas.set_direita(self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
 

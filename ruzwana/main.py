@@ -42,13 +42,13 @@ class Perigo:
             PERIGOS[self.tipo] = 1
         self.cena_vai()
 
-class Carta:
+class Cartas:
     def __init__(self):
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem)
             for uma_imagem in IMAGENS]
-        for ordem, cartaS in enumerate(self.cartas):
+        for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
-                carta.set_direita = (self.carta[ordem+1])
+                cartas.set_direita = (self.cartas[ordem+1])
     def baralho(self):
         return self.cartas
 

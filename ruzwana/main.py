@@ -53,7 +53,8 @@ class Cartas:
         return self.cartas
 
 class Jogo:
-    global PERIGOS
+    def __init__(self):
+        global PERIGOS
     PERIGOS = {}
     def __init__(self):
         self.baralho = Cartas().baralho()

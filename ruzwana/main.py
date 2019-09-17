@@ -18,7 +18,7 @@ DI["ARTEFATO"] = "https://i.imgur.com/vN9MDwx.jpg"
 DI["FOGO"] = "https://i.imgur.com/Mbek5ie.jpg"
 DI["ARANHA"] = "https://i.imgur.com/k2RoQqf.jpg"
 DI["COBRA"] = "https://i.imgur.com/k2RoQqf.jpg"
-ACAMPAMENTO = Cena ("https://i.imgur.com/Cbt8tRd.jpg")
+ACAMPAMENTO = Cena("https://i.imgur.com/Cbt8tRd.jpg")
         
 class Perigo:
     def __init__(self, imagem, tipo):

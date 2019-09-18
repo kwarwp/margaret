@@ -22,28 +22,23 @@ pedras = [TURQUESA]
 artefatos = [ARTa]
 
 class Carta:
-	def __init__(self, cena=ARANHA):
-		self.carta = Cena(cena)
-		anterior = self
-		for carta in caos:
-			umacarta = Carta(carta)
-			umacarta.anterior(anterior.carta)
-			anterior = umacarta
+    def __init__(self, cena=ARANHA):
+        self.carta = Cena(cena).vai()
         
-	def vai(self):
-     	 self.carta.vai()
-         
-	def anterior(self, anterior):
-		anterior.direita = self.carta
-		self.carta.esquerda = anterior
+    def vai(self):
+        self.carta.vai()
+     
+    def anterior(self, anterior):
+        anterior.direita = self.carta
+        self.carta.esquerda = anterior
     
 
 class Jogo:
-	def __init__(self):
-		self.templo = Cena(TEMPLO)
-		self.carta = Carta()
-		self.carta.anterior(self.templo)
-		self.templo.vai()
+    def __init__(self):
+        self.templo = Cena(TEMPLO)
+        self.carta = Carta()
+        self.carta.anterior(self.templo)
+        self.templo.vai()
         
         
 if __name__ == "__main__":

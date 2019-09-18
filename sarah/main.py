@@ -23,7 +23,7 @@ artefatos = [ARTa]
 
 class Carta:
     def __init__(self, cena=ARANHA):
-        self.carta = Cena(cena).vai()
+        self.carta = Cena(cena)
         
     def vai(self):
         self.carta.vai()

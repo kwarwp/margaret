@@ -20,3 +20,7 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Sep 18 2019 17:28:14.341 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: <InternalError: too much recursion>
+'''},

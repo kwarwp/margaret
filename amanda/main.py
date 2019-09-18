@@ -1,6 +1,7 @@
 # margaret.amanda.main.py
 #Código criado por Acacia Calegari
 from _spy.vitollino.main import Cena
+from random import shuffle
 TEMPLO = "https://i.imgur.com/S6Ruv7c.jpg"
 TURQUESA = "https://i.imgur.com/jR1l6vN.png"
 ARANHA = "https://i.imgur.com/1Bz5EVM.png"
@@ -8,7 +9,8 @@ ARTEFATO = "https://i.imgur.com/IgwQY1N.png"
 DESMORONAMENTO = "https://i.imgur.com/GYLGPyn.jpg"
 COBRA = "https://i.imgur.com/1S1LFUE.jpg"
 
-DESASTRES = [ARTEFATO, DESMORONAMENTO, COBRA, ARANHA]*5
+caos = [ARTEFATO, DESMORONAMENTO, COBRA, ARANHA]*5
+shuffle(caos)
 
 class Carta:
     def __init__(self, imagem=ARANHA):
@@ -19,11 +21,11 @@ class Carta:
 
     def monta_baralho(self, anterior):
         for imagem_carta in caos:
-        carta = Carta(imagem_carta)
-        carta.anterior(anterior.carta)
-        anterior = carta
+            carta = Carta(imagem_carta)
+            carta.anterior(anterior.carta)
+            anterior = carta
         
-    def anterior(self, anterior)
+    def anterior(self, anterior):
         anterior.direita = self.carta
         self.carta.esquerda = anterior
         
@@ -32,7 +34,8 @@ class Jogo:
         self.templo = Cena(TEMPLO)
         self.carta = Carta()
         self.carta.anterior(self.templo)
+        self.carta.monta_baralho(self.carta)
         self.templo.vai()
         
 if __name__ == "__main__":
-	Jogo()
+    Jogo()

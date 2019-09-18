@@ -13,3 +13,10 @@ IndentationError: expected an indented block
                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2019 17:10:59.171 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  self.carta.esquerda = anterior
+  ^
+IndentationError: unexpected indent
+'''},

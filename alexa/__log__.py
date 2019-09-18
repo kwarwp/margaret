@@ -6,3 +6,10 @@
                           ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Sep 18 2019 16:49:26.882 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  from _"spy.vitollino.main import Cena
+                                       ^
+SyntaxError: EOL while scanning string literal
+'''},

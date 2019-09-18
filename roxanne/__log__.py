@@ -134,3 +134,10 @@ NameError: name 'caerna' is not defined
                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2019 17:41:49.488 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  for imagem_carta(imagem_carta)
+                                 ^
+SyntaxError: invalid syntax
+'''},

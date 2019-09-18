@@ -32,7 +32,7 @@ class Carta:
         anterior.direita = self.carta
         self.carta.esquerda = anterior
         
-    def montar_baralho(self):
+    def montar_baralho(self, anterior):
         for imagem_carta in caos:
             carta = Carta(imagem_carta)
             carta.anterior(anterior.carta)

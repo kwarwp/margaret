@@ -5,12 +5,12 @@ TURQUESA = "https://i.imgur.com/jcJOmVD.png"
 ARANHA = "https://i.imgur.com/lt6nVqj.gif"
 
 class Carta:
-	def _init__(self):
+	def __init__(self):
 		Cena(TEMPLO).vai()  
     
 
 class Jogo:
-	def _init__(self):
+	def __init__(self):
 		Cena(TEMPLO).vai()
         
         

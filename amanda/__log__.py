@@ -31,3 +31,10 @@ RuntimeError: <InternalError: too much recursion>
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Wed Sep 18 2019 17:43:32.53 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  def anterior(self, anterior)
+                               ^
+SyntaxError: invalid syntax
+'''},

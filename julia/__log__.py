@@ -63,3 +63,10 @@ NameError: name 'TEMPLAO' is not defined
     Cena(TEMPLAO).vai()
 NameError: name 'TEMPLAO' is not defined
 '''},
+{'date': 'Wed Sep 18 2019 16:57:31.118 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  class Jogo:
+  ^
+IndentationError: expected an indented block
+'''},

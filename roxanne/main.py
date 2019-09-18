@@ -1,14 +1,50 @@
-# margaret.roxanne.main.py
-from _spy.vitollino.main import Cena 
-CENA = "https://i.imgur.com/XY8get8.jpg"
-MONSTRO = "https://i.imgur.com/ZOoZ2aQ.jpg"
-OURO = "https://i.imgur.com/4L5y1To.jpg"
-caverna = Cena(CENA)
-monstro = Cena(MONSTRO)
-ouro = Cena(OURO)
-caverna.direita = monstro
-monstro.esquerda = caverna
-caverna.vai()
-monstro.direita = ouro
-ouro.esquerda = monstro
-monstro.vai()
+# margaret.julia.main.py
+from _spy.vitollino.main import Cena
+TEMPLO = "https://i.imgur.com/eiRyeJf.jpg"
+
+""" PEDRAS """
+TURQUESA = "https://i.imgur.com/jcJOmVD.png"
+
+""" ARTEFATOS """
+ARTa = "https://i.imgur.com/qyzLwer.png"
+
+""" CAOS """
+ARANHA = "https://i.imgur.com/lt6nVqj.gif"
+DESMORONAMENTO = "https://i.imgur.com/SzTXOyb.png"
+COBRA = "https://i.imgur.com/ZGHOKIz.png"
+LAVA = "https://i.imgur.com/TadcMw6.jpg"
+MUMIA = "https://i.imgur.com/krrhvL6.jpg"
+
+
+""" Listas """
+caos = [ARANHA, DESMORONAMENTO, COBRA, LAVA, MUMIA]*5
+pedras = [TURQUESA]
+artefatos = [ARTa]
+
+class Carta:
+    def __init__(self, cena=ARANHA):
+        self.carta = Cena(cena).vai()
+        
+    def vai(self):
+        self.carta.vai()
+    def monta_baralho(self, anterior):
+        for imagem_carta(imagem_carta)
+            carta = Carta(anterior.carta)
+            anterior = carta
+     
+    def anterior(self, anterior):
+        anterior.direita = self.carta
+        self.carta.esquerda = anterior
+    
+
+class Jogo:
+    def __init__(self):
+        self.templo = Cena(TEMPLO)
+        self.carta = Carta()
+        self.carta.anterior(self.templo)
+        self.carta.monta_baralho(self.carta)
+        self.templo.vai()
+        
+        
+if __name__ == "__main__":
+	Jogo()

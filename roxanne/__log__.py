@@ -127,3 +127,10 @@ NameError: name 'tesouro' is not defined
     caerna.vai()
 NameError: name 'caerna' is not defined
 '''},
+{'date': 'Wed Sep 18 2019 17:41:14.628 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  for imagem_carta(imagem_carta)
+                                 ^
+SyntaxError: invalid syntax
+'''},

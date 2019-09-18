@@ -228,3 +228,7 @@ AttributeError: 'Carta' object has no attribute 'proximo'
     		self.carta.proximo(self.templo)
 AttributeError: 'Carta' object has no attribute 'proximo'
 '''},
+{'date': 'Wed Sep 18 2019 17:28:09.862 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: <InternalError: too much recursion>
+'''},

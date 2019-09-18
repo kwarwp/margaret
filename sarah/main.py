@@ -27,10 +27,16 @@ class Carta:
         
     def vai(self):
         self.carta.vai()
-     
+        
     def anterior(self, anterior):
         anterior.direita = self.carta
         self.carta.esquerda = anterior
+        
+    def montar_baralho(self):
+        for imagem_carta in caos:
+            carta = Carta(imagem_carta)
+            carta.anterior(anterior.carta)
+            anterior = carta
     
 
 class Jogo:
@@ -38,6 +44,7 @@ class Jogo:
         self.templo = Cena(TEMPLO)
         self.carta = Carta()
         self.carta.anterior(self.templo)
+        self.carta.monta_baralho(self.carta)
         self.templo.vai()
         
         

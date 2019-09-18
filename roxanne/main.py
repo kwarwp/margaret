@@ -1,5 +1,6 @@
 # margaret.julia.main.py
 from _spy.vitollino.main import Cena
+from random import shuffle 
 TEMPLO = "https://i.imgur.com/eiRyeJf.jpg"
 
 """ PEDRAS """
@@ -18,6 +19,7 @@ MUMIA = "https://i.imgur.com/krrhvL6.jpg"
 
 """ Listas """
 caos = [ARANHA, DESMORONAMENTO, COBRA, LAVA, MUMIA]*5
+shuffle(caos)
 pedras = [TURQUESA]
 artefatos = [ARTa]
 
@@ -28,10 +30,10 @@ class Carta:
     def vai(self):
         self.carta.vai()
     def monta_baralho(self, anterior):
-        for imagem_carta(imagem_carta)
-            carta = Carta(anterior.carta)
+        for imagem_carta in caos:
+            carta = Carta(imagem_carta)
+            carta.anterior(anterior.carta)
             anterior = carta
-     
     def anterior(self, anterior):
         anterior.direita = self.carta
         self.carta.esquerda = anterior

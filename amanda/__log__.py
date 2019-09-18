@@ -24,3 +24,10 @@ IndentationError: unexpected indent
 'error': '''
 RuntimeError: <InternalError: too much recursion>
 '''},
+{'date': 'Wed Sep 18 2019 17:43:05.645 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  carta = Carta(imagem_carta)
+  ^
+IndentationError: expected an indented block
+'''},

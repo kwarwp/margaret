@@ -38,3 +38,10 @@ IndentationError: expected an indented block
                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2019 17:44:39.233 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def anterior(self, anterior)
+                               ^
+SyntaxError: invalid syntax
+'''},

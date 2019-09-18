@@ -52,3 +52,10 @@ IndentationError: expected an indented block
     tesouro.direita = mumia
 NameError: name 'mumia' is not defined
 '''},
+{'date': 'Wed Sep 18 2019 17:01:40.68 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  def vai(self):
+  ^
+IndentationError: unexpected indent
+'''},

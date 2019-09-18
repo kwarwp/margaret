@@ -44,7 +44,7 @@ class Jogo:
         self.templo = Cena(TEMPLO)
         self.carta = Carta()
         self.carta.anterior(self.templo)
-        self.carta.monta_baralho(self.carta)
+        self.carta.montar_baralho(self.carta)
         self.templo.vai()
         
         

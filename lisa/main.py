@@ -39,9 +39,15 @@ class Jogador:
         
     def continua(self):
         """ entra em nova camara e acumula turquesas """
-        # self.ganha_uma_turquesa()
         self.turquesa = self.turquesa + 1
+        self.ganha_uma_turquesa()
         pass
+    def ganha_uma_turquesa(self):
+        lugar =  60*self.turquesa
+        tur = Elemento(TURQUESA,  tit="Turquesa",
+            style=dict(left="50px", top="350px", width="50px",
+            height="30px"),
+                       cena=self.acampamento.cena)
 
         
     def desiste(self):
@@ -98,10 +104,6 @@ class Jogo:
         INVENTARIO.inicia()
         #INVENTARIO.bota(tur)
         self.acampamento = Acampamento()
-        tur = Elemento(TURQUESA,  tit="Turquesa",
-            style=dict(left="50px", top="350px", width="50px",
-            height="30px"),
-                       cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Carta(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])

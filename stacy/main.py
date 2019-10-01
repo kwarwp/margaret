@@ -1,6 +1,6 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
-from _spy.vitollino.main import Cena, STYLE, Elemento, INVENTARIO
+from _spy.vitollino.main import Cena, STYLE, Elemento
 STYLE["width"] = 600
 STYLE["height"] = 600
 from random import shuffle
@@ -89,10 +89,8 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS = {}
-        INVENTARIO.inicia()
-        tur = Elemento(TURQUESA, tit="Turquesa")
-        INVENTARIO.bota(tur)
         self.acampamento = Acampamento()
+        tur = Elemento(TURQUESA, tit="Turquesa", cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Cartas(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])

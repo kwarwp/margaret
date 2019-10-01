@@ -22,6 +22,19 @@ DI["PEPITADEOURO"] = "https://i.imgur.com/tsP6aby.jpg"
 DI["OBSIDIANA"] = "https://i.imgur.com/1Pqs1JN.jpg"
 DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
 ACAMPAMENTO = Cena("https://i.imgur.com/wgcVh9M.jpg")
+
+class Acampamento:
+    def __init__(self):
+        self.cena = Cena("https://i.imgur.com/wgcVh9M.jpg")
+        pass
+        # o que tem que ter no acampamento?
+        
+    self.vai(self):
+        self.cena.vai()
+        
+class Jogador:
+    def __init__(self):
+        pass
     
 class Perigo:
     def __init__(self, imagem, tipo):

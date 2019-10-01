@@ -90,7 +90,7 @@ class Jogo:
         global PERIGOS
         PERIGOS = {}
         self.acampamento = Acampamento()
-        tur = Elemento(TURQUESA, tit="Turquesa", cena=self.acampamento.cena)
+        tur = Elemento(DI=["TURQUESA"], tit="turquesa", style=dict(left=5, top=50, width=25), cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Cartas(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])

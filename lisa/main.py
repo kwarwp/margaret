@@ -37,6 +37,7 @@ class Jogador:
         
     def continua(self):
         """ entra em nova camara e acumula turquesas """
+        # self.ganha_uma_turquesa()
         pass
 
         
@@ -48,6 +49,7 @@ class Jogador:
 
 class Perigo:
     def __init__(self, imagem, tipo, jogador):
+        self.jogador = jogador
         self.cena = Cena(imagem)
         self.tipo = tipo
         # chupa cabra -- aparato
@@ -69,6 +71,7 @@ class Perigo:
             self.cena.direita = self.acampamento
         else:
             PERIGOS[self.tipo] = 1
+        self.jogador.continua()
         self.cena_vai()
         
 class Carta:

@@ -8,18 +8,50 @@ from random import shuffle
 IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
 shuffle(IMAGENS)
 PERIGOS = {}
-
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
-ACAMPAMENTO = Cena("https://i.imgur.com/dmSDeDF.jpg")      
+
+
+class Acampamento:
+    def __init__(self):
+        """ o que tem que ter no acampamento?"""
+        self.cena = Cena("https://i.imgur.com/dmSDeDF.jpg")
+        pass
+        # 
+        
+    def vai(self):
+        self.cena.vai()
+    
+
+
+class Jogador:
+    def __init__(self):
+        """ o que tem que ter no jogador?
+            o jogador ganha uma turquesa para cada camara
+        """
+        pass
+
+        
+    def continua(self):
+        """ entra em nova camara e acumula turquesas """
+        pass
+
+        
+    def desiste(self):
+        """ segue para o acampamento"""
+        pass
+        
+
+
 class Perigo:
     def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)
         self.tipo = tipo
+        # chupa cabra -- aparato
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
-        self.acampamento = ACAMPAMENTO
+        self.acampamento = Acampamento()
 
     def set_direita(self, direita):
         self.cena.direita = direita

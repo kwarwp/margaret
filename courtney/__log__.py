@@ -300,3 +300,10 @@ IndentationError: expected an indented block
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2019 09:20:21.332 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  pass Image
+        ^
+SyntaxError: invalid syntax
+'''},

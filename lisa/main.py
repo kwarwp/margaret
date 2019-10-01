@@ -24,10 +24,11 @@ class Acampamento:
 
 
 class Jogador:
-    def __init__(self):
+    def __init__(self, acampamento):
         """ o que tem que ter no jogador?
             o jogador ganha uma turquesa para cada camara
         """
+        self.acampamento = acampamento
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
         self.cena_desiste = Cena()
@@ -41,7 +42,7 @@ class Jogador:
         
     def desiste(self):
         """ segue para o acampamento"""
-        pass
+        self.acampamento.vai()
         
 
 
@@ -53,6 +54,7 @@ class Perigo:
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
         self.acampamento = Acampamento()
+        self.set_esquerda(jogador.cena_desiste)
 
     def set_direita(self, direita):
         self.cena.direita = direita
@@ -87,7 +89,8 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS ={}
-        self.jogador = Jogador()
+        self.acampamento = Acampamento()
+        self.jogador = Jogador(self.acampamento)
         self.baralho = Carta(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])

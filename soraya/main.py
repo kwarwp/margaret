@@ -16,12 +16,12 @@ FOGO =
 
 
 class Acampamento:
-  def __init__(self):
-    pass
+     def __init__(self):
+        pass
     # o que tem que ter no jogador
     # o jogador ganha uma turquesa para cada camara
-  def continua(self):
-      pass
+     def continua(self):
+        pass
       # acumula turquesa
       
      

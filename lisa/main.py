@@ -7,7 +7,7 @@ from random import shuffle
 #from natalia.main import sereiamonstro
 IMAGENS = ["FOGO", "COBRA", "ARANHA", "MUMIA",
 "DESMORONAMENTO"]*5
-shuffle(IMAGENS)
+#shuffle(IMAGENS)
 PERIGOS = {}
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
@@ -92,17 +92,32 @@ class Perigo:
             self.cena.direita = self.acampamento
         else:
             PERIGOS[self.tipo] = 1
-        self.jogador.continua()
+        #self.jogador.continua()
         self.cena_vai()
 
 
 class Tesouro(Perigo):
     def __init__(self, imagem, tipo, jogador):
         super().__init__(imagem, tipo, jogador)
+        for tur in range(tipo+1):
+            self.ganha_uma_turquesa(tur)
         
     def vai(self):
         self.jogador.continua()
         self.cena_vai()
+        
+    def ganha_uma_turquesa(self, onde):
+        """
+        ouro = turquesa // 10
+        sobra_ouro = ouro % 10
+        obsidiana = sobra_ouro // 5
+        tur = sobra_ouro % 5
+        """
+        lugar =  50*onde
+        tur = Elemento(TURQUESA,  tit="Turquesa",
+            style=dict(left=f"{lugar}px", top="350px", width="50px",
+            height="30px"),
+                       cena=self.acampamento.cena)
         
 class Carta:
     def __init__(self, jogador):
@@ -113,8 +128,11 @@ class Carta:
                               jogador) 
             for uma_imagem in IMAGENS]
         tesouros = [Tesouro(
-            RDI["PEDRAS"], "PEDRAS", jogador)] * 10
+            RDI["PEDRAS"], pedras % 5, jogador)
+            pedras for pedras in range(30)]
         self.cartas += tesouros
+        shuffle(self.cartas)
+        shuffle(self.cartas)
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.set_direita(self.cartas[ordem+1])

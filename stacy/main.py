@@ -29,7 +29,7 @@ class Acampamento:
         pass
         # o que tem que ter no acampamento?
         
-    self.vai(self):
+    def.vai(self):
         self.cena.vai()
         
 class Jogador:

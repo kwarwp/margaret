@@ -50,6 +50,7 @@ class Jogador:
             
 class Perigo:
     def __init__(self, imagem, tipo, jogador):
+        self.jogador = jogador
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai

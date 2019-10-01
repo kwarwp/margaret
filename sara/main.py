@@ -6,6 +6,7 @@ STYLE["width"] = 600
 STYLE["height"] = 600
 from random import shuffle
 IMAGENS = ["CENA", "ACAMPAMENTO", "MOCHILA", "ARTEFATO1", "MONSTRO", "PEDRAS", "FOGO", "DESABAMENTO", "COBRA", "ARANHA", "SALADOTESOURO", "OBSIDIANA", "TURQUESA", "PEPITADEOURO"]*5
+TURQUESA = ""
 shuffle(IMAGENS)
 PERIGOS = {}
 
@@ -37,6 +38,7 @@ class Jogador:
     def __init__(self):
         """ o que tem que ter no jogador? """
         """ o jogador ganha uma turquesa para cada camara """
+        self.turquesa
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
         self.cena_desiste = Cena()
@@ -45,15 +47,17 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesa """
         # self.ganha_uma_turquesa()
-        nova_cena.vai
+        self.turquesa = self.turquesa + 1
+        pass
         
                 
     def desiste(self):
         " segue para o acampamento """
-        self.acampamento.vai
+        self.acampamento.vai()
             
 class Perigo:
-    def __init__(self, imagem, tipo):
+    def __init__(self, imagem, tipo, jogador):
+        
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai
@@ -72,6 +76,7 @@ class Perigo:
             self.cena.direita = self.acampamento
         else:
             PERIGOS[self.tipo] = 1
+        self.jogador.continua()
         self.cena_vai()
 
 class Cartas:

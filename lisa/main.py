@@ -100,6 +100,10 @@ class Tesouro(Perigo):
     def __init__(self, imagem, tipo, jogador):
         super().__init__(imagem, tipo, jogador)
         
+    def vai(self):
+        self.jogador.continua()
+        self.cena_vai()
+        
 class Carta:
     def __init__(self, jogador):
         self.jogador = jogador
@@ -108,6 +112,9 @@ class Carta:
                               uma_imagem,
                               jogador) 
             for uma_imagem in IMAGENS]
+        tesouros = [Tesouro(
+            RDI["PEDRAS"], "PEDRAS", jogador)] * 10
+        self.cartas += tesouros
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 carta.set_direita(self.cartas[ordem+1])

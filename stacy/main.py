@@ -78,7 +78,7 @@ class Perigo:
 class Cartas:
     def __init__(self, jogador):
         self.jogador = jogador
-        self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem, jogador) for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 cartas.set_direita(self.cartas[ordem+1])
@@ -91,7 +91,7 @@ class Jogo:
         PERIGOS = {}
         self.acampamento = Acampamento()
         self.jogador = Jogador(self.acampamento)
-        self.baralho = Carta(self.jogador).baralho()
+        self.baralho = Cartas(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
         self.templo.direita = self.baralho[1]

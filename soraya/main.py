@@ -11,7 +11,17 @@ PERIGOS = {}
 DI = DICIONARIO_DE_IMAGENS = {} 
 DI["TEMPLO"] = "https://i.imgur.com/jnxWklS.jpg"
 DI["TESOURO"] = "https://i.imgur.com/tI5hg9u.jpg"
-DI["FOGO"] =
+DI["FOGO"] = "https://i.imgur.com/KRK66bR.jpg"
+DI["ARTEFATO1"] = "https://i.imgur.com/1QHNdyI.jpg"
+DI["COBRA"] = "https://i.imgur.com/MydpgBT.jpg"
+DI["DESABAMENTO"] = "https://i.imgur.com/jnxWklS.jpg"
+DI["MUMIA"] = "https://i.imgur.com/HPp1k5T.jpg" 
+DI["ARANHA"] = "https://i.imgur.com/w90m1jf.jpg"
+DI["SALADOTESOURO"] = "https://i.imgur.com/83xewyg.jpg"
+DI["PEPITADEOURO"] = "https://i.imgur.com/tsP6aby.jpg"
+DI["OBSIDIANA"] = "https://i.imgur.com/1Pqs1JN.jpg"
+DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
+ACAMPAMENTO = Cena("https://i.imgur.com/wgcVh9M.jpg")
 
 "CENA" = ""
 "TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"

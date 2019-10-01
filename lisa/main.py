@@ -31,8 +31,10 @@ class Jogador:
         """
         self.turquesa = 0
         self.acampamento = acampamento
-        self.cena_continua = Cena()
+        # Aparato para capturar a ação clica na direita
+        self.cena_continua = Cena() # Chupa-cabras
         self.cena_continua.vai = self.continua
+        # Aparato para capturar a ação clica na esquerda
         self.cena_desiste = Cena()
         self.cena_desiste.vai = self.desiste
 
@@ -40,19 +42,29 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesas """
         self.turquesa = self.turquesa + 1
-        self.ganha_uma_turquesa()
         pass
-    def ganha_uma_turquesa(self):
-        lugar =  60*self.turquesa
+    def ganha_uma_turquesa(self, onde):
+        """
+        ouro = turquesa // 10
+        sobra_ouro = ouro % 10
+        obsidiana = sobra_ouro // 5
+        tur = sobra_ouro % 5
+        """
+        lugar =  50*onde
         tur = Elemento(TURQUESA,  tit="Turquesa",
-            style=dict(left="50px", top="350px", width="50px",
+            style=dict(left=f"{lugar}px", top="350px", width="50px",
             height="30px"),
                        cena=self.acampamento.cena)
 
         
     def desiste(self):
         """ segue para o acampamento"""
+        self.coleta_tesouro()
         self.acampamento.vai()
+        
+    def coleta_tesouro(self):
+        for tur in range(self.turquesa):
+            self.ganha_uma_turquesa(tur)
         
 
 

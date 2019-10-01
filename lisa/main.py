@@ -117,7 +117,7 @@ class Tesouro(Perigo):
         tur = Elemento(TURQUESA,  tit="Turquesa",
             style=dict(left=f"{lugar}px", top="350px", width="50px",
             height="30px"),
-                       cena=self.acampamento.cena)
+                       cena=self.cena)
         
 class Carta:
     def __init__(self, jogador):
@@ -129,7 +129,7 @@ class Carta:
             for uma_imagem in IMAGENS]
         tesouros = [Tesouro(
             RDI["PEDRAS"], pedras % 5, jogador)
-            pedras for pedras in range(30)]
+            for pedras in range(30)]
         self.cartas += tesouros
         shuffle(self.cartas)
         shuffle(self.cartas)

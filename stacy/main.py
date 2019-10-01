@@ -90,7 +90,7 @@ class Jogo:
         global PERIGOS
         PERIGOS = {}
         INVENTARIO.inicia()
-        tur = Elemento(TURQUESA)
+        tur = Elemento(TURQUESA, tit="Turquesa")
         INVENTARIO.bota(tur)
         self.acampamento = Acampamento()
         self.jogador = Jogador(self.acampamento)

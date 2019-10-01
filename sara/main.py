@@ -36,16 +36,21 @@ class Acampamento:
 class Jogador:
     def __init__(self):
         """ o que tem que ter no jogador? """
-        """ o jogador ganha uma turquesa para cada camara """ 
-        pass
+        """ o jogador ganha uma turquesa para cada camara """
+        self.cena_continua = Cena()
+        self.cena_continua.vai = self.continua
+        self.cena_desiste = Cena()
+        self.cena_desiste.vai = self.desiste
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """
-        pass
+        # self.ganha_uma_turquesa()
+        nova_cena.vai
+        
                 
     def desiste(self):
         " segue para o acampamento """
-        pass
+        self.acampamento.vai
             
 class Perigo:
     def __init__(self, imagem, tipo):
@@ -94,6 +99,8 @@ inca = Jogo()
 
 if __name__ == "__main__":
     inca.inicia()
+    
+    
     
 
 

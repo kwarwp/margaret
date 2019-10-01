@@ -28,7 +28,10 @@ class Jogador:
         """ o que tem que ter no jogador?
             o jogador ganha uma turquesa para cada camara
         """
-        pass
+        self.cena_continua = Cena()
+        self.cena_continua.vai = self.continua
+        self.cena_desiste = Cena()
+        self.cena_desiste.vai = self.desiste
 
         
     def continua(self):
@@ -43,7 +46,7 @@ class Jogador:
 
 
 class Perigo:
-    def __init__(self, imagem, tipo):
+    def __init__(self, imagem, tipo, jogador):
         self.cena = Cena(imagem)
         self.tipo = tipo
         # chupa cabra -- aparato
@@ -67,8 +70,12 @@ class Perigo:
         self.cena_vai()
         
 class Carta:
-    def __init__(self):
-        self.cartas = [Perigo(RDI[uma_imagem], uma_imagem) 
+    def __init__(self, jogador):
+        self.jogador = jogador
+        self.cartas = [Perigo(
+                              RDI[uma_imagem],
+                              uma_imagem,
+                              jogador) 
             for uma_imagem in IMAGENS]
         for ordem, carta in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
@@ -80,7 +87,8 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS ={}
-        self.baralho = Carta().baralho()
+        self.jogador = Jogador()
+        self.baralho = Carta(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
         self.templo.direita = self.baralho[1]

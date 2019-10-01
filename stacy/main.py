@@ -44,15 +44,25 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesa """
         self.turquesa = self.turquesa + 1
-        self.ganha_uma_turquesa()
-        
-    def ganha_uma_turquesa(self):
-        lugar = 60*lugar.turquesa
-        tur = Elemento(DI["TURQUESA"], tit="turquesa", style=dict(left=F"{lugar}px", top="350px", widtg="50px", height="30px"), cena=self.acampamento.cena)
+        pass
+    def ganha_uma_turquesa(self, onde):
+        """
+        ouro = turquesa // 10
+        sobra_ouro = ouro % 10
+        obsidiana = sobra_ouro // 5
+        tur = sobra_ouro % 5
+        """
+        lugar = 50*onde
+        tur = Elemento(TURQUESA,  tit=DI["Turquesa"], style=dict(left=f"{lugar}px", top="350px", width="50px", height="30px"), cena=self.acampamento.cena)
     
     def desiste(self):
         " segue para o acampamento """
+        self.coleta_tesouro()
         self.acampamento.vai()
+        
+    def coleta_tesouro(self):
+        for tur in range(self.turquesa):
+            self.ganha_uma_turquesa(tur)
             
 class Perigo:
     def __init__(self, imagem, tipo, jogador):
@@ -78,6 +88,11 @@ class Perigo:
             PERIGOS[self.tipo] = 1
         self.jogador.continua()
         self.cena_vai()
+        
+class Tesouro(Perigo):
+    def __init__(self, imagem, tipo, jogador):
+        super().__init__(imagem, tipo, jogador)
+
 
 class Cartas:
     def __init__(self, jogador):

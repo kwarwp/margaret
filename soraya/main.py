@@ -5,8 +5,14 @@ STYLE:["widht"] = 600
 STYLE:["height"] = 600
 from random import shuffle 
 IMAGENS = ["FOGO" , "COBRA" , "DESABAMENTO" , "MUMIA" , "ARANHA"]*5
+shuffle (IMAGENS)
+PERIGOS = {}
 
 DI = DICIONARIO_DE_IMAGENS = {} 
+DI["TEMPLO"] = "https://i.imgur.com/jnxWklS.jpg"
+DI["TESOURO"] = "https://i.imgur.com/tI5hg9u.jpg"
+DI["FOGO"] =
+
 "CENA" = ""
 "TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"
 TEMPLO = "https://i.imgur.com/jnxWklS.jpg"

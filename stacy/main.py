@@ -36,6 +36,14 @@ class Jogador:
         pass
         # o que tem que ter no jogador?
         # o jogador ganha uma turquesa para cada camara
+        
+    def continua(self):
+        pass
+        # acumula turquesa
+        
+    def desiste(self):
+        pass
+        #
     
 class Perigo:
     def __init__(self, imagem, tipo):

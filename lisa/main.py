@@ -17,8 +17,6 @@ class Acampamento:
     def __init__(self):
         """ o que tem que ter no acampamento?"""
         self.cena = Cena("https://i.imgur.com/dmSDeDF.jpg")
-        pass
-        # 
         
     def vai(self):
         self.cena.vai()

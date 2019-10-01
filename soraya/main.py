@@ -14,6 +14,10 @@ ARANHA =
 FOGO =
 
 
+
+class Acampamento:
+  def __init__(self
+class Jogador
 templo = Cena(CENA)
 tesouro = Cena(TESOURO)
 templo.direta = tesouro

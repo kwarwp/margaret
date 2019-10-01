@@ -99,6 +99,8 @@ class Jogo:
         #INVENTARIO.bota(tur)
         self.acampamento = Acampamento()
         tur = Elemento(TURQUESA,  tit="Turquesa",
+            style=dict(left="50px", top="350px", width="50px",
+            height="30px"),
                        cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Carta(self.jogador).baralho()

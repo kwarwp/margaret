@@ -1611,3 +1611,10 @@ SyntaxError: invalid syntax
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2019 08:57:59.436 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 41
+  pass set_direita
+        ^
+SyntaxError: invalid syntax
+'''},

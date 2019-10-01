@@ -31,9 +31,10 @@ class Acampamento:
         self.cena.vai()
         
 class Jogador:
-    def __init__(self):
+    def __init__(self, acampamento):
         """ o que tem que ter no jogador? 
             o jogador ganha uma turquesa para cada camara """ 
+        self.acampamento = acampamento
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
         self.cena_desiste = Cena()

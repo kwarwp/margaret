@@ -1,13 +1,15 @@
 # margaret.soraya.main.py
 __author__ "Vitória da Costa Lima vitcardinnot@gmail.com
-from spy.vitollino.main import Cena
+from spy.vitollino.main import Cena, STYLE
+STYLE:[
+STYLE:[
 DI = DICIONARIO_DE_IMAGENS = {} 
 "CENA" = ""
 "TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"
 TEMPLO = "https://i.imgur.com/jnxWklS.jpg"
 COBRA = "https://i.imgur.com/MydpgBT.jpg"
 DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
-MUMIA =
+MUMIA = 
 ARANHA =
 FOGO =
 

@@ -272,3 +272,10 @@ SyntaxError: EOL while scanning string literal
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Oct 01 2019 09:12:59.611 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  def continua(self):   
+  ^
+IndentationError: expected an indented block
+'''},

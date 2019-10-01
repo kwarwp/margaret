@@ -5,7 +5,8 @@ from ruzwana.main import DI as RDI
 from random import shuffle
 #from stacy.main import fogo
 #from natalia.main import sereiamonstro
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
+IMAGENS = ["FOGO", "COBRA", "ARANHA", "MUMIA",
+"DESMORONAMENTO"]*5
 shuffle(IMAGENS)
 PERIGOS = {}
 DI = DICIONARIO_DE_IMAGENS = {}
@@ -67,7 +68,6 @@ class Jogador:
             self.ganha_uma_turquesa(tur)
         
 
-
 class Perigo:
     def __init__(self, imagem, tipo, jogador):
         self.jogador = jogador
@@ -94,6 +94,11 @@ class Perigo:
             PERIGOS[self.tipo] = 1
         self.jogador.continua()
         self.cena_vai()
+
+
+class Tesouro(Perigo):
+    def __init__(self, imagem, tipo, jogador):
+        super().__init__(imagem, tipo, jogador)
         
 class Carta:
     def __init__(self, jogador):

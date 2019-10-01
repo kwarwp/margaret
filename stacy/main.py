@@ -4,8 +4,9 @@ from _spy.vitollino.main import Cena, STYLE, Elemento, INVENTARIO
 STYLE["width"] = 800
 STYLE["height"] = 800
 from random import shuffle
-IMAGENS = ["FOGO", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
-shuffle(IMAGENS)
+PERIGOS = ["FOGO", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
+PEDRAS = ["PEPITADEOURO", "OBSIDIANA", "TURQUESA"]*20
+shuffle(IMAGENS, PEDRAS)
 PERIGOS = {}
 
 DI = DICIONARIO_DE_IMAGENS = {}

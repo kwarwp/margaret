@@ -35,6 +35,9 @@ class Jogador:
         """ o que tem que ter no jogador? 
             o jogador ganha uma turquesa para cada camara """ 
         self.cena_continua = Cena()
+        self.cena_continua.vai = self.continua
+        self.cena_desiste = Cena()
+        self.cena_desiste = self.desiste
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """

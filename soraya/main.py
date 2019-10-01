@@ -22,15 +22,28 @@ DI["PEPITADEOURO"] = "https://i.imgur.com/tsP6aby.jpg"
 DI["OBSIDIANA"] = "https://i.imgur.com/1Pqs1JN.jpg"
 DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
 ACAMPAMENTO = Cena("https://i.imgur.com/wgcVh9M.jpg")
+class Perigo:
+    def __init__(self, imagem, tipo):
+        self.cena = Cena(imagem)
+        self.tipo = tipo
+        self.cena_vai = self.cena.vai
+        self.cena.vai = self.vai
+        self.acampamento = ACAMPAMENTO
+        
+    def set_direita(self, direita):
+        self.cena.direita = direita
+        
+    def set_esquerda(self, esquerda):
+        self.cena.esquerda = esquerda
+        
+    def vai(self):
+        if self.tipo in PERIGOS:
+            # deu ruim, já tinha aparecido um perigo
+            self.cena.direita = self.acampamento
+        else:
+            PERIGOS[self.tipo] = 1
+        self.cena_vai()
 
-"CENA" = ""
-"TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"
-TEMPLO = "https://i.imgur.com/jnxWklS.jpg"
-COBRA = "https://i.imgur.com/MydpgBT.jpg"
-DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
-MUMIA = 
-ARANHA =
-FOGO =
 
 
 

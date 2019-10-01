@@ -1834,3 +1834,7 @@ NameError: name 'TURQUESA' is not defined
     shuffle(IMAGENS, PEDRAS)
 NameError: name 'IMAGENS' is not defined
 '''},
+{'date': 'Tue Oct 01 2019 10:53:51.82 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: random is not a function>
+'''},

@@ -71,3 +71,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Oct 01 2019 09:12:54.358 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  self.cena = Cena("https://i.imgur.com/ZzWag8V.jpg")
+  ^
+IndentationError: unexpected indent
+'''},

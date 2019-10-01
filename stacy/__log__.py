@@ -1568,3 +1568,10 @@ NameError: name 'ACAMPAMENTO' is not defined
                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2019 08:37:50.341 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  def.vai(self):
+      ^
+SyntaxError: invalid syntax
+'''},

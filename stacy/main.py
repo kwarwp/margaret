@@ -45,7 +45,7 @@ class Jogador:
                 
     def desiste(self):
         " segue para o acampamento """
-        pass
+        self.acampamento.vai()
             
 class Perigo:
     def __init__(self, imagem, tipo, jogador):
@@ -83,14 +83,15 @@ class Cartas:
 class Jogo:
     def __init__(self):
         global PERIGOS
-        PERIGOS ={}
-        self.jogador = Jogador()
-        self.baralho = Cartas(self.jogador).baralho()
+        self.acampamento = Acampamento()
+        self.jogador = Jogador(self.acampamento)
+        self.baralho = Carta(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
-        self.templo.direita = self.baralho[1]        
+        self.templo.direita = self.baralho[1]
     def inicia(self):
         self.templo.vai()
+
 
 inca = Jogo()
 

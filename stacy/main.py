@@ -6,7 +6,7 @@ STYLE["height"] = 800
 from random import shuffle
 PERIGOS = ["FOGO", "COBRA", "DESABAMENTO", "MUMIA", "ARANHA"]*5
 PEDRAS = ["PEPITADEOURO", "OBSIDIANA", "TURQUESA"]*20
-shuffle(IMAGENS, PEDRAS)
+shuffle(PERIGOS, PEDRAS)
 PERIGOS = {}
 
 DI = DICIONARIO_DE_IMAGENS = {}

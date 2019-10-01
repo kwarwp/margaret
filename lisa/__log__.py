@@ -323,3 +323,10 @@ KeyError: PEDRAS
                                                                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2019 11:06:39.703 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 130
+  tesouros = [Tesouro(
+                                                                                    ^
+SyntaxError: invalid syntax
+'''},

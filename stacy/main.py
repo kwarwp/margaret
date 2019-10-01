@@ -21,7 +21,6 @@ DI["SALADOTESOURO"] = "https://i.imgur.com/83xewyg.jpg"
 DI["PEPITADEOURO"] = "https://i.imgur.com/tsP6aby.jpg"
 DI["OBSIDIANA"] = "https://i.imgur.com/1Pqs1JN.jpg"
 DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
-ACAMPAMENTO = Cena("https://i.imgur.com/wgcVh9M.jpg")
 
 class Acampamento:
     def __init__(self):
@@ -29,7 +28,7 @@ class Acampamento:
         pass
         # o que tem que ter no acampamento?
         
-    def.vai(self):
+    def vai(self):
         self.cena.vai()
         
 class Jogador:

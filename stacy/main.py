@@ -33,7 +33,8 @@ class Acampamento:
 class Jogador:
     def __init__(self, acampamento):
         """ o que tem que ter no jogador? 
-            o jogador ganha uma turquesa para cada camara """ 
+            o jogador ganha uma turquesa para cada camara """
+        self.turquesa = 0
         self.acampamento = acampamento
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
@@ -42,6 +43,7 @@ class Jogador:
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """
+        self.turquesa = self.turquesa + 1
         self.acampamento.vai()
                 
     def desiste(self):

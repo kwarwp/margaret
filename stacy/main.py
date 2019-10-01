@@ -1,6 +1,6 @@
 # margaret.stacy.main.py
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
-from _spy.vitollino.main import Cena, STYLE, Elemento
+from _spy.vitollino.main import Cena, STYLE, Elemento, INVENTARIO
 STYLE["width"] = 800
 STYLE["height"] = 800
 from random import shuffle
@@ -44,10 +44,12 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesa """
         self.turquesa = self.turquesa + 1
-        self.
+        self.ganha_uma_turquesa()
+        
     def ganha_uma_turquesa(self):
         lugar = 60*self.turquesa()
         tur = Elemento(DI["TURQUESA"], tit="turquesa", style=dict(left=F"{lugar}px", top="350px", widtg="50px", height="30px"), cena=self.acampamento.cena)
+    
     def desiste(self):
         " segue para o acampamento """
         self.acampamento.vai()
@@ -91,8 +93,8 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS = {}
+        INVENTARIO.inicia()
         self.acampamento = Acampamento()
-        tur = Elemento(DI=["TURQUESA"], tit="turquesa", style=dict(left=5, top=50, width=25), cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Cartas(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])

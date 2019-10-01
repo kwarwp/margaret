@@ -85,3 +85,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Oct 01 2019 09:13:12.568 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  def continua(self):
+  ^
+IndentationError: unexpected indent
+'''},

@@ -39,7 +39,7 @@ class Jogador:
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
         self.cena_desiste = Cena()
-        self.cena_desiste = self.desiste
+        self.cena_desiste.vai = self.desiste
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """
@@ -72,6 +72,7 @@ class Perigo:
             self.cena.direita = self.acampamento
         else:
             PERIGOS[self.tipo] = 1
+        self.jogador.continua()
         self.cena_vai()
 
 class Cartas:
@@ -87,6 +88,7 @@ class Cartas:
 class Jogo:
     def __init__(self):
         global PERIGOS
+        PERIGOS = {}
         self.acampamento = Acampamento()
         self.jogador = Jogador(self.acampamento)
         self.baralho = Carta(self.jogador).baralho()

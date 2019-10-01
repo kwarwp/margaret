@@ -47,7 +47,7 @@ class Jogador:
         self.ganha_uma_turquesa()
         
     def ganha_uma_turquesa(self):
-        lugar = 60*self.turquesa()
+        lugar = 60*lugar.turquesa
         tur = Elemento(DI["TURQUESA"], tit="turquesa", style=dict(left=F"{lugar}px", top="350px", widtg="50px", height="30px"), cena=self.acampamento.cena)
     
     def desiste(self):
@@ -61,7 +61,7 @@ class Perigo:
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
-        self.acampamento = Acampamento()
+        self.acampamento = jogador.acampamento
         self.set_esquerda(jogador.cena_desiste)
         
     def set_direita(self, direita):

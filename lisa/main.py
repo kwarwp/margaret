@@ -1,6 +1,6 @@
 # margaret.lisa.main.py
 __author__ = "Carlo E. T. Oliveira carlo@ufrj.br"
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena, Elemento, INVENTARIO
 from ruzwana.main import DI as RDI
 from random import shuffle
 #from stacy.main import fogo
@@ -11,6 +11,7 @@ PERIGOS = {}
 DI = DICIONARIO_DE_IMAGENS = {}
 DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
 DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
+TURQUESA = "https://i.imgur.com/8WDBJM3.png" # DI["TURQUESA"]
 
 
 class Acampamento:
@@ -28,6 +29,7 @@ class Jogador:
         """ o que tem que ter no jogador?
             o jogador ganha uma turquesa para cada camara
         """
+        self.turquesa = 0
         self.acampamento = acampamento
         self.cena_continua = Cena()
         self.cena_continua.vai = self.continua
@@ -38,6 +40,7 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesas """
         # self.ganha_uma_turquesa()
+        self.turquesa = self.turquesa + 1
         pass
 
         
@@ -55,7 +58,7 @@ class Perigo:
         # chupa cabra -- aparato
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
-        self.acampamento = Acampamento()
+        self.acampamento = jogador.acampamento
         self.set_esquerda(jogador.cena_desiste)
 
     def set_direita(self, direita):
@@ -92,7 +95,11 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS ={}
+        INVENTARIO.inicia()
+        #INVENTARIO.bota(tur)
         self.acampamento = Acampamento()
+        tur = Elemento(TURQUESA,  tit="Turquesa",
+                       cena=self.acampamento.cena)
         self.jogador = Jogador(self.acampamento)
         self.baralho = Carta(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])

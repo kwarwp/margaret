@@ -1,8 +1,8 @@
 # margaret.soraya.main.py
 __author__ "Vitória da Costa Lima vitcardinnot@gmail.com
 from spy.vitollino.main import Cena, STYLE
-STYLE:[
-STYLE:[
+STYLE:["widht"]
+STYLE:["height"]
 DI = DICIONARIO_DE_IMAGENS = {} 
 "CENA" = ""
 "TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"
@@ -16,7 +16,10 @@ FOGO =
 
 
 class Acampamento:
-  def __init__(self
+  def __init__(self):
+    pass
+    # o que tem que ter no jogador
+    # o jogador ganha uma turquesa para cada camara
 class Jogador
 templo = Cena(CENA)
 tesouro = Cena(TESOURO)

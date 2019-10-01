@@ -29,6 +29,7 @@ class Jogador
       def __init__(self):
       "" o que tem que ter no jogador
          o jogador ganha uma turquesa para cada camara
+      ""
          
 templo = Cena(CENA)
 tesouro = Cena(TESOURO)

@@ -37,7 +37,7 @@ class Jogador:
         """ o jogador ganha uma turquesa para cada camara """ 
         pass
 class Inca:
-def continua(self):
+def continua(self):   
         """ entra em nova camara e acumula turquesa """
         pass
                 

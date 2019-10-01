@@ -316,3 +316,10 @@ KeyError: PEDRAS
     tesouros = [Tesouro(
 KeyError: PEDRAS
 '''},
+{'date': 'Tue Oct 01 2019 11:06:33.894 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 130
+  tesouros = [Tesouro(
+                                                                                    ^
+SyntaxError: invalid syntax
+'''},

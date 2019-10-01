@@ -24,27 +24,27 @@ DI["TURQUESA"] = "https://i.imgur.com/yIhLHaK.jpg"
 
 class Acampamento:
     def __init__(self):
+        """ o que tem que ter no acampamento? """
         self.cena = Cena("https://i.imgur.com/wgcVh9M.jpg")
         pass
-        # o que tem que ter no acampamento?
-        
+                
     def vai(self):
         self.cena.vai()
         
 class Jogador:
     def __init__(self):
+        """ o que tem que ter no jogador? """
+        """ o jogador ganha uma turquesa para cada camara """ 
         pass
-        # o que tem que ter no jogador?
-        # o jogador ganha uma turquesa para cada camara
-        
+                
     def continua(self):
+        """ entra em nova camara e acumula turquesa """
         pass
-        # acumula turquesa
-        
+                
     def desiste(self):
+        " segue para o acampamento """
         pass
-        #
-    
+            
 class Perigo:
     def __init__(self, imagem, tipo):
         self.cena = Cena(imagem)

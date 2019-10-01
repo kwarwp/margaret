@@ -6,7 +6,7 @@ DI = DICIONARIO_DE_IMAGENS = {}
 "TESOURO" = "https://i.imgur.com/tI5hg9u.jpg"
 TEMPLO = "https://i.imgur.com/jnxWklS.jpg"
 COBRA = "https://i.imgur.com/MydpgBT.jpg"
-DESABAMENTO =
+DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA =
 ARANHA =
 FOGO =

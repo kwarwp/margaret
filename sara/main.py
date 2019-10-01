@@ -26,15 +26,15 @@ DI["PEPITADEOURO"] = "https://i.imgur.com/5MmC1SO.jpg"
 DI["TURQUESA"] = "https://i.imgur.com/mh4EZF7.jpg"
 
 class Acampamento:
-     def __init__(self)
-     """ o que tem que ter no acampamento? """
+    def __init__(self):
+        """ o que tem que ter no acampamento? """
         self.cena = Cena("https://i.imgur.com/ZzWag8V.jpg")
         
     def vai(self):
         self.cena.vai()
         
 class Jogador:
-     def __init__(self):
+    def __init__(self):
         """ o que tem que ter no jogador? """
         """ o jogador ganha uma turquesa para cada camara """ 
         pass
@@ -84,7 +84,7 @@ class Jogo:
         PERIGOS ={}
         self.jogador = Jogador()
         self.baralho = Cartas().baralho()
-        self.templo = Cena(DI["TEMPLO"])
+        self.templo = Cena(DI["CENA"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
         self.templo.direita = self.baralho[1]        
     def inicia(self):

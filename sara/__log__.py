@@ -29,3 +29,10 @@ SyntaxError: invalid syntax
     templo.direita = artefato
 NameError: name 'templo' is not defined
 '''},
+{'date': 'Tue Oct 01 2019 09:09:29.405 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def __init__(self)
+                     ^
+SyntaxError: invalid syntax
+'''},

@@ -41,19 +41,20 @@ class Jogador:
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """
-        pass 
+        self.acampamento.vai()
                 
     def desiste(self):
         " segue para o acampamento """
         pass
             
 class Perigo:
-    def __init__(self, imagem, tipo):
+    def __init__(self, imagem, tipo, jogador):
         self.cena = Cena(imagem)
         self.tipo = tipo
         self.cena_vai = self.cena.vai
         self.cena.vai = self.vai
         self.acampamento = Acampamento()
+        self.set_esquerda(jogador.cena_desiste)
         
     def set_direita(self, direita):
         self.cena.direita = direita

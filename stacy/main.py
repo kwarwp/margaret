@@ -79,6 +79,7 @@ class Jogo:
     def __init__(self):
         global PERIGOS
         PERIGOS ={}
+        self.jogador = Jogador()
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])

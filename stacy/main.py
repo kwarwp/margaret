@@ -32,13 +32,13 @@ class Acampamento:
         
 class Jogador:
     def __init__(self):
-        """ o que tem que ter no jogador? """
-        """ o jogador ganha uma turquesa para cada camara """ 
-        pass
+        """ o que tem que ter no jogador? 
+            o jogador ganha uma turquesa para cada camara """ 
+        self.cena_continua = Cena()
                 
     def continua(self):
         """ entra em nova camara e acumula turquesa """
-        pass
+        pass 
                 
     def desiste(self):
         " segue para o acampamento """
@@ -67,7 +67,8 @@ class Perigo:
         self.cena_vai()
 
 class Cartas:
-    def __init__(self):
+    def __init__(self, jogador):
+        self.jogador = jogador
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem) for uma_imagem in IMAGENS]
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
@@ -80,7 +81,7 @@ class Jogo:
         global PERIGOS
         PERIGOS ={}
         self.jogador = Jogador()
-        self.baralho = Cartas().baralho()
+        self.baralho = Cartas(self.jogador).baralho()
         self.templo = Cena(DI["TEMPLO"])
         #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
         self.templo.direita = self.baralho[1]        

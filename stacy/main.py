@@ -44,8 +44,10 @@ class Jogador:
     def continua(self):
         """ entra em nova camara e acumula turquesa """
         self.turquesa = self.turquesa + 1
-        self.acampamento.vai()
-                
+        self.
+    def ganha_uma_turquesa(self):
+        lugar = 60*self.turquesa()
+        tur = Elemento(DI["TURQUESA"], tit="turquesa", style=dict(left=F"{lugar}px", top="350px", widtg="50px", height="30px"), cena=self.acampamento.cena)
     def desiste(self):
         " segue para o acampamento """
         self.acampamento.vai()

@@ -211,3 +211,10 @@ NameError: name 'carta' is not defined
     from ruzwana.main import DI as RDI
 ImportError: cannot import name 'DI'
 '''},
+{'date': 'Tue Oct 01 2019 08:37:15.171 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  self vai(self):
+        ^
+SyntaxError: invalid syntax
+'''},

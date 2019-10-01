@@ -34,6 +34,8 @@ class Acampamento:
 class Jogador:
     def __init__(self):
         pass
+        # o que tem que ter no jogador?
+        # o jogador ganha uma turquesa para cada camara
     
 class Perigo:
     def __init__(self, imagem, tipo):

@@ -93,17 +93,40 @@ class Perigo:
 class Tesouro(Perigo):
     def __init__(self, imagem, tipo, jogador):
         super().__init__(imagem, tipo, jogador)
+        for tur in range(tipo+1)
+            self.ganha_uma_turquesa(tur)
 
+def vai(self):
+    self.jogador.continua()
+    self.cena_vai()
+    
+def ganha_uma_turquesa(self, onde):
+    """
+    ouro = turquesa // 10
+    sobra_ouro = ouro % 10
+    obsidiana = sobra_ouro // 5 
+    tur = sonbra_ouro % 5 
+    """
+    lugar =  50*onde
+    tur = Elemento(TURQUESA,  tit="Turquesa", tyle=dict(left=f"{lugar}px", top="350px", width="50px",
+            height="30px"), ena=self.cena)
+        
 
 class Cartas:
     def __init__(self, jogador):
         self.jogador = jogador
-        self.cartas = [Perigo(DI[uma_imagem], uma_imagem, jogador) for uma_imagem in IMAGENS]
+        self.cartas = [Perigo(DI[uma_imagem], uma_imagem, jogador) for uma_imagem in PERIGOS]
+        tesouros = [Tesouro(DI["PEDRAS"], pedras % 5, jogador) for pedras in range(3))]
+        for pedras in range(30)]
+        self.cartas += tesouros
+        shuffle(self.cartas)
+        shuffle(self.cartas)
         for ordem, cartas in enumerate(self.cartas):
             if ordem < len(self.cartas)-1:
                 cartas.set_direita(self.cartas[ordem+1])
-    def baralho(self):
-        return self.cartas
+    
+def baralho(self):
+    return self.cartas
     
 class Jogo:
     def __init__(self):

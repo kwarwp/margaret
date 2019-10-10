@@ -1896,3 +1896,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Oct 10 2019 11:31:48.118 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 97
+  self.ganha_uma_turquesa(tur)
+  ^
+IndentationError: unexpected indent
+'''},

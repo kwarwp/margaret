@@ -1854,3 +1854,10 @@ Exception: <TypeError: random is not a function>
 'error': '''
 Exception: <TypeError: random is not a function>
 '''},
+{'date': 'Thu Oct 10 2019 11:21:26.663 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 96
+  for tur in range(tipo+1)
+                           ^
+SyntaxError: invalid syntax
+'''},

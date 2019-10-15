@@ -22,7 +22,7 @@ class Camara:
         
     def sai(self, explorador):
         print("explorador desiste de explorar e sai da camara")
-        explorador.pilhagem()
+        ...
 
 class Explorador:
     def __init__(self, camara):

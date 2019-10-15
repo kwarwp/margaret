@@ -20,8 +20,8 @@ class Pilhagem:
     """ A pilhagem é o lucro retirado do templo """
     def __init__(self):
         """ Cria a pilhagem com os seus valores """
-        self.pilhagem = pilhagem()
-        self.explorador = Explorador()  # cria um explorador
+        self.pilhagem = Pilhagem()
+        self.explorador = Explorador(self.pilhagem)  # cria um explorador
         
     def inicia(self):
         """ dá início ao jogo, fazendo o explorador entrar

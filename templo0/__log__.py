@@ -19,3 +19,10 @@ Traceback (most recent call last):
     self.camara.entra(self.jogador)
 AttributeError: 'Templo' object has no attribute 'jogador'
 '''},
+{'date': 'Tue Oct 15 2019 11:01:57.674 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  if "entra na camara de novo?" == "s"
+                                       ^
+SyntaxError: invalid syntax
+'''},

@@ -16,7 +16,7 @@ class Explorador:
         print("criou explorador")
 
 
-class pilhagem:
+class Pilhagem:
     """ A pilhagem é o lucro retirado do templo """
     def __init__(self):
         """ Cria a pilhagem com os seus valores """

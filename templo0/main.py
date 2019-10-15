@@ -10,10 +10,15 @@ class Camara:
         
     def entra(self, explorador):
         print("explorador entrou na camara")
+        explorador.pilhagem()
 
 class Explorador:
     def __init__(self):
         print("criou explorador")
+        
+    def pilhagem(self):
+        """ saqueia a camara e fica com o tesouro"""
+        print("saqueia a camara")
 
 class Templo:
     """ O Templo Inca com camaras secretas """

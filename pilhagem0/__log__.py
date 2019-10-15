@@ -21,3 +21,7 @@ RuntimeError: too much recursion
   module '$exec_455' line 33
     pilhagem = pilhagem()
 '''},
+{'date': 'Tue Oct 15 2019 10:19:33.273 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is undefined>
+'''},

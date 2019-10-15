@@ -93,7 +93,7 @@ class Perigo:
 class Tesouro(Perigo):
     def __init__(self, imagem, tipo, jogador):
         super().__init__(imagem, tipo, jogador)
-        for tur in range(tipo+1)
+        for tur in range(tipo+1):
             self.ganha_uma_turquesa(tur)
 
 def vai(self):
@@ -116,8 +116,7 @@ class Cartas:
     def __init__(self, jogador):
         self.jogador = jogador
         self.cartas = [Perigo(DI[uma_imagem], uma_imagem, jogador) for uma_imagem in PERIGOS]
-        tesouros = [Tesouro(DI["PEDRAS"], pedras % 5, jogador) for pedras in range(3))]
-        for pedras in range(30)]
+        tesouros = [Tesouro(DI["TURQUESA"], pedras % 5, jogador) for pedras in range(30)]
         self.cartas += tesouros
         shuffle(self.cartas)
         shuffle(self.cartas)

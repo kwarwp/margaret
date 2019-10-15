@@ -3,9 +3,9 @@
 Tesouro Inca - O Templo
 """
 __author__ = "Junior"
-
-def Templo(self):
-    print("chega no templo")
+class Templo:
+    def Templo(self):
+        print("chega no templo")
 
 class Camara:
     """ A camara é o lugar do jogo """
@@ -15,9 +15,7 @@ class Camara:
         self.explorador = explorador()  # cria um explorador
     
     def inicia(self):
-        """ dá inicio ao jogo, fazendo o explorador entrar
-    na primmeira câmara
-    """
+        """ dá inicio ao jogo, fazendo o explorador entrar na primmeira câmara """
         self.camara.entrar(self.explorador)
 
 if __name__ == "__main__":

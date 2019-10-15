@@ -7,7 +7,7 @@ __author__ = "Junior"
 def Templo(self):
     print("chega no templo")
 
-class camara:
+class Camara:
     """ A camara é o lugar do jogo """
     def __init__(self):
         """ as camaras são as divisões do templo """

@@ -45,3 +45,9 @@ RuntimeError: too much recursion
   module '$exec_505' line 33
     Pilhagem = Pilhagem()
 '''},
+{'date': 'Tue Oct 15 2019 10:59:01.792 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_515' line 33
+    pilhagem = Pilhagem()
+'''},

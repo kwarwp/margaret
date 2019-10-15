@@ -5,5 +5,3 @@ class Professor:
     def __init__(self):
         print("Feliz dia dos professores")
     
-if __name__ == "__main__":
-    Professor.inicia()

@@ -1910,3 +1910,10 @@ IndentationError: unexpected indent
                            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 15 2019 08:58:02.530 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 119
+  tesouros = [Tesouro(DI["PEDRAS"], pedras % 5, jogador) for pedras in range(3))]
+                                                                               ^
+SyntaxError: invalid syntax
+'''},

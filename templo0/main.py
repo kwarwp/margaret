@@ -4,12 +4,24 @@ Tesouro Inca - O Templo
 """
 __author__ = "Carlo"
 
+class Cabana:
+    """ onde o explorador guarda os tesouros """
+    def __init__(self):
+        self.tesouro = 0
+        print(f"criou cabana contendo {self.tesouro} tesouros")
+
 class Camara:
     def __init__(self):
         print("criou camara")
+        self.cabana = Cabana()
         
     def entra(self, explorador):
+        """ entra e saqueia esta camara """
         print("explorador entrou na camara")
+        explorador.pilhagem()
+        
+    def sai(self, explorador):
+        print("explorador desiste de explorar e sai da camara")
         explorador.pilhagem()
 
 class Explorador:
@@ -24,6 +36,8 @@ class Explorador:
         print(f"saqueia a camara e fica com {self.butim} tesouros")
         if input(f"voce já tem {self.butim} tesouros,continua?") == "s":
             self.camara.entra(self)
+        else:
+            self.camara.sai(self)
 
 class Templo:
     """ O Templo Inca com camaras secretas """

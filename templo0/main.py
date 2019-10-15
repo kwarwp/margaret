@@ -15,12 +15,14 @@ class Camara:
 class Explorador:
     def __init__(self, camara):
         self.camara = camara
-        print("criou explorador")
+        self.butim = 0
+        print(f"criou explorador com butim {self.butim}")
         
     def pilhagem(self):
         """ saqueia a camara e fica com o tesouro"""
         print("saqueia a camara")
-        if input("continua?") == "s":
+        self.butim += 1
+        if input(f"voce já tem {self.butim} tesouros,continua?") == "s":
             self.camara.entra(self)
 
 class Templo:

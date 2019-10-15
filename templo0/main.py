@@ -9,6 +9,12 @@ class Cabana:
     def __init__(self):
         self.tesouro = 0
         print(f"criou cabana contendo {self.tesouro} tesouros")
+        
+    def entra(self, explorador):
+        """ entra e saqueia esta camara """
+        print("explorador entrou na cabana")
+        self.tesouro = explorador.guarda_butim()
+        print(f"explorador guarda na cabana {self.tesouro} tesouros")
 
 class Camara:
     def __init__(self):
@@ -22,13 +28,18 @@ class Camara:
         
     def sai(self, explorador):
         print("explorador desiste de explorar e sai da camara")
-        ...
+        self.cabana.entra(explorador)
 
 class Explorador:
     def __init__(self, camara):
         self.camara = camara
         self.butim = 0
         print(f"criou explorador com butim {self.butim}")
+        
+    def guarda_butim(self):
+        """ coloca o butim que está carregando na segurança da cabana"""
+        self.butim, guarda = 0, self.butim
+        return guarda
         
     def pilhagem(self):
         """ saqueia a camara e fica com o tesouro"""

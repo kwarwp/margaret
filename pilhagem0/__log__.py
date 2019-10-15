@@ -15,3 +15,9 @@
     pilhagem = Pilhagem()
 NameError: name 'Pilhagem' is not defined
 '''},
+{'date': 'Tue Oct 15 2019 10:19:17.358 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_455' line 33
+    pilhagem = pilhagem()
+'''},

@@ -1938,3 +1938,7 @@ SyntaxError: invalid syntax
                                                                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 15 2019 09:02:58.929 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: random is not a function>
+'''},

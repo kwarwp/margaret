@@ -7,10 +7,10 @@ __author__ = "Junior"
 
 class camara:
     """ A camara é o lugar do jogo """
-    def _init_(self):
+    def __init__(self):
         """ as camaras são as divisões do templo """
         self.camara = camara()  # importa a camara de outro módulo
-        self.explorador = Explorador()  # cria um explorador
+        self.explorador = explorador()  # cria um explorador
     
     def inicia(self):
         """ dá inicio ao jogo, fazendo o explorador entrar

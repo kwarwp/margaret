@@ -29,3 +29,7 @@ Exception: <TypeError: obj is undefined>
 'error': '''
 Exception: <TypeError: undefined has no properties>
 '''},
+{'date': 'Tue Oct 15 2019 10:23:14.738 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},

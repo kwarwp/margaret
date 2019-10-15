@@ -33,3 +33,9 @@ Exception: <TypeError: undefined has no properties>
 'error': '''
 Exception: <TypeError: undefined has no properties>
 '''},
+{'date': 'Tue Oct 15 2019 10:28:20.799 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_495' line 33
+    pilhagem = Pilhagem()
+'''},

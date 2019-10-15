@@ -116,3 +116,7 @@ NameError: name 'templo' is not defined
     camara = Camara()
 NameError: name 'Camara' is not defined
 '''},
+{'date': 'Tue Oct 15 2019 10:07:55.495 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is undefined>
+'''},

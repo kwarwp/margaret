@@ -77,3 +77,10 @@ NameError: name 'camara' is not defined
     self.camara = camara()  # importa a camara de outro módulo
 NameError: name 'camara' is not defined
 '''},
+{'date': 'Tue Oct 15 2019 10:04:23.229 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+'''},

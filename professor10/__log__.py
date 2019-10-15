@@ -54,3 +54,10 @@ NameError: name 'professor' is not defined
     professor.inicia()
 NameError: name 'professor' is not defined
 '''},
+{'date': 'Tue Oct 15 2019 14:37:36.990 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+'''},

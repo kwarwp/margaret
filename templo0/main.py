@@ -26,7 +26,7 @@ class Templo:
         """ dá início ao jogo, fazendo o explorador entrar
             na primeira câmara
         """
-        self.camara.entra(self.jogador)
+        self.camara.entra(self.explorador)
 
 if __name__ == "__main__":
     templo = Templo()

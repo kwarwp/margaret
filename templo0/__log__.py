@@ -26,3 +26,10 @@ AttributeError: 'Templo' object has no attribute 'jogador'
                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 15 2019 11:02:30.558 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  if "entra na camara de novo?" == "s"
+                                       ^
+SyntaxError: invalid syntax
+'''},

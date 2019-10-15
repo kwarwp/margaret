@@ -20,8 +20,8 @@ class Explorador:
         
     def pilhagem(self):
         """ saqueia a camara e fica com o tesouro"""
-        print("saqueia a camara")
         self.butim += 1
+        print(f"saqueia a camara e fica com {self.butim} tesouros")
         if input(f"voce já tem {self.butim} tesouros,continua?") == "s":
             self.camara.entra(self)
 

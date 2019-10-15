@@ -15,7 +15,7 @@ class Cabana:
         print("explorador entrou na cabana")
         self.tesouro += explorador.guarda_butim()
         print(f"explorador guarda na cabana {self.tesouro} tesouros")
-        if "entra na camara de novo?" == "s"
+        if input("entra na camara de novo?") == "s":
             explorador.retorna()
 
 class Camara:

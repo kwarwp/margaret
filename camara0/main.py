@@ -17,3 +17,7 @@ class camara:
     na primmeira câmara
     """
         self.camara.entrar(self.explorador)
+
+if __name__ == "__main__":
+    templo - Templo()
+    tempo.inicia()

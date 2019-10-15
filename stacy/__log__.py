@@ -1917,3 +1917,10 @@ SyntaxError: invalid syntax
                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 15 2019 08:58:39.120 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 120
+  for pedras in range(30)]
+                         ^
+SyntaxError: invalid syntax
+'''},

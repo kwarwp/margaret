@@ -1903,3 +1903,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Oct 15 2019 08:57:28.766 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 96
+  for tur in range(tipo+1)
+                           ^
+SyntaxError: invalid syntax
+'''},

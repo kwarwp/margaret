@@ -54,7 +54,7 @@ class Jogador:
         tur = sobra_ouro % 5
         """
         lugar = 50*onde
-        tur = Elemento(TURQUESA,  tit=DI["Turquesa"], style=dict(left=f"{lugar}px", top="350px", width="50px", height="30px"), cena=self.acampamento.cena)
+        tur = Elemento(TURQUESA,  tit="Turquesa", style=dict(left=f"{lugar}px", top="350px", width="50px", height="30px"), cena=self.acampamento.cena)
     
     def desiste(self):
         " segue para o acampamento """

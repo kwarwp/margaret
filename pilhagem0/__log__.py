@@ -25,3 +25,7 @@ RuntimeError: too much recursion
 'error': '''
 Exception: <TypeError: obj is undefined>
 '''},
+{'date': 'Tue Oct 15 2019 10:22:59.246 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: undefined has no properties>
+'''},

@@ -56,3 +56,10 @@ AttributeError: 'Carta' object has no attribute 'monta_baralho'
     self.carta.monta_baralho(self.carta)
 AttributeError: 'Carta' object has no attribute 'monta_baralho'
 '''},
+{'date': 'Sun Oct 20 2019 22:33:59.8 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  umacarta = Carta(carta)
+  ^
+IndentationError: expected an indented block
+'''},

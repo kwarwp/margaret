@@ -8,18 +8,24 @@ from random import randint
 class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. O jogador entra nela quando se invoca o método vai """
     def __init__(self, outra):
+        self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabammento"]
         self.camara = "Você entrou numa câmara com perigos."
-        self.perigos = 0
+        self.perigos = {tipo :0 for tipo in self.tipos}
+        self.perigo_mortal = None
         self.outra = outra
         
     def sai(self):
-        input(f"Você sai do templo, mas encontrou {self.perigos} perigos")
+        per_m = self.perigo_mortal
+        quantos = self.perigos[per.m]
+        input(f"Você sai do templo, mas encontrou {quantos} {per-m}")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
-            self.perigos = self.perigos + 1
-            if self.perigos > 1 :
+            tipo_do_perigo = self.tipos[randint(0,5)]
+            self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
+            if self.perigos[tipo_do_perigo] > 1 :
+                self.perigo_motal = tipo_do_perigo
                 input("Você foge assustado para a entrada do templo")
                 self.sai()
                 self.outra.perde()

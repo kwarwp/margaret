@@ -235,3 +235,10 @@ SyntaxError: invalid syntax
     print(help())
 IOError: File http://supygirls.pythonanywhere.com/js/builtins_docstrings.js not found
 '''},
+{'date': 'Tue Nov 05 2019 11:15:32.885 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 103
+  print(help(.))
+              ^
+SyntaxError: invalid syntax
+'''},

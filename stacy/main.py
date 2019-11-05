@@ -30,7 +30,7 @@ class JogoDoTesouroInca:
         if input(self.templo+continua) == "s":
             input("Você se embrenha no templo, e explora")
             muitos = self.camara.vai()
-            input(F"Você sai do templo com {muitos} tesouros?")
+            input(F"Você sai do templo com {muitos} tesouros")
         else:
             input("Você sabiamente desiste desta loucura")
         

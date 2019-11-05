@@ -8,7 +8,7 @@ from random import randint
 class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. O jogador entra nela quando se invoca o método vai """
     def __init__(self, outra):
-        self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabammento"]
+        self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabamento"]
         self.camara = "Você entrou numa câmara com {}."
         self.perigos = {tipo :0 for tipo in self.tipos}
         self.perigo_mortal = None

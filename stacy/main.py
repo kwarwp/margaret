@@ -28,6 +28,7 @@ class JogoDoTesouroInca:
         if input(self.templo+continua) == "S":
             input("Você se embrenha no templo, e explora")
             self.camara.vai()
+            input("Você sai do templo de mãos vazias")
         else:
             input("Você sabiamente desiste desta loucura")
         

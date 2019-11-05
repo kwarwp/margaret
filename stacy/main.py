@@ -12,7 +12,7 @@ class CamaraSecreta:
     def vai(self):
         continua = "Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
-            self.vai()
+            return self.vai()
         else:
             input("Você volta para a entrada do templo")
             return 10

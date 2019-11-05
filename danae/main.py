@@ -14,6 +14,10 @@ class CamaraPerigosa:
         self.perigos = 0
         self.outra = outra
         
+    def sai(self):
+        input(f"Você sai do templo mas encontrou {self.perigos} perigos")
+
+        
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
@@ -21,7 +25,8 @@ class CamaraPerigosa:
             return self.outra.vai()
         else:
             input("Você volta para a entrada do templo")
-            input(f"Você sai do templo mas encontrou {self.perigos} perigos")
+            self.sai()
+            self.outra.sai()
             return self.tesouros
 
 class CamaraSecreta:
@@ -33,6 +38,9 @@ class CamaraSecreta:
         self.tesouros = 0
         self.outra = outra
         
+    def sai(self):
+        input(f"Você sai do templo com {self.tesouros} tesouros:")
+        
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
@@ -40,7 +48,8 @@ class CamaraSecreta:
             return self.outra.vai()
         else:
             input("Você volta para a entrada do templo")
-            input(f"Você sai do templo com {self.tesouros} tesouros:")
+            self.sai()
+            self.outra.sai()
             return self.tesouros
 
 class JogoDoTesouroInca:

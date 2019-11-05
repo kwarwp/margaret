@@ -1990,3 +1990,10 @@ Exception: <TypeError: random is not a function>
 'error': '''
 Exception: <TypeError: random is not a function>
 '''},
+{'date': 'Tue Nov 05 2019 08:56:30.605 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+'''},

@@ -15,7 +15,7 @@ class CamaraSecreta:
             self.vai()
         else:
             input("Você volta para a entrada do templo")
-            return 10
+            return ("10")
 
 class JogoDoTesouroInca:
     """ O jogo do tesouro inca. O jogo começa quando se invoca o método vai """
@@ -24,7 +24,7 @@ class JogoDoTesouroInca:
         self.camara = CamaraSecreta()
         
     def vai(self):
-        continua = "Você vai entrar? (s/N)"
+        continua = " Você vai entrar? (s/N)"
         if input(self.templo+continua) == "s":
             input("Você se embrenha no templo, e explora")
             muitos = self.camara.vai()

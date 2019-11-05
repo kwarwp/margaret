@@ -10,8 +10,8 @@ class CamaraSecreta:
         self.camara = "Você entrou numa câmara com tesouros."
         
     def vai(self):
-        continua = "Segue para outra câmara? (S/N)"
-        if input(self.camara+continua) == "S":
+        continua = "Segue para outra câmara? (s/N)"
+        if input(self.camara+continua) == "s":
             self.vai()
         else:
             input("Você volta para a entrada do templo")
@@ -24,8 +24,8 @@ class JogoDoTesouroInca:
         self.camara = CamaraSecreta()
         
     def vai(self):
-        continua = "Você vai entrar? (S/N)"
-        if input(self.templo+continua) == "S":
+        continua = "Você vai entrar? (s/N)"
+        if input(self.templo+continua) == "s":
             input("Você se embrenha no templo, e explora")
             muitos = self.camara.vai()
             input(F"Você sai do templo com {muitos} tesouros?")

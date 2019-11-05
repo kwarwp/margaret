@@ -18,7 +18,7 @@ class CamaraPerigosa:
         per_m = self.perigo_mortal
         quantos = self.perigos[per_m] if per_m != None else 0
         per_m = per_m if per_m != None else "perigo"
-        input(f"Você sai do templo mas encontrou {quantos} {per_m}s")
+        input(f"Você sai do templo, mas encontrou {quantos} {per_m}s")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
@@ -50,10 +50,10 @@ class CamaraSecreta:
         self.outra = outra
         
     def perde(self):
-        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
+        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros.")
         
     def sai(self):
-        input(f"Você sai do templo com {self.tesouros} tesouros:")
+        input(f"Você sai do templo com {self.tesouros} tesouros.")
         
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"

@@ -169,3 +169,39 @@ AttributeError: 'CamaraPerigosa' object has no attribute 'tesouros'
     tipo_do_perigo = self.tipos[randint(0,5)]
 IndexError: list index out of range
 '''},
+{'date': 'Tue Nov 05 2019 10:43:46.719 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 101
+    tesouro.vai()
+  module <module> line 94
+    muitos = self.camara.vai()
+  module <module> line 42
+    return self.outra.vai()
+  module <module> line 73
+    return self.vai()
+  module <module> line 73
+    return self.vai()
+  module <module> line 73
+    return self.vai()
+  module <module> line 73
+    return self.vai()
+  module <module> line 73
+    return self.vai()
+  module <module> line 71
+    return self.outra.vai()
+  module <module> line 47
+    self.sai()
+  module <module> line 26
+    quantos = self.perigos[per_m]
+KeyError: None
+'''},

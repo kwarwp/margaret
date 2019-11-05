@@ -2,11 +2,12 @@
 """ Tesouro Inca - versão texto
 Uma aventura de exploração
 
+v 19.11.05h - o jogador foge se encontra dois perigos do mesmo tipo
 v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
 v 19.11.05f - alterna aleatoriamente entre tesouros e perigos
 """
 __author__ = "Queila Couto <queila at ufrj br>"
-__version__ = "19.11.05g"
+__version__ = "19.11.05h"
 from random import randint
 
 class CamaraPerigosa:
@@ -14,18 +15,24 @@ class CamaraPerigosa:
     O jogador entra nela quando se invoca o método vai
     """
     def __init__(self, outra):
-        self.camara = "Você entrou numa câmara com perigos."
-        self.perigos = 0
+        self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabamento"]
+        self.camara = "Você entrou numa câmara com {}."
+        self.perigos = {tipo :0 for tipo in self.tipos}
+        self.perigo_mortal = None
         self.outra = outra
         
     def sai(self):
-        input(f"Você sai do templo mas encontrou {self.perigos} perigos")
+        per_m = self.perigo_mortal
+        quantos = self.perigos[per_m]
+        input(f"Você sai do templo mas encontrou {quantos} {per_m}")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        if input(self.camara+continua) == "s":
-            self.perigos = self.perigos + 1
-            if self.perigos > 1 :
+        tipo_do_perigo = self.tipos[randint(0,5)]
+        if input(self.camara.format(tipo_do_perigo)+continua) == "s":
+            self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
+            if self.perigos[tipo_do_perigo] > 1 :
+                self.perigo_mortal = tipo_do_perigo
                 input("Você foge assustado para a entrada do templo")
                 self.sai()
                 self.outra.perde()

@@ -2004,3 +2004,10 @@ SyntaxError: invalid syntax
                                                  ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Tue Nov 05 2019 09:05:23.219 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  if input(self.camara+continua) == "S"
+                                        ^
+SyntaxError: invalid syntax
+'''},

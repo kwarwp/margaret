@@ -212,3 +212,10 @@ KeyError: None
                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 05 2019 10:51:17.731 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  quantos = self.perigos[per_m] if per_m not None else 0
+                                              ^
+SyntaxError: invalid syntax
+'''},

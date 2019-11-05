@@ -1997,3 +1997,10 @@ Exception: <TypeError: random is not a function>
                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 05 2019 09:04:59.246 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  self.camara = "Você entrou numa câmara vazia.""
+                                                 ^
+SyntaxError: EOL while scanning string literal
+'''},

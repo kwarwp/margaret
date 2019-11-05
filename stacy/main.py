@@ -13,12 +13,18 @@ class CamaraPerigosa:
         self.outra = outra
         
     def sai(self):
-        input(F"Você sai do templo mas encontrou {self.perigos} perigos")    
-        
+        input(f"Você sai do templo mas encontrou {self.perigos} perigos")
+
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.perigos = self.perigos + 1
+            if self.perigos > 1 :
+                input("Você foge assustado para a entrada do templo")
+                self.sai()
+                self.outra.sai()
+                return self.perigos
+            
             if randint(0,9) > 3:
                 return self.outra.vai()
             else:
@@ -27,7 +33,8 @@ class CamaraPerigosa:
             input("Você volta para a entrada do templo")
             self.sai()
             self.outra.sai()
-            return self.tesouros            
+            return self.perigos
+           
 
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. O jogador entra nela quando se invoca o método vai """

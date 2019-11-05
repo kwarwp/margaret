@@ -6,6 +6,17 @@ __author__ = "Carlo Oliveira <carlo at ufrj br>"
 __version__ = "19.11.05a"
 
 
+class JogoDoTesouroInca:
+    """ O jogo do tesouro inca. 
+    O jogo começa quando se invoca o método vai
+    """
+    def __init__(self):
+        self.templo = "Você está diante de um templo Inca"
+        
+    def vai(self):
+        print(self.templo)
+
+
 if __name__ == "__main__":
-    tesouro = Tesouro()
+    tesouro = JogoDoTesouroInca()
     tesouro.vai()

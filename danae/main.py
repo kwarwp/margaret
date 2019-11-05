@@ -28,7 +28,7 @@ class CamaraPerigosa:
             if self.perigos > 1 :
                 input("Você foge assustado para a entrada do templo")
                 self.sai()
-                self.outra.sai()
+                self.outra.perde()
                 return self.perigos
             
             if randint(0,9) > 3:
@@ -49,6 +49,9 @@ class CamaraSecreta:
         self.camara = "Você entrou numa câmara com tesouros."
         self.tesouros = 0
         self.outra = outra
+        
+    def perde(self):
+        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
         
     def sai(self):
         input(f"Você sai do templo com {self.tesouros} tesouros:")

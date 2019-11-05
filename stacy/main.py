@@ -14,10 +14,7 @@ class JogoDoTesouroInca:
         if input(self.templo+continua) == "S":
             input("você se embrenha no templo, e desaparece")
         else:
-            input
-        
-    def vai(self):
-        print(self.templo)
+            input("Você sabiamente desiste desta loucura")
         
 if __name__ == "__main__"
     tesouro = JogoDoTesouroInca()

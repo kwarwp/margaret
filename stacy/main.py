@@ -16,6 +16,6 @@ class JogoDoTesouroInca:
         else:
             input("Você sabiamente desiste desta loucura")
         
-if __name__ == "__main__"
+if __name__ == "__main__":
     tesouro = JogoDoTesouroInca()
     tesouro.vai()

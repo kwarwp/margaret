@@ -30,7 +30,7 @@ class JogoDoTesouroInca:
             muitos = self.camara.vai()
             input(F"Você sai do templo com {muitos} tesouros?")
         else:
-            input("Você sabiamente desiste desta loucura"+str(muitos))
+            input("Você sabiamente desiste desta loucura")
         
 if __name__ == "__main__":
     tesouro = JogoDoTesouroInca()

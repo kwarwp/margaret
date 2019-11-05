@@ -2019,3 +2019,7 @@ Exception: <TypeError: arguments[($len - 1)] is undefined>
 'error': '''
 Exception: <TypeError: arguments[($len - 1)] is undefined>
 '''},
+{'date': 'Tue Nov 05 2019 10:16:38.209 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: arguments[($len - 1)] is undefined>
+'''},

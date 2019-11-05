@@ -7,7 +7,7 @@ __version__ = "19.11.05a"
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. O jogador entra nela quando se invoca o método vai """
     def __init__(self):
-        self.camara = "Você entrou numa câmara vazia.""
+        self.camara = "Você entrou numa câmara vazia."
         
     def vai(self):
         continua = "Segue para outra câmara? (S/N)"

@@ -2,7 +2,7 @@
 """ Tesouro Inca - versão texto uma aventura de exploração """
 
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
-__version__ = "19.11.05f"
+__version__ = "19.11.05"
 from random import randint
 
 class CamaraPerigosa:
@@ -22,7 +22,7 @@ class CamaraPerigosa:
             if self.perigos > 1 :
                 input("Você foge assustado para a entrada do templo")
                 self.sai()
-                self.outra.sai()
+                self.outra.perde()
                 return self.perigos
             
             if randint(0,9) > 3:
@@ -43,8 +43,11 @@ class CamaraSecreta:
         self.tesouros = 0
         self.outra = outra
         
+    def perde(self):
+        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
+        
     def sai(self):
-        input(F"Você sai do templo com {self.tesouros} tesouros:")
+        input(f"Você sai do templo com {self.tesouros} tesouros:")
         
     def vai(self):
         continua = "Segue para outra câmara? (s/N)"
@@ -64,6 +67,7 @@ class JogoDoTesouroInca:
     """ O jogo do tesouro inca. O jogo começa quando se invoca o método vai """
     def __init__(self):
         self.templo = "Você está diante de um templo Inca."
+        tesouro = CamaraSecreta(None)
         self.camara = CamaraPerigosa(tesouro)
         tesouro.outra = self.camara
         
@@ -75,7 +79,7 @@ class JogoDoTesouroInca:
             
         else:
             input("Você sabiamente desiste desta loucura")
-        a
+        
 if __name__ == "__main__":
     tesouro = JogoDoTesouroInca()
     tesouro.vai()

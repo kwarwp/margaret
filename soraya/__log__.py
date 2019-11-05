@@ -41,3 +41,10 @@ SyntaxError: invalid syntax
      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 05 2019 10:25:10.37 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  v 19.11.05f - o jogador foge se encontra dois perigos qualquer
+     ^
+SyntaxError: invalid syntax
+'''},

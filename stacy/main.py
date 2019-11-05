@@ -13,7 +13,7 @@ class CamaraPerigosa:
         self.outra = outra
         
     def sai(self):
-        input(f"Você sai do templo mas encontrou {self.perigos} perigos")
+        input(f"Você sai do templo, mas encontrou {self.perigos} perigos")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"

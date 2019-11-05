@@ -13,3 +13,10 @@ SyntaxError: EOL while scanning string literal
                                                             ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Tue Nov 05 2019 10:21:49.461 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
+     ^
+SyntaxError: invalid syntax
+'''},

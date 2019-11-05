@@ -205,3 +205,10 @@ IndexError: list index out of range
     quantos = self.perigos[per_m]
 KeyError: None
 '''},
+{'date': 'Tue Nov 05 2019 10:50:42.491 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  quantos = self.perigos[per_m] if per_m not None else: 0
+                                              ^
+SyntaxError: invalid syntax
+'''},

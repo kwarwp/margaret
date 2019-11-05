@@ -2149,3 +2149,10 @@ NameError: name 'per' is not defined
     (per-m)
 NameError: name 'per' is not defined
 '''},
+{'date': 'Tue Nov 05 2019 10:46:31.250 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  per_m = self.perigo_mortal if not None else: "perigo"
+                                              ^
+SyntaxError: invalid syntax
+'''},

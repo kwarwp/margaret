@@ -3,7 +3,8 @@
 Uma aventura de exploração
 """
 __author__ = "Carlo Oliveira <carlo at ufrj br>"
-__version__ = "19.11.05e"
+__version__ = "19.11.05f"
+from random import randint
 
 class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. 
@@ -22,7 +23,10 @@ class CamaraPerigosa:
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.perigos = self.perigos + 1
-            return self.outra.vai()
+            if randint(0,9) > 3:
+                return self.outra.vai()
+            else:
+                return self.vai()
         else:
             input("Você volta para a entrada do templo")
             self.sai()
@@ -45,7 +49,10 @@ class CamaraSecreta:
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.tesouros = self.tesouros + 1
-            return self.outra.vai()
+            if randint(0,9) > 6:
+                return self.outra.vai()
+            else:
+                return self.vai()
         else:
             input("Você volta para a entrada do templo")
             self.sai()

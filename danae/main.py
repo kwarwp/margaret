@@ -1,9 +1,12 @@
 # margaret.danae.main.py
 """ Tesouro Inca - versão texto
 Uma aventura de exploração
+
+v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
+v 19.11.05f - alterna aleatoriamente entre tesouros e perigos
 """
 __author__ = "Carlo Oliveira <carlo at ufrj br>"
-__version__ = "19.11.05f"
+__version__ = "19.11.05g"
 from random import randint
 
 class CamaraPerigosa:
@@ -18,11 +21,16 @@ class CamaraPerigosa:
     def sai(self):
         input(f"Você sai do templo mas encontrou {self.perigos} perigos")
 
-        
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.perigos = self.perigos + 1
+            if self.perigos > 1 :
+                input("Você foge assustado para a entrada do templo")
+                self.sai()
+                self.outra.sai()
+                return self.perigos
+            
             if randint(0,9) > 3:
                 return self.outra.vai()
             else:
@@ -31,7 +39,7 @@ class CamaraPerigosa:
             input("Você volta para a entrada do templo")
             self.sai()
             self.outra.sai()
-            return self.tesouros
+            return self.perigos
 
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. 

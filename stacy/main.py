@@ -8,14 +8,16 @@ class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. O jogador entra nela quando se invoca o método vai """
     def __init__(self):
         self.camara = "Você entrou numa câmara com tesouros."
+        self.tesouros = 0
         
     def vai(self):
         continua = "Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
+            self.tesouros = self.tesouros + 1
             return self.vai()
         else:
             input("Você volta para a entrada do templo")
-            return 10
+            return self.tesouros
 
 class JogoDoTesouroInca:
     """ O jogo do tesouro inca. O jogo começa quando se invoca o método vai """

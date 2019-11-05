@@ -9,23 +9,23 @@ class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. O jogador entra nela quando se invoca o método vai """
     def __init__(self, outra):
         self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabammento"]
-        self.camara = "Você entrou numa câmara com perigos."
+        self.camara = "Você entrou numa câmara com {}."
         self.perigos = {tipo :0 for tipo in self.tipos}
         self.perigo_mortal = None
         self.outra = outra
         
     def sai(self):
         per_m = self.perigo_mortal
-        quantos = self.perigos[per.m]
+        quantos = self.perigos[per_m]
         input(f"Você sai do templo, mas encontrou {quantos} {per-m}")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         tipo_do_perigo = self.tipos[randint(0,5)]
-        if input(self.camara+continua) == "s":
+        if input(self.camara.format(tipo_do_perigo)+continua) == "s":
             self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
             if self.perigos[tipo_do_perigo] > 1 :
-                self.perigo_motal = tipo_do_perigo
+                self.perigo_mortal = tipo_do_perigo
                 input("Você foge assustado para a entrada do templo")
                 self.sai()
                 self.outra.perde()

@@ -2156,3 +2156,10 @@ NameError: name 'per' is not defined
                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 05 2019 10:48:22.319 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  per_m = self.perigo_mortal if per_m not None else: "perigo"
+                                           ^
+SyntaxError: invalid syntax
+'''},

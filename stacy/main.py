@@ -21,7 +21,7 @@ class CamaraPerigosa:
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        tipo_do_perigo = self.tipos[randint(0,5)]
+        tipo_do_perigo = self.tipos[randint(0,4)]
         if input(self.camara.format(tipo_do_perigo)+continua) == "s":
             self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
             if self.perigos[tipo_do_perigo] > 1 :

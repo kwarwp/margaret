@@ -23,8 +23,8 @@ class CamaraPerigosa:
         
     def sai(self):
         per_m = self.perigo_mortal
-        quantos = self.perigos[per_m] if per_m not None else 0
-        per_m = per_m if per_m not None else "perigo"
+        quantos = self.perigos[per_m] if per_m != None else 0
+        per_m = per_m if per_m != None else "perigo"
         input(f"Você sai do templo mas encontrou {quantos} {per_m}s")
 
     def vai(self):

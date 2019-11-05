@@ -11,7 +11,7 @@ class CamaraSecreta:
         
     def vai(self):
         continua = "Segue para outra câmara? (S/N)"
-        if input(self.camara+continua) == "S"
+        if input(self.camara+continua) == "S":
             self.vai()
         else:
             input("Você volta para a entrada do templo")

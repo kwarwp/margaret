@@ -2011,3 +2011,7 @@ SyntaxError: EOL while scanning string literal
                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 05 2019 10:15:41.69 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: arguments[($len - 1)] is undefined>
+'''},

@@ -16,8 +16,9 @@ class CamaraPerigosa:
         
     def sai(self):
         per_m = self.perigo_mortal
-        quantos = self.perigos[per_m]
-        input(f"Você sai do templo, mas encontrou {quantos} {per-m}")
+        quantos = self.perigos[per_m] if per_m != None else 0
+        per_m = per_m if per_m != None else "perigo"
+        input(f"Você sai do templo mas encontrou {quantos} {per_m}s")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
@@ -40,7 +41,6 @@ class CamaraPerigosa:
             self.sai()
             self.outra.sai()
             return self.perigos
-           
 
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. O jogador entra nela quando se invoca o método vai """
@@ -56,7 +56,7 @@ class CamaraSecreta:
         input(f"Você sai do templo com {self.tesouros} tesouros:")
         
     def vai(self):
-        continua = "Segue para outra câmara? (s/N)"
+        continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.tesouros = self.tesouros + 1
             if randint(0,9) > 6:
@@ -82,10 +82,10 @@ class JogoDoTesouroInca:
         if input(self.templo+continua) == "s":
             input("Você se embrenha no templo, e explora")
             muitos = self.camara.vai()
-            
         else:
             input("Você sabiamente desiste desta loucura")
-        
+
+
 if __name__ == "__main__":
     tesouro = JogoDoTesouroInca()
     tesouro.vai()

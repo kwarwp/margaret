@@ -2256,3 +2256,10 @@ IndentationError: unexpected indent
     self.tesouro[tipo_do_tesouro] = self.tesouro[tipo_do_tesouro] + 1
 AttributeError: 'CamaraSecreta' object has no attribute 'tesouro'
 '''},
+{'date': 'Tue Nov 12 2019 16:57:25.282 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 89
+  self.perigo_mortal = tipo_do_perigo
+  ^
+IndentationError: unexpected indent
+'''},

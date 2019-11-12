@@ -45,7 +45,7 @@ class CamaraPerigosa:
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. O jogador entra nela quando se invoca o método vai """
     def __init__(self, outra):
-        self.tipos = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10" , "11", "12", "13", "14", "15", "16", "17"]
+        self.tipos = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
         self.camara = "Você entrou numa câmara com {} tesouros."
         self.tesouros = {tipo :0 for tipo in self.tipos}
         self.outra = outra
@@ -58,9 +58,10 @@ class CamaraSecreta:
         
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        if input(self.camara+continua) == "s":
-            self.tesouros = self.tesouros + 1
-            if randint(0,9) > 6:
+        tipo_do_tesouro = self.tipos[randint(0,16)]
+        if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
+            self.tesouro[tipo_do_tesouro] = self.tesouro[tipo_do_tesouro] + 1
+                    if randint(0,16) > 6:
                 return self.outra.vai()
             else:
                 return self.vai()

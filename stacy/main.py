@@ -60,8 +60,8 @@ class CamaraSecreta:
         continua = " Segue para outra câmara? (s/N)"
         tipo_do_tesouro = self.tipos[randint(0,16)]
         if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
-            self.tesouro[tipo_do_tesouro] = self.tesouro[tipo_do_tesouro] + 1
-                    if randint(0,16) > 6:
+            self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] + 1
+            if randint(0,16) > 6:
                 return self.outra.vai()
             else:
                 return self.vai()

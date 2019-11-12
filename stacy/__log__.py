@@ -2213,3 +2213,10 @@ AttributeError: 'CamaraSecreta' object has no attribute 'tesouro'
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 12 2019 16:52:25.195 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 71
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},

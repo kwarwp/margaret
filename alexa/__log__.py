@@ -63,3 +63,10 @@ AttributeError: 'Carta' object has no attribute 'monta_baralho'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Nov 24 2019 17:01:06.926 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  umacarta = Carta(carta)
+  ^
+IndentationError: expected an indented block
+'''},

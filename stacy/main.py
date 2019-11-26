@@ -47,7 +47,7 @@ class CamaraSecreta:
     def __init__(self, outra):
         self.tipos = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
         self.camara = "Você entrou numa câmara com {} tesouros."
-        self.tesouros = {tipo :0 for tipo in self.tipos}
+        self.tesouros = 0
         self.outra = outra
         
     def perde(self):

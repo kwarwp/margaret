@@ -23,12 +23,13 @@ class CamaraPerigosa:
         
     def sai(self):
         per_m = self.perigo_mortal
-        quantos = self.perigos[per_m]
-        input(f"Você sai do templo mas encontrou {quantos} {per_m}")
+        quantos = self.perigos[per_m] if per_m != None else 0
+        per_m = per_m if per_m != None else "perigo"
+        input(f"Você sai do templo mas encontrou {quantos} {per_m}s")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        tipo_do_perigo = self.tipos[randint(0,5)]
+        tipo_do_perigo = self.tipos[randint(0,4)]
         if input(self.camara.format(tipo_do_perigo)+continua) == "s":
             self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
             if self.perigos[tipo_do_perigo] > 1 :

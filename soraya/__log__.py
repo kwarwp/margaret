@@ -169,3 +169,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Nov 26 2019 10:03:45.557 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 81
+  return self.outra.vai()
+  ^
+IndentationError: unexpected indent
+'''},

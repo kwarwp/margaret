@@ -162,3 +162,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Nov 26 2019 10:02:59.257 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 80
+  if randint(0,9) > 6:
+  ^
+IndentationError: unexpected indent
+'''},

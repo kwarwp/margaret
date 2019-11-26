@@ -55,9 +55,8 @@ class CamaraSecreta:
     """
     def __init__(self, outra):
         self.camara = "Você entrou numa câmara com tesouros."
-        self.tesouro = "Você entrou numa câmara com {} tesouros."
-        if self.tesouros = +1
-        
+        self.tesouros = 0
+        self.outra = outra
         
     def perde(self):
         input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
@@ -69,7 +68,6 @@ class CamaraSecreta:
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.tesouros = self.tesouros + 1
-            
             if randint(0,9) > 6:
                 return self.outra.vai()
             else:

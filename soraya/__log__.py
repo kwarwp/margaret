@@ -351,3 +351,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Nov 26 2019 10:16:58.399 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 86
+  if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
+  ^
+IndentationError: unexpected indent
+'''},

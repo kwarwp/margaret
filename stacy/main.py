@@ -51,11 +51,11 @@ class CamaraSecreta:
         self.outra = outra
         
     def perde(self):
-        din = self.tesouro
+        din = self.tesouros
         input(f"Você fugiu do templo e perdeu {din} tesouros.")
         
     def sai(self):
-        din = self.tesouro
+        din = self.tesouros
         input(f"Você sai do templo com {din} tesouros.")
                         
     def vai(self):

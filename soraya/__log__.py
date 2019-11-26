@@ -90,3 +90,10 @@ SyntaxError: invalid syntax
      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 26 2019 09:57:02.268 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  if self.tesouros = +1
+                    ^
+SyntaxError: invalid syntax
+'''},

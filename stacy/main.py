@@ -2,7 +2,7 @@
 """ Tesouro Inca - versão texto uma aventura de exploração """
 
 __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
-__version__ = "19.11.05"
+__version__ = "19.11.26"
 from random import randint
 
 class CamaraPerigosa:
@@ -51,11 +51,13 @@ class CamaraSecreta:
         self.outra = outra
         
     def perde(self):
-        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros.")
+        din = self.tesouro
+        input(f"Você fugiu do templo e perdeu {din} tesouros.")
         
     def sai(self):
-        input(f"Você sai do templo com {self.tesouros} tesouros.")
-        
+        din = self.tesouro
+        input(f"Você sai do templo com {din} tesouros.")
+                        
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         tipo_do_tesouro = self.tipos[randint(0,16)]

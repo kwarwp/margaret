@@ -5,6 +5,10 @@ __author__ = "Victória Regina Caruzo victorialourencocaruzo@gmail.com"
 __version__ = "19.11.26"
 from random import randint
 
+class Baralho:
+    def __init__(self):
+        self.baralho = []
+
 class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. O jogador entra nela quando se invoca o método vai """
     def __init__(self, outra):

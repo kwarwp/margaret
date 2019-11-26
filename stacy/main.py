@@ -52,17 +52,21 @@ class CamaraSecreta:
         
     def perde(self):
         din = self.tesouros
+        din = self.tesouros[din] if din != None else 0
+        din = din if din != None else "tesouros"
         input(f"Você fugiu do templo e perdeu {din} tesouros.")
         
     def sai(self):
         din = self.tesouros
+        din = self.tesouros[din] if din != None else 0
+        din = din if din != None else "tesouros"
         input(f"Você sai do templo com {din} tesouros.")
                         
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         tipo_do_tesouro = self.tipos[randint(0,16)]
         if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
-            self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] + 1
+            self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] + self.outra 
             if randint(0,16) > 6:
                 return self.outra.vai()
             else:

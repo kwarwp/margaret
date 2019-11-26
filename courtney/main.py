@@ -1,133 +1,102 @@
 # margaret.courtney.main.py
 __author__ = "Adailton dos S. Junior junior_shoot4@hotmail.com"
+""" Tesouro Inca - versão texto
+Uma aventura de exploração
 
-from _spy.vitollino.main import Cena, Elemento, INVENTARIO
-from ruzwana.main import DI as RDI
-from random import shuffle
-#from stacy.main import fogo
-#from natalia.main import sereiamonstro
-IMAGENS = ["FOGO", "PEDRAS", "ARANHA", "MUMIA", "DESMORONAMENTO"]*5
-shuffle(IMAGENS)
-PERIGOS = {}
-DI = DICIONARIO_DE_IMAGENS = {}
-DI["TEMPLO"] = "https://i.imgur.com/7GZetDn.jpg"
-DI["TESOURO"] = "https://i.imgur.com/h8MfuRD.jpg"
-TURQUESA = "https://i.imgur.com/8WDBJM3.png" # DI["TURQUESA"]
+v 19.11.05h - o jogador foge se encontra dois perigos do mesmo tipo
+v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
+v 19.11.05f - alterna aleatoriamente entre tesouros e perigos
+"""
+__author__ = "Queila Couto <queila at ufrj br>"
+__version__ = "19.11.05h"
+from random import randint
 
-
-class Acampamento:
-    def __init__(self):
-        """ o que tem que ter no acampamento?"""
-        self.cena = Cena("https://i.imgur.com/dmSDeDF.jpg")
+class CamaraPerigosa:
+    """ Uma camara contendo um perigos mortais. 
+    O jogador entra nela quando se invoca o método vai
+    """
+    def __init__(self, outra):
+        self.tipos = ["aranha", "fogo", "mumia", "cobra", "desabamento"]
+        self.camara = "Você entrou numa câmara com {}."
+        self.perigos = {tipo :0 for tipo in self.tipos}
+        self.perigo_mortal = None
+        self.outra = outra
         
+    def sai(self):
+        per_m = self.perigo_mortal
+        quantos = self.perigos[per_m]
+        input(f"Você sai do templo mas encontrou {quantos} {per_m}")
+
     def vai(self):
-        self.cena.vai()
-    
-
-
-class Jogador:
-    def __init__(self, acampamento):
-        """ o que tem que ter no jogador?
-            o jogador ganha uma turquesa para cada camara
-        """
-        self.turquesa = 0
-        self.acampamento = acampamento
-        # Aparato para capturar a ação clica na direita
-        self.cena_continua = Cena() # Chupa-cabras
-        self.cena_continua.vai = self.continua
-        # Aparato para capturar a ação clica na esquerda
-        self.cena_desiste = Cena()
-        self.cena_desiste.vai = self.desiste
-
-        
-    def continua(self):
-        """ entra em nova camara e acumula turquesas """
-        self.turquesa = self.turquesa + 1
-        pass
-    def ganha_uma_turquesa(self, onde):
-        """
-        ouro = turquesa // 10
-        sobra_ouro = ouro % 10
-        obsidiana = sobra_ouro // 5
-        tur = sobra_ouro % 5
-        """
-        lugar =  50*onde
-        tur = Elemento(TURQUESA,  tit="Turquesa",
-            style=dict(left=f"{lugar}px", top="350px", width="50px",
-            height="30px"),
-                       cena=self.acampamento.cena)
-
-        
-    def desiste(self):
-        """ segue para o acampamento"""
-        self.coleta_tesouro()
-        self.acampamento.vai()
-        
-    def coleta_tesouro(self):
-        for tur in range(self.turquesa):
-            self.ganha_uma_turquesa(tur)
-        
-
-
-class Perigo:
-    def __init__(self, imagem, tipo, jogador):
-        self.jogador = jogador
-        self.cena = Cena(imagem)
-        self.tipo = tipo
-        # chupa cabra -- aparato
-        self.cena_vai = self.cena.vai
-        self.cena.vai = self.vai
-        self.acampamento = jogador.acampamento
-        self.set_esquerda(jogador.cena_desiste)
-
-    def set_direita(self, direita):
-        self.cena.direita = direita
-
-    def set_esquerda(self, esquerda):
-        self.cena.esquerda = esquerda
-    
-        
-    def vai(self):
-        if self.tipo in PERIGOS:
-            # deu ruim, já tinha aperecido um perigo
-            self.cena.direita = self.acampamento
+        continua = " Segue para outra câmara? (s/N)"
+        tipo_do_perigo = self.tipos[randint(0,5)]
+        if input(self.camara.format(tipo_do_perigo)+continua) == "s":
+            self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
+            if self.perigos[tipo_do_perigo] > 1 :
+                self.perigo_mortal = tipo_do_perigo
+                input("Você foge assustado para a entrada do templo")
+                self.sai()
+                self.outra.perde()
+                return self.perigos
+            
+            if randint(0,9) > 3:
+                return self.outra.vai()
+            else:
+                return self.vai()
         else:
-            PERIGOS[self.tipo] = 1
-        self.jogador.continua()
-        self.cena_vai()
-        
-class Carta:
-    def __init__(self, jogador):
-        self.jogador = jogador
-        self.cartas = [Perigo(
-                              RDI[uma_imagem],
-                              uma_imagem,
-                              jogador) 
-            for uma_imagem in IMAGENS]
-        for ordem, carta in enumerate(self.cartas):
-            if ordem < len(self.cartas)-1:
-                carta.set_direita(self.cartas[ordem+1])
-    def baralho(self):
-        return self.cartas
-        
-class Jogo:
-    def __init__(self):
-        global PERIGOS
-        PERIGOS ={}
-        INVENTARIO.inicia()
-        #INVENTARIO.bota(tur)
-        self.acampamento = Acampamento()
-        self.jogador = Jogador(self.acampamento)
-        self.baralho = Carta(self.jogador).baralho()
-        self.templo = Cena(DI["TEMPLO"])
-        #self.templo = Perigo(tipo="TEMPLO", imagem=DI["TEMPLO"])
-        self.templo.direita = self.baralho[1]
-    def inicia(self):
-        self.templo.vai()
-        
+            input("Você volta para a entrada do templo")
+            self.sai()
+            self.outra.sai()
+            return self.perigos
 
-inca = Jogo()  # Inca()
+class CamaraSecreta:
+    """ Uma camara contendo um conteúdo misterioso. 
+    O jogador entra nela quando se invoca o método vai
+    """
+    def __init__(self, outra):
+        self.camara = "Você entrou numa câmara com tesouros."
+        self.tesouros = 0
+        self.outra = outra
+        
+    def perde(self):
+        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
+        
+    def sai(self):
+        input(f"Você sai do templo com {self.tesouros} tesouros:")
+        
+    def vai(self):
+        continua = " Segue para outra câmara? (s/N)"
+        if input(self.camara+continua) == "s":
+            self.tesouros = self.tesouros + 1
+            if randint(0,9) > 6:
+                return self.outra.vai()
+            else:
+                return self.vai()
+        else:
+            input("Você volta para a entrada do templo")
+            self.sai()
+            self.outra.sai()
+            return self.tesouros
+
+class JogoDoTesouroInca:
+    """ O jogo do tesouro inca. 
+    O jogo começa quando se invoca o método vai
+    """
+    def __init__(self):
+        self.templo = "Você está diante de um templo Inca."
+        tesouro = CamaraSecreta(None)
+        self.camara = CamaraPerigosa(tesouro)
+        tesouro.outra = self.camara
+        
+    def vai(self):
+        continua = " Você vai entrar? (s/N)"
+        if input(self.templo+continua) == "s":
+            input("Você se embrenha no templo, e explora")
+            muitos = self.camara.vai()
+        else:
+            input("Você sabiamente desiste desta loucura")
+
 
 if __name__ == "__main__":
-    inca.inicia()
-    
+    tesouro = JogoDoTesouroInca()
+    tesouro.vai()

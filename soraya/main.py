@@ -54,7 +54,7 @@ class CamaraSecreta:
     O jogador entra nela quando se invoca o método vai
     """
     def __init__(self, outra):
-        self.camara = "Você entrou numa câmara com tesouros."
+        self.camara = "Você entrou numa câmara com {} tesouros."
         self.tesouros = 0
         self.outra = outra
         

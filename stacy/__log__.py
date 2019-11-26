@@ -2476,3 +2476,10 @@ TypeError: unhashable type: 'dict'
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 26 2019 11:12:45.701 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 80
+  input(f"Por enquanto, você tem {din} tesouros.)
+                                                 ^
+SyntaxError: EOL while scanning string literal
+'''},

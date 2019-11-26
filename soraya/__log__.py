@@ -155,3 +155,10 @@ TypeError: Can't convert int to str implicitely
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Nov 26 2019 10:02:33.236 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros.")
+  ^
+IndentationError: expected an indented block
+'''},

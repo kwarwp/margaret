@@ -1,13 +1,12 @@
 # margaret.courtney.main.py
-__author__ = "Adailton dos S. Junior junior_shoot4@hotmail.com"
-""" Tesouro Inca - versão texto
+
 Uma aventura de exploração
 
 v 19.11.05h - o jogador foge se encontra dois perigos do mesmo tipo
 v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
 v 19.11.05f - alterna aleatoriamente entre tesouros e perigos
 """
-__author__ = "Queila Couto <queila at ufrj br>"
+__author__ = "Vitória Costa <vitória at ufrj br>"
 __version__ = "19.11.05h"
 from random import randint
 
@@ -24,12 +23,13 @@ class CamaraPerigosa:
         
     def sai(self):
         per_m = self.perigo_mortal
-        quantos = self.perigos[per_m]
-        input(f"Você sai do templo mas encontrou {quantos} {per_m}")
+        quantos = self.perigos[per_m] if per_m != None else 0
+        per_m = per_m if per_m != None else "perigo"
+        input(f"Você sai do templo mas encontrou {quantos} {per_m}s")
 
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        tipo_do_perigo = self.tipos[randint(0,5)]
+        tipo_do_perigo = self.tipos[randint(0,4)]
         if input(self.camara.format(tipo_do_perigo)+continua) == "s":
             self.perigos[tipo_do_perigo] = self.perigos[tipo_do_perigo] + 1
             if self.perigos[tipo_do_perigo] > 1 :
@@ -55,8 +55,9 @@ class CamaraSecreta:
     """
     def __init__(self, outra):
         self.camara = "Você entrou numa câmara com tesouros."
-        self.tesouros = 0
-        self.outra = outra
+        self.tesouro = "Você entrou numa câmara com {} tesouros."
+        if self.tesouros = +1
+        
         
     def perde(self):
         input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros:")
@@ -68,6 +69,7 @@ class CamaraSecreta:
         continua = " Segue para outra câmara? (s/N)"
         if input(self.camara+continua) == "s":
             self.tesouros = self.tesouros + 1
+            
             if randint(0,9) > 6:
                 return self.outra.vai()
             else:

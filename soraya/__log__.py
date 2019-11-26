@@ -344,3 +344,10 @@ KeyError: tipos
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Nov 26 2019 10:16:54.69 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 86
+  if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
+  ^
+IndentationError: unexpected indent
+'''},

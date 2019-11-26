@@ -2483,3 +2483,10 @@ SyntaxError: invalid syntax
                                                  ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Tue Nov 26 2019 11:13:11.677 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 81
+  input(f"Por enquanto, você tem {self.tesouros} tesouros.)
+                                                           ^
+SyntaxError: EOL while scanning string literal
+'''},

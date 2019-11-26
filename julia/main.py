@@ -2,13 +2,14 @@
 """ Tesouro Inca - versão texto
 Uma aventura de exploração
 
+v 19.11.26a - encontra mais de um tesouro e avisa quantos tem
 v 19.11.05h - o jogador foge se encontra dois perigos do mesmo tipo
 v 19.11.05g - o jogador foge se encontra dois perigos quaisquer
 v 19.11.05f - alterna aleatoriamente entre tesouros e perigos
 """
 __author__ = "Queila Couto <queila at ufrj br>"
 __version__ = "19.11.05h"
-from random import randint
+from random import randint, shuffle
 
 class CamaraPerigosa:
     """ Uma camara contendo um perigos mortais. 
@@ -51,10 +52,11 @@ class CamaraPerigosa:
 
 class CamaraSecreta:
     """ Uma camara contendo um conteúdo misterioso. 
-    O jogador entra nela quando se invoca o método vai
+    O jogador entra nela quando se invoca o método vai.
+    O jogador pode encontrar um total entre 1 e 17 tesouros
     """
     def __init__(self, outra):
-        self.camara = "Você entrou numa câmara com tesouros."
+        self.camara = "Você entrou numa câmara com {} tesouros."
         self.tesouros = 0
         self.outra = outra
         
@@ -66,8 +68,9 @@ class CamaraSecreta:
         
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
-        if input(self.camara+continua) == "s":
-            self.tesouros = self.tesouros + 1
+        tesouros_aqui = randint(1,17)
+        if input(self.camara.format(tesouros_aqui)+continua) == "s":
+            self.tesouros = self.tesouros + tesouros_aqui
             if randint(0,9) > 6:
                 return self.outra.vai()
             else:

@@ -51,31 +51,28 @@ class CamaraSecreta:
         self.outra = outra
         
     def perde(self):
-        din = self.tesouros
-        din = self.tesouros[din] if din != None else 0
-        din = din if din != None else "tesouros"
-        input(f"Você fugiu do templo e perdeu {din} tesouros.")
+        input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros.")
         
     def sai(self):
-        din = self.tesouros
-        din = self.tesouros[din] if din != None else 0
-        din = din if din != None else "tesouros"
-        input(f"Você sai do templo com {din} tesouros.")
+        input(f"Você sai do templo com {self.tesouros} tesouros.")
                         
     def vai(self):
         continua = " Segue para outra câmara? (s/N)"
         tipo_do_tesouro = self.tipos[randint(0,16)]
         if input(self.camara.format(tipo_do_tesouro)+continua) == "s":
-            self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] + self.outra 
+            self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] 
             if randint(0,16) > 6:
                 return self.outra.vai()
             else:
                 return self.vai()
+        
         else:
             input("Você volta para a entrada do templo")
             self.sai()
             self.outra.sai()
             return self.tesouros
+            
+        input(f"Por enquanto, você tem {self.tesouros} tesouros.")
 
 class JogoDoTesouroInca:
     """ O jogo do tesouro inca. O jogo começa quando se invoca o método vai """

@@ -2469,3 +2469,10 @@ TypeError: unhashable type: 'dict'
     din = self.tesouros[din] if din != None else 0
 TypeError: unhashable type: 'dict'
 '''},
+{'date': 'Tue Nov 26 2019 11:11:59.707 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  else:
+   ^
+SyntaxError: invalid syntax
+'''},

@@ -2371,3 +2371,25 @@ TypeError: unhashable type: 'dict'
     din = self.tesouros[din] if din != None else 0
 TypeError: unhashable type: 'dict'
 '''},
+{'date': 'Tue Nov 26 2019 11:09:26.713 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 99
+    tesouro.vai()
+  module <module> line 92
+    muitos = self.camara.vai()
+  module <module> line 36
+    return self.outra.vai()
+  module <module> line 69
+    self.tesouros[tipo_do_tesouro] = self.tesouros[tipo_do_tesouro] + self.outra 
+TypeError: unsupported operand type(s) for +: 'int' and 'CamaraPerigosa'
+'''},

@@ -148,3 +148,10 @@ TypeError: Can't convert int to str implicitely
     self.tesouros = self.tesouros + 1
 TypeError: Can't convert int to str implicitely
 '''},
+{'date': 'Tue Nov 26 2019 10:01:50.868 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  input(f"Você fugiu do templo e perdeu {self.tesouros} tesouros.")
+  ^
+IndentationError: expected an indented block
+'''},

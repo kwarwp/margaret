@@ -1,13 +1,14 @@
 # margaret.sara.main.py
 __author__ = "Luiza Busnardo busnardo.luiza@gmail.com"
 
-from _spy.vitollino.main import Cena, STYLE
+from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"] = 600
 STYLE["height"] = 600
 from random import shuffle
 IMAGENS = ["CENA", "ACAMPAMENTO", "MOCHILA", "ARTEFATO1", "MONSTRO", "PEDRAS", "FOGO", "DESABAMENTO", "COBRA", "ARANHA", "SALADOTESOURO", "OBSIDIANA", "TURQUESA", "PEPITADEOURO"]*5
 shuffle(IMAGENS)
 DI = DICIONARIO_DE_IMAGENS = {}
+DI["TEMPLO"] = "https://i.imgur.com/ZzWag8V.jpg"
 DI["CENA"] = "https://i.imgur.com/ZzWag8V.jpg"
 DI["ACAMPAMENTO"] = "https://i.imgur.com/3QWHNYM.jpg"
 DI["MOCHILA"] = "https://i.imgur.com/UCQvviq.jpg"
@@ -112,7 +113,7 @@ class Carta:
     def __init__(self, jogador):
         self.jogador = jogador
         self.cartas = [Perigo(
-                              RDI[uma_imagem],
+                              DI[uma_imagem],
                               uma_imagem,
                               jogador) 
             for uma_imagem in IMAGENS]
